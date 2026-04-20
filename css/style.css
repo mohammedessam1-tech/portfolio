@@ -167,6 +167,33 @@ html {
   cursor: pointer;
 }
 
+.project-card.blurred-project {
+  filter: blur(6px);
+  opacity: 0.72;
+  pointer-events: none;
+}
+
+.project-card.blurred-project:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.project-card-blurred-overlay {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 20;
+  background: rgba(10, 10, 10, 0.95);
+  border: 1px solid #FFE600;
+  color: #FFE600;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  padding: 0.45rem 0.75rem;
+  border-radius: 9999px;
+}
+
 /* ─── Form input focus glow ─── */
 input:focus,
 textarea:focus,
