@@ -603,6 +603,16 @@ select option {
     max-width: 100%;
   }
 
+  #hero {
+    min-height: auto !important;
+    height: auto !important;
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+  }
+
+  #hero .relative.z-10.max-w-6xl {
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
   }
 
   /* ensure large headings don't overflow */
@@ -631,6 +641,51 @@ select option {
   #mobile-menu .mobile-nav-link {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+
+  /* mobile carousel for large sections */
+  .carousel-snap {
+    display: flex !important;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    margin-left: -0.5rem;
+    padding-left: 0.5rem;
+    justify-content: flex-start;
+  }
+
+  .carousel-snap::-webkit-scrollbar {
+    display: none;
+  }
+
+  .carousel-snap {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .carousel-snap .project-card,
+  .carousel-snap .ai-projects-card,
+  .carousel-snap .skill-category {
+    scroll-snap-align: start;
+    flex: 0 0 auto;
+    width: min(90vw, 360px);
+    max-width: 360px;
+  }
+
+  .carousel-snap .project-card {
+    min-height: 18rem;
+  }
+
+  .carousel-snap .ai-projects-card {
+    width: min(90vw, 340px);
+    max-width: 340px;
+  }
+
+  .carousel-snap .skill-category {
+    width: min(90vw, 320px);
+    max-width: 320px;
   }
 
   /* reduce motion for reveal animations on mobile */

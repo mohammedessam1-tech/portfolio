@@ -143,7 +143,7 @@
           </h1>
 
           <!-- Subtitle with stagger -->
-          <div class="reveal-up mt-6 mb-8 hero-copy" style="animation-delay:0.3s">
+          <div class="reveal-up mt-4 mb-4 hero-copy" style="animation-delay:0.3s">
             <p class="text-brutal-light/70 text-sm md:text-base font-grotesk leading-relaxed max-w-lg">
               <span class="text-brutal-cyan font-bold">Shopify Developer & AI Automation Specialist</span>
               <br>
@@ -230,13 +230,10 @@
         </div>
 
         <!-- Right: Profile Photo Block -->
-        <div class="hidden md:flex items-center justify-center">
+        <div class="hidden md:flex md:flex-col items-center justify-center">
           <div class="reveal-right relative" style="animation-delay:0.3s">
-            <!-- Deep offset shadow layers -->
-            <div class="absolute -bottom-5 -right-5 w-full h-full bg-brutal-yellow border-4 border-brutal-dark z-0"></div>
-            <div class="absolute -bottom-2 -right-2 w-full h-full bg-brutal-pink border-4 border-brutal-dark z-0"></div>
             <!-- Photo frame -->
-            <div class="relative border-4 border-brutal-light z-10 overflow-hidden photo-frame-hero">
+            <div class="relative border-2 border-brutal-yellow z-10 overflow-hidden photo-frame-hero">
                   <img src="images/profile2.jpg"
                     alt="Mohammed Essam — Shopify Developer & AI Automation Specialist"
                    class="w-full h-full object-cover block"
@@ -254,18 +251,17 @@
             <div class="absolute -top-3 -left-3 bg-brutal-yellow border-4 border-brutal-dark px-3 py-2 z-20">
               <span class="font-mono font-bold text-brutal-dark text-xs uppercase tracking-widest">Giza, Egypt 🇪🇬</span>
             </div>
-            <!-- Bottom-right accent badge -->
-            <div class="absolute -bottom-3 -right-3 bg-brutal-cyan border-4 border-brutal-dark px-3 py-2 z-20">
-              <span class="font-mono font-bold text-brutal-dark text-xs uppercase tracking-widest flex items-center gap-2">
-                <span class="w-2 h-2 bg-brutal-dark rounded-full animate-pulse"></span>
-                Open to Work
-              </span>
+          </div>
+          <div class="mt-4 flex justify-center">
+            <div class="inline-flex items-center gap-2 bg-brutal-cyan border-4 border-brutal-dark px-4 py-2 z-20">
+              <span class="w-2 h-2 bg-brutal-dark rounded-full animate-pulse"></span>
+              <span class="font-mono font-bold text-brutal-dark text-xs uppercase tracking-widest">Open to Work</span>
             </div>
           </div>
         </div>
 
         <!-- Mobile: Photo strip (shows below stats) -->
-        <div class="md:hidden mt-8 flex justify-center">
+        <div class="md:hidden mt-4 flex justify-center">
           <div class="relative w-48 h-56">
             <div class="absolute -bottom-3 -right-3 w-full h-full bg-brutal-yellow border-4 border-brutal-dark z-0"></div>
             <div class="relative border-4 border-brutal-light z-10 w-full h-full overflow-hidden">
@@ -590,10 +586,13 @@
         <p class="reveal-up mt-6 text-brutal-light/50 font-grotesk max-w-xl" style="animation-delay:0.25s">
           A selection of websites and digital platforms I've designed, built, and launched across various industries.
         </p>
+        <p class="reveal-up mt-4 text-brutal-light/40 text-xs uppercase tracking-widest text-center sm:hidden" style="animation-delay:0.28s">
+          Swipe to browse featured work →
+        </p>
       </div>
 
       <!-- Portfolio grid -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="portfolio-grid">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 carousel-snap" id="portfolio-grid">
 
         <!-- 1 — Pawfect Worlds -->
         <a href="https://pawfectworlds.com/" target="_blank" rel="noopener noreferrer"
@@ -1006,6 +1005,32 @@
           </div>
         </a>
 
+        <!-- 17 — Portfolio Assets -->
+        <a href="https://drive.google.com/drive/folders/1SVsSC-iQ47AcpyL-7JJyXSUAVLu8BVRM?usp=sharing" target="_blank" rel="noopener noreferrer"
+           class="reveal-up project-card group relative col-span-1 sm:col-span-2 lg:col-span-2 bg-gradient-to-br from-pink-500 via-orange-500 to-yellow-400 border-4 border-brutal-yellow shadow-[0_0_45px_rgba(255,230,0,0.25)] hover:-translate-y-2 hover:-translate-x-2 transition-all duration-300 overflow-hidden"
+           style="animation-delay:0.9s">
+          <div class="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.35),transparent_45%)] pointer-events-none"></div>
+          <div class="relative overflow-hidden h-52 flex items-center justify-center">
+            <div class="flex flex-col items-center justify-center text-center gap-3 px-6">
+              <div class="inline-flex items-center gap-2 uppercase tracking-[0.25em] text-[10px] font-bold text-brutal-dark bg-brutal-light px-3 py-1 rounded-full shadow-brutal">
+                <span>Featured</span>
+              </div>
+              <i class="fas fa-folder-open text-brutal-dark text-6xl opacity-95"></i>
+              <span class="text-brutal-dark font-mono font-bold text-lg uppercase tracking-widest">Portfolio Assets</span>
+            </div>
+            <div class="absolute inset-0 bg-brutal-dark/0 group-hover:bg-brutal-dark/15 transition-all duration-300"></div>
+          </div>
+          <div class="p-5 border-t-4 border-brutal-yellow/30 bg-brutal-dark/10">
+            <span class="font-mono text-xs text-brutal-dark/70 uppercase tracking-widest">Assets · Media</span>
+            <h3 class="font-mono font-bold text-brutal-dark text-lg mt-3 group-hover:text-brutal-dark transition-colors duration-200">Explore my asset collection</h3>
+            <p class="text-brutal-dark/60 text-xs font-grotesk mt-2 leading-relaxed">A curated folder of videos, photos, and other design materials to showcase my creative work.</p>
+            <div class="mt-4 inline-flex items-center gap-2 text-brutal-dark font-mono text-xs uppercase tracking-[0.25em] font-bold">
+              <i class="fas fa-external-link-alt"></i>
+              Open Drive Folder
+            </div>
+          </div>
+        </a>
+
       </div><!-- /portfolio-grid -->
 
     </div>
@@ -1032,7 +1057,7 @@
       </div>
 
       <!-- Skills grid -->
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 carousel-snap">
 
         <!-- AI Tools -->
         <div class="reveal-up skill-category group" style="animation-delay:0.1s">
@@ -1433,9 +1458,12 @@
         <p class="reveal-up mt-6 text-brutal-dark/50 font-grotesk max-w-xl mx-auto" style="animation-delay:0.25s">
           A curated list of AI-powered tools and apps I built or integrated — open the links to try them live.
         </p>
+        <p class="reveal-up mt-4 text-brutal-dark/40 text-xs uppercase tracking-widest text-center md:hidden" style="animation-delay:0.28s">
+          Swipe to explore AI projects →
+        </p>
       </div>
 
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="ai-projects-grid">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 carousel-snap" id="ai-projects-grid">
 
         <a href="https://ai.studio/apps/82d1878a-b244-41a9-9339-1d41eabcf7b0" target="_blank" rel="noopener noreferrer" class="reveal-up group ai-projects-card bg-brutal-dark border-4 border-brutal-yellow/10 overflow-hidden hover:-translate-y-2 hover:-translate-x-2 hover:shadow-brutal transition-all duration-300">
           <div class="ai-project-screenshot">
