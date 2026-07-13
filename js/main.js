@@ -441,8 +441,9 @@ console.log('%c🌐 https://linktr.ee/Mohammed_Essam1', 'color:#00FF88;');
 
 // ─── Live Page Hits Counter ─────────────────────────────────
 (function initHitsCounter() {
+  const counterCard = document.getElementById('counter-card');
   const countEl = document.getElementById('visitor-count');
-  if (!countEl) return;
+  if (!countEl || !counterCard) return;
 
   // We use the free public counterapi.dev service
   // Key: mohammedessam_portfolio_views
@@ -451,11 +452,15 @@ console.log('%c🌐 https://linktr.ee/Mohammed_Essam1', 'color:#00FF88;');
     .then(data => {
       if (data && typeof data.value !== 'undefined') {
         countEl.textContent = data.value.toLocaleString();
-      } else {
-        countEl.textContent = 'Active';
       }
     })
     .catch(() => {
       countEl.textContent = 'Active';
     });
+
+  // Only show the counter card if the URL contains "?admin=true" or "?stats"
+  const urlParams = new URLSearchParams(window.location.search);
+  if (urlParams.has('admin') || urlParams.has('stats')) {
+    counterCard.classList.remove('hidden');
+  }
 })();
