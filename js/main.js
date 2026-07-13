@@ -435,5 +435,5 @@
 
 // ─── Log ──────────────────────────────────────────────────
 console.log('%c🚀 Mohammed Essam Portfolio', 'color:#FFE600;font-size:16px;font-weight:bold;');
-console.log('%c📧 mohammedessam.web_growth@zohomail.com', 'color:#00E5FF;');
+console.log('%c📧 mohammed@mohammedessam.online', 'color:#00E5FF;');
 console.log('%c🌐 https://linktr.ee/Mohammed_Essam1', 'color:#00FF88;');
