@@ -145,6 +145,20 @@
     <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-16">
       <div class="grid md:grid-cols-2 gap-12 items-center">
 
+        <!-- Mobile: Photo strip (shows first on mobile) -->
+        <div class="md:hidden mt-4 flex justify-center">
+          <div class="relative w-48 h-56">
+            <div class="absolute -bottom-3 -right-3 w-full h-full bg-brutal-yellow border-4 border-brutal-dark z-0"></div>
+            <div class="relative border-4 border-brutal-light z-10 w-full h-full overflow-hidden">
+              <img src="images/profile2.jpg"
+                   alt="Mohammed Essam"
+                   class="w-full h-full object-cover"
+                   style="object-position: center 5%;"
+              />
+            </div>
+          </div>
+        </div>
+
         <!-- Left: Text -->
         <div class="text-left">
           <!-- Badge -->
@@ -277,19 +291,7 @@
           </div>
         </div>
 
-        <!-- Mobile: Photo strip (shows below stats) -->
-        <div class="md:hidden mt-4 flex justify-center">
-          <div class="relative w-48 h-56">
-            <div class="absolute -bottom-3 -right-3 w-full h-full bg-brutal-yellow border-4 border-brutal-dark z-0"></div>
-            <div class="relative border-4 border-brutal-light z-10 w-full h-full overflow-hidden">
-              <img src="images/profile2.jpg"
-                   alt="Mohammed Essam"
-                   class="w-full h-full object-cover"
-                   style="object-position: center 5%;"
-              />
-            </div>
-          </div>
-        </div>
+
 
       </div>
     </div>
@@ -611,7 +613,30 @@
       <!-- Portfolio grid -->
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 carousel-snap" id="portfolio-grid">
 
-        <!-- 1 — Pawfect Worlds -->
+        <!-- 1 — Veloye -->
+        <a href="https://veloye.com/" target="_blank" rel="noopener noreferrer"
+           class="reveal-up project-card group relative bg-brutal-gray border-4 border-brutal-light/10 hover:border-brutal-cyan hover:-translate-y-2 hover:-translate-x-2 hover:shadow-brutal-cyan transition-all duration-300 overflow-hidden"
+           style="animation-delay:0.05s">
+          <div class="relative overflow-hidden h-44">
+            <img src="images/projects/veloye.jpg"
+                 alt="Veloye website screenshot"
+                 class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+            <div class="w-full h-full bg-gradient-to-br from-cyan-500 to-blue-600 items-center justify-center" style="display:none">
+              <i class="fas fa-soap text-white text-5xl opacity-80"></i>
+            </div>
+            <div class="absolute inset-0 bg-brutal-dark/0 group-hover:bg-brutal-dark/20 transition-all duration-300"></div>
+            <div class="absolute top-3 right-3 bg-brutal-cyan text-brutal-dark font-mono font-bold text-xs px-2 py-1 uppercase border-2 border-brutal-dark opacity-0 group-hover:opacity-100 transition-opacity duration-200">Live ↗</div>
+            <div class="absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-brutal-gray to-transparent"></div>
+          </div>
+          <div class="p-4">
+            <span class="font-mono text-xs text-brutal-cyan/60 uppercase tracking-widest">Shopify · E-commerce</span>
+            <h3 class="font-mono font-bold text-brutal-light text-sm mt-1 group-hover:text-brutal-cyan transition-colors duration-200">Veloye</h3>
+            <p class="text-brutal-light/70 text-xs font-grotesk mt-1 leading-relaxed">Specialized cleaning products and beauty essentials e-commerce store.</p>
+          </div>
+        </a>
+
+        <!-- 2 — Pawfect Worlds -->
         <a href="https://pawfectworlds.com/" target="_blank" rel="noopener noreferrer"
            class="reveal-up project-card group relative bg-brutal-gray border-4 border-brutal-light/10 hover:border-brutal-yellow hover:-translate-y-2 hover:-translate-x-2 hover:shadow-brutal-yellow transition-all duration-300 overflow-hidden"
            style="animation-delay:0.1s">
