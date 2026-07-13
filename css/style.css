@@ -308,6 +308,16 @@ select option {
   border: 1px solid rgba(255,255,255,0.1);
 }
 
+/* ─── Upcoming Card styles ─── */
+.upcoming-card {
+  filter: blur(2px);
+  transition: filter 0.4s cubic-bezier(0.22, 1, 0.36, 1), transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.upcoming-card:hover {
+  filter: blur(0);
+}
+
 /* ─── Skill tags hover ─── */
 .skill-tag {
   display: inline-block;
@@ -356,6 +366,12 @@ select option {
 .nav-link.active {
   border-bottom-color: #FFE600;
   color: #FFE600;
+}
+
+.mobile-nav-link.active {
+  border-left-color: #FFE600;
+  color: #FFE600;
+  background: rgba(255, 230, 0, 0.05);
 }
 
 /* ─── Responsive: portfolio cards ─── */
@@ -693,6 +709,11 @@ select option {
     transition: none;
     transform: none !important;
     opacity: 1 !important;
+  }
+
+  /* Disable blur on mobile for better UX */
+  .upcoming-card {
+    filter: none !important;
   }
 }
 
