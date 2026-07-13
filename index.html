@@ -23,6 +23,66 @@
   <meta property="twitter:description" content="Shopify Developer & AI Automation Specialist. E-commerce Operations, Digital Growth, and Workflow Systems. Based in Giza, Egypt." />
   <meta property="twitter:image" content="https://mohammedessam.site/images/profile.jpg" />
 
+  <!-- Google Analytics (GA4) -->
+  <!-- Replace G-XXXXXXXXXX with your actual GA4 Measurement ID -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+  <!-- JSON-LD Structured Data for AI & Search Engines (SEO/LLMO) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://mohammedessam.site/#person",
+        "name": "Mohammed Essam",
+        "jobTitle": "Shopify Developer & AI Automation Specialist",
+        "url": "https://mohammedessam.site/",
+        "sameAs": [
+          "https://www.linkedin.com/in/mohammed-essam-younis/",
+          "https://github.com/mohammedessam1-tech",
+          "https://www.instagram.com/mohammedessam_webgrowth",
+          "https://www.tiktok.com/@mohammedessam_web_growth",
+          "https://www.facebook.com/MohammedEssam.WebGrowth",
+          "https://www.youtube.com/@MohammedEssamWebGrowth"
+        ],
+        "image": "https://mohammedessam.site/images/profile.jpg",
+        "description": "Professional Shopify Developer and AI Workflow Automation Specialist based in Giza, Egypt. Expert in e-commerce setup, operations management, and low-code development.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Giza",
+          "addressCountry": "Egypt"
+        },
+        "knowsAbout": [
+          "Shopify Development",
+          "E-commerce Operations",
+          "AI Tools & Automations",
+          "Low-Code/No-Code Tools",
+          "Digital Marketing",
+          "Prompt Engineering",
+          "WordPress"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://mohammedessam.site/#website",
+        "url": "https://mohammedessam.site/",
+        "name": "Mohammed Essam Portfolio",
+        "description": "Portfolio of Mohammed Essam - Shopify Developer & AI Automation Specialist.",
+        "publisher": {
+          "@id": "https://mohammedessam.site/#person"
+        }
+      }
+    ]
+  }
+  </script>
+
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
 
@@ -2161,6 +2221,13 @@
             </div>
           </a>
           <p class="font-grotesk text-brutal-light/70 text-xs max-w-xs mt-2">Building impactful digital experiences from Giza, Egypt. Available worldwide.</p>
+          
+          <!-- Hits Counter Card -->
+          <div class="mt-5 inline-flex items-center gap-3 bg-brutal-gray border-2 border-brutal-yellow px-4 py-2 text-brutal-yellow font-mono text-xs uppercase tracking-widest" style="box-shadow: 3px 3px 0 0 #FFE600;">
+            <span class="w-2 h-2 bg-brutal-green rounded-full animate-pulse"></span>
+            <span>Total Visits:</span>
+            <span id="visitor-count" class="font-bold">----</span>
+          </div>
         </div>
 
         <!-- Quick links -->

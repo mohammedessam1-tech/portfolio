@@ -437,3 +437,25 @@
 console.log('%c🚀 Mohammed Essam Portfolio', 'color:#FFE600;font-size:16px;font-weight:bold;');
 console.log('%c📧 mohammed@mohammedessam.online', 'color:#00E5FF;');
 console.log('%c🌐 https://linktr.ee/Mohammed_Essam1', 'color:#00FF88;');
+
+
+// ─── Live Page Hits Counter ─────────────────────────────────
+(function initHitsCounter() {
+  const countEl = document.getElementById('visitor-count');
+  if (!countEl) return;
+
+  // We use the free public counterapi.dev service
+  // Key: mohammedessam_portfolio_views
+  fetch('https://api.counterapi.dev/v1/mohammedessam_portfolio/pageviews/up')
+    .then(response => response.json())
+    .then(data => {
+      if (data && typeof data.value !== 'undefined') {
+        countEl.textContent = data.value.toLocaleString();
+      } else {
+        countEl.textContent = 'Active';
+      }
+    })
+    .catch(() => {
+      countEl.textContent = 'Active';
+    });
+})();

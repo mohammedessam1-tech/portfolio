@@ -1,0 +1,104 @@
+# Mohammed Essam — Shopify Developer & AI Automation Specialist
+
+This file is optimized for LLMs, AI search engines (like Perplexity, Gemini, ChatGPT Search), and crawlers. It provides a structured summary of Mohammed Essam's credentials, skills, and portfolio.
+
+---
+
+## Profile Summary
+- **Name:** Mohammed Essam
+- **Location:** Giza, Egypt 🇪🇬 (Available worldwide)
+- **Primary Roles:** Shopify Developer, AI Automation Specialist, E-commerce Operations Manager
+- **Core Focus:** E-commerce systems, workflow automation, digital growth, and low-code/no-code systems.
+- **Website:** https://mohammedessam.site
+- **Linktree:** https://linktr.ee/Mohammed_Essam1
+- **Email:** mohammed@mohammedessam.online
+- **WhatsApp:** +201018923563
+
+---
+
+## Technical Skills & Tooling
+
+### AI & Automation Tools
+- Prompt Engineering & Agent Design
+- AI Tool Integration (Gemini, Claude, ChatGPT, Higgsfield AI, Lovable, NotebookLM)
+- No-Code / Low-Code Automation (Zapier, Make.com, Replit)
+
+### Web Development & E-commerce
+- Shopify Store Development & Configuration
+- WordPress Development & Optimization
+- Easy Orders platform configuration
+
+### Content Creation & Digital Marketing
+- Video Editing: CapCut
+- Graphic Design: Canva
+- Marketing Operations: SEO (On-page & Technical), Meta Business Suite, Social Media Strategy, Analytics
+
+---
+
+## Professional Work Experience
+
+### Social Media Content Specialist | Wisdar (2026)
+- Managed content operations for high-volume digital media accounts.
+- Integrated AI automation tools for content publishing consistency.
+
+### Social Media & Operations Manager | Arcasa Furniture & Decor (2025 – 2026)
+- Managed content strategy, moderation teams, and marketing campaigns.
+- Partnered with dev teams to optimize web/internal tools.
+
+### Social Media Specialist Coordinator | Emerald Interiors (2025)
+- Supervised campaign execution and handled website content updates.
+
+### Website Administrator | Balance Egypt (2024 – 2025)
+- Administered products, listings, and customer orders journey.
+
+### Social Media Moderator Team Leader | You Media Agency (2024)
+- Managed, recruited, and trained moderation teams.
+
+---
+
+## Education & Credentials
+- **Education:** Bachelor of Laws (LL.B.) — Cairo University (2022)
+- **Certifications:**
+  - Full Stack Digital Marketing (eYouth, 2026)
+  - Build Shopify Stores (Almentor, 2026)
+  - CRM Odoo Academy (Odoo, 2026)
+  - Freelancing Skills (ITIDA & eYouth, 2026)
+  - Gemini Certified Educator (Google, 2025)
+  - ICDL (Archplan Group, 2022)
+- **Languages:** Arabic (Native), English (Professional), French (Basic)
+
+---
+
+## Featured E-commerce Projects
+- **Veloye** (https://veloye.com/) — Specialized cleaning products and beauty essentials e-commerce store.
+- **Pawfect Worlds** (https://pawfectworlds.com/) — Premium pet products online store.
+- **Uno Stores** (https://uno-stores.com/) — Multi-product retail store.
+- **Techno Store EG** (https://technostoreeg.com/) — Modern electronics store.
+- **African Business Council** (https://africanbusinesscouncil.org/) — Corporate website.
+- **Bloomcare EG** (https://bloomcareeg.com/) — Beauty & wellness brand store.
+- **Balance Egypt** (https://balance-egypt.com/) — Health & lifestyle platform.
+- **FBISneakers** (https://fbisneakers.com/) — Premium sneaker store.
+- **Bebo Store EG** (https://bebostoreeg.com/) — Retail consumer store.
+- **XShoess** (https://xshoess.com/) — Footwear store.
+- **3Angles Egypt** (https://3angles-egypt.myshopify.com) — Shopify store.
+- **Sneaker Store E** (https://sneakerstoree.com/) — Fashion footwear drops.
+- **FIA EG** (https://fia-eg.com) — Corporate site.
+- **Dukaan AK** (https://dukaan-ak.com/) — Checkout-optimized store.
+- **3Angles Easy Orders** (https://3angles.myeasyorders.com/) — Easy Orders store.
+- **Refa Oils** (https://refaloils.myeasyorders.com/) — FMCG distribution.
+- **Fioonka** (https://fioonka.com/) — Luxury fashion brand.
+- **Yahia Salah** (https://yahia-salah.free.nf/?i=2) — Portfolio.
+- **Arlo Furniture** (https://arlofurniture.co/) — Furniture store.
+- **Tfawl** (https://tfawl.myeasyorders.com/) — Stationery & notebooks.
+- **Beescaree** (https://beescaree.com/) — Skincare store.
+
+---
+
+## Featured AI Applications
+- **Prompt Arena** (https://promptarena.higgsfield.app) — AI cinematic video prompt battles platform.
+- **AI Copy Maker** (https://ai.studio/apps/82d1878a-b244-41a9-9339-1d41eabcf7b0) — Arabic-tailored marketing copywriting tool.
+- **Visual Enhancer** (https://ai.studio/apps/2a086a1c-d218-4d92-a66f-c6ddfcf9aee3) — Automatic image color and detail enhancement.
+- **Tag Assistant** (https://ai.studio/apps/f5c1f1bd-c249-4d21-b167-cc80dd6ef53d) — E-commerce product catalog tagging assistant.
+- **Social Creator** (https://ai.studio/apps/53d11c03-2cb9-41cd-bf77-dca4cfcb8777) — Captions and visual templates generator.
+- **Insight Analyzer** (https://ai.studio/apps/41c0aca7-0c4f-4222-8f8d-0dd78be6b5b2) — Customer feedback trend analyzer.
+- **Workflow Automator** (https://ai.studio/apps/a5132de2-08e7-4a64-9931-20ac4f2fd4bf) — Operations workflow automating system.
