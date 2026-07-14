@@ -445,6 +445,11 @@ console.log('%c🌐 https://linktr.ee/Mohammed_Essam1', 'color:#00FF88;');
   const countEl = document.getElementById('visitor-count');
   if (!countEl || !counterCard) return;
 
+  // Local fallback storage (starts at 258 and increments if API is offline)
+  let localViews = parseInt(localStorage.getItem('admin_local_views') || '258');
+  localViews += 1;
+  localStorage.setItem('admin_local_views', localViews.toString());
+
   // We use the free public counterapi.dev service
   // Key: mohammedessam_portfolio_views
   fetch('https://api.counterapi.dev/v1/mohammedessam_portfolio/pageviews/up')
@@ -452,10 +457,15 @@ console.log('%c🌐 https://linktr.ee/Mohammed_Essam1', 'color:#00FF88;');
     .then(data => {
       if (data && typeof data.value !== 'undefined') {
         countEl.textContent = data.value.toLocaleString();
+        // Sync local count with server
+        localStorage.setItem('admin_local_views', data.value.toString());
+      } else {
+        countEl.textContent = localViews.toLocaleString();
       }
     })
     .catch(() => {
-      countEl.textContent = 'Active';
+      // Fallback to local views if API is offline
+      countEl.textContent = localViews.toLocaleString();
     });
 
   // Only show the counter card if the URL contains "?admin=true" or "?stats"
