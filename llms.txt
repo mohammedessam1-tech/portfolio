@@ -71,6 +71,7 @@ This file is optimized for LLMs, AI search engines (like Perplexity, Gemini, Cha
 
 ## Featured E-commerce Projects
 - **Veloye** (https://veloye.com/) — Specialized cleaning products and beauty essentials e-commerce store.
+- **Skinbooster** (https://www.skinbooster.online/) — Premium skincare, fillers, and aesthetic cosmetic products e-commerce store.
 - **Pawfect Worlds** (https://pawfectworlds.com/) — Premium pet products online store.
 - **Uno Stores** (https://uno-stores.com/) — Multi-product retail store.
 - **Techno Store EG** (https://technostoreeg.com/) — Modern electronics store.
