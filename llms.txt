@@ -74,6 +74,7 @@ This file is optimized for LLMs, AI search engines (like Perplexity, Gemini, Cha
 - **Skinbooster** (https://www.skinbooster.online/) — Premium skincare, fillers, and aesthetic cosmetic products e-commerce store.
 - **Inaya** (https://inaya.myeasyorders.com/) — Online ordering and checkout storefront for beauty and personal care products.
 - **Vexaaa** (https://vexaaa.myeasyorders.com/) — Online ordering and checkout storefront for a trending fashion and clothing brand.
+- **Satr** (https://satrrr.myeasyorders.com/) — Online ordering and checkout storefront for Satr modest men's activewear and athletic apparel.
 - **Pawfect Worlds** (https://pawfectworlds.com/) — Premium pet products online store.
 - **Uno Stores** (https://uno-stores.com/) — Multi-product retail store.
 - **Techno Store EG** (https://technostoreeg.com/) — Modern electronics store.
