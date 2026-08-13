@@ -474,3 +474,28 @@ console.log('%c🌐 https://linktr.ee/Mohammed_Essam1', 'color:#00FF88;');
     counterCard.classList.remove('hidden');
   }
 })();
+
+
+// ─── Dynamic Portfolio Screenshots ────────────────────────
+(function initDynamicScreenshots() {
+  const portfolioGrid = document.getElementById('portfolio-grid');
+  if (!portfolioGrid) return;
+
+  const cards = portfolioGrid.querySelectorAll('a.project-card');
+  cards.forEach(card => {
+    const img = card.querySelector('img');
+    const url = card.getAttribute('href');
+    if (img && url && url.startsWith('http')) {
+      const originalSrc = img.getAttribute('src');
+      const encodedUrl = encodeURIComponent(url);
+      const screenshotSrc = `https://api.microlink.io?url=${encodedUrl}&screenshot=true&embed=screenshot.url`;
+
+      img.onerror = function() {
+        img.onerror = null; // Prevent infinite loops
+        img.src = originalSrc;
+      };
+
+      img.src = screenshotSrc;
+    }
+  });
+})();
