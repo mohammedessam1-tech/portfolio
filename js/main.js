@@ -499,3 +499,136 @@ console.log('%c🌐 https://linktr.ee/Mohammed_Essam1', 'color:#00FF88;');
     }
   });
 })();
+
+
+// ─── Marketing Experience Filters ──────────────────────────
+(function initMarketingFilters() {
+  const filterBtns = document.querySelectorAll('.marketing-filter-btn');
+  const grid       = document.getElementById('marketing-grid');
+  if (!grid) return;
+  const cards      = grid.querySelectorAll('.project-card');
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      // Toggle active states on buttons
+      filterBtns.forEach(b => {
+        b.classList.remove('active', 'bg-brutal-pink', 'text-brutal-dark', 'shadow-brutal');
+        b.classList.add('bg-brutal-gray', 'text-brutal-light/70', 'border-brutal-light/10');
+      });
+
+      btn.classList.remove('bg-brutal-gray', 'text-brutal-light/70', 'border-brutal-light/10');
+      btn.classList.add('active', 'bg-brutal-pink', 'text-brutal-dark', 'shadow-brutal');
+
+      const filterValue = btn.getAttribute('data-filter');
+
+      cards.forEach(card => {
+        const categories = card.getAttribute('data-categories').split(' ');
+        if (filterValue === 'all' || categories.includes(filterValue)) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+
+      // Update dots if the carousel update method exists
+      if (grid.updateCarouselDots) {
+        grid.updateCarouselDots();
+      }
+    });
+  });
+})();
+
+
+// ─── Carousel Dots Pagination ──────────────────────────────
+(function initCarouselDots() {
+  const carousels = document.querySelectorAll('.carousel-snap');
+
+  carousels.forEach(carousel => {
+    // Create dots container
+    const dotsContainer = document.createElement('div');
+    dotsContainer.className = 'carousel-dots flex justify-center items-center gap-2.5 mt-6 md:hidden';
+    carousel.parentNode.insertBefore(dotsContainer, carousel.nextSibling);
+
+    function updateDots() {
+      // Clear existing dots
+      dotsContainer.innerHTML = '';
+      
+      // Get all visible children in the carousel
+      const children = Array.from(carousel.children).filter(el => {
+        return !el.classList.contains('hidden') && el.offsetHeight > 0;
+      });
+
+      if (children.length <= 1) return; // No dots needed if only 1 item
+
+      children.forEach((child, index) => {
+        const dot = document.createElement('button');
+        dot.className = 'w-2.5 h-2.5 rounded-full border border-brutal-light/30 bg-brutal-light/10 transition-all duration-200 cursor-pointer focus:outline-none';
+        dot.setAttribute('aria-label', `Go to slide ${index + 1}`);
+
+        // Click to scroll to item
+        dot.addEventListener('click', () => {
+          carousel.scrollTo({
+            left: child.offsetLeft - carousel.offsetLeft,
+            behavior: 'smooth'
+          });
+        });
+
+        dotsContainer.appendChild(dot);
+      });
+
+      highlightActiveDot(children);
+    }
+
+    function highlightActiveDot(children) {
+      if (!children) {
+        children = Array.from(carousel.children).filter(el => {
+          return !el.classList.contains('hidden') && el.offsetHeight > 0;
+        });
+      }
+      
+      const dots = dotsContainer.querySelectorAll('button');
+      if (dots.length === 0) return;
+
+      const scrollLeft = carousel.scrollLeft;
+      const width = carousel.clientWidth;
+      
+      // Find which child is closest to the left scroll edge
+      let activeIndex = 0;
+      let minDiff = Infinity;
+
+      children.forEach((child, idx) => {
+        const diff = Math.abs(child.offsetLeft - carousel.offsetLeft - scrollLeft);
+        if (diff < minDiff) {
+          minDiff = diff;
+          activeIndex = idx;
+        }
+      });
+
+      dots.forEach((dot, idx) => {
+        if (idx === activeIndex) {
+          dot.className = 'w-3.5 h-3.5 rounded-full border-2 border-brutal-dark bg-brutal-yellow scale-110 shadow-[1.5px_1.5px_0_0_#0A0A0A] transition-all duration-200 focus:outline-none';
+        } else {
+          dot.className = 'w-2.5 h-2.5 rounded-full border border-brutal-light/20 bg-brutal-light/15 hover:bg-brutal-light/35 transition-all duration-200 cursor-pointer focus:outline-none';
+        }
+      });
+    }
+
+    // Initialize dots on load
+    updateDots();
+
+    // Listen to scroll event
+    let scrollTimeout;
+    carousel.addEventListener('scroll', () => {
+      clearTimeout(scrollTimeout);
+      scrollTimeout = setTimeout(() => {
+        const visibleChildren = Array.from(carousel.children).filter(el => {
+          return !el.classList.contains('hidden') && el.offsetHeight > 0;
+        });
+        highlightActiveDot(visibleChildren);
+      }, 50);
+    }, { passive: true });
+
+    // Expose update dots method on the element for filtering purposes
+    carousel.updateCarouselDots = updateDots;
+  });
+})();
