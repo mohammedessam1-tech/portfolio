@@ -450,9 +450,9 @@ console.log('%c🌐 https://linktr.ee/Mohammed_Essam1', 'color:#00FF88;');
   localViews += 1;
   localStorage.setItem('admin_local_views', localViews.toString());
 
-  // We use the free public counterapi.dev service
-  // Key: mohammedessam_portfolio_views
-  fetch('https://api.counterapi.dev/v1/mohammedessam_portfolio/pageviews/up')
+  // We use the free public countapi clone service
+  // Key: mohammedessam_portfolio_pageviews
+  fetch('https://countapi.mileshilliard.com/api/v1/hit/mohammedessam_portfolio_pageviews')
     .then(response => response.json())
     .then(data => {
       if (data && typeof data.value !== 'undefined') {
