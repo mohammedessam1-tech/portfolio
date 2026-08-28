@@ -284,40 +284,85 @@
 })();
 
 
-// ─── Category Filtering for Work / Portfolio Page ─────────
+// ─── Category & Status Filtering for Work / Portfolio Page ─────────
 (function initWorkFilters() {
-  const filterBtns = document.querySelectorAll('.work-filter-btn');
-  const grid       = document.getElementById('work-grid');
-  if (!grid || !filterBtns.length) return;
+  const filterBtns   = document.querySelectorAll('.work-filter-btn');
+  const liveSec      = document.getElementById('live-projects-section');
+  const upcomingSec  = document.getElementById('upcoming-projects-section');
+  const cards        = document.querySelectorAll('.project-card');
+  if (!filterBtns.length || !cards.length) return;
 
-  const cards = grid.querySelectorAll('.project-card');
+  function applyFilter(filterValue) {
+    filterBtns.forEach(b => {
+      if (b.getAttribute('data-filter') === filterValue) {
+        b.classList.remove('bg-brutal-gray', 'text-brutal-light/70', 'border-brutal-light/10');
+        b.classList.add('active', 'bg-brutal-yellow', 'text-brutal-dark', 'shadow-brutal');
+      } else {
+        b.classList.remove('active', 'bg-brutal-yellow', 'text-brutal-dark', 'shadow-brutal');
+        b.classList.add('bg-brutal-gray', 'text-brutal-light/70', 'border-brutal-light/10');
+      }
+    });
+
+    let visibleLive = 0;
+    let visibleUpcoming = 0;
+
+    cards.forEach(card => {
+      const categories = (card.getAttribute('data-categories') || '').split(' ');
+      const status = card.getAttribute('data-status') || '';
+      
+      let isVisible = false;
+      if (filterValue === 'all') {
+        isVisible = true;
+      } else if (filterValue === 'live') {
+        isVisible = (status === 'live' || categories.includes('live'));
+      } else if (filterValue === 'upcoming') {
+        isVisible = (status === 'upcoming' || categories.includes('upcoming'));
+      } else {
+        isVisible = categories.includes(filterValue);
+      }
+
+      if (isVisible) {
+        card.classList.remove('hidden');
+        if (status === 'live' || categories.includes('live')) visibleLive++;
+        if (status === 'upcoming' || categories.includes('upcoming')) visibleUpcoming++;
+      } else {
+        card.classList.add('hidden');
+      }
+    });
+
+    // Toggle section visibility based on visible card counts
+    if (liveSec) {
+      if (visibleLive > 0) {
+        liveSec.classList.remove('hidden');
+      } else {
+        liveSec.classList.add('hidden');
+      }
+    }
+    if (upcomingSec) {
+      if (visibleUpcoming > 0) {
+        upcomingSec.classList.remove('hidden');
+      } else {
+        upcomingSec.classList.add('hidden');
+      }
+    }
+  }
 
   filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
-      filterBtns.forEach(b => {
-        b.classList.remove('active', 'bg-brutal-yellow', 'text-brutal-dark', 'shadow-brutal');
-        b.classList.add('bg-brutal-gray', 'text-brutal-light/70', 'border-brutal-light/10');
-      });
-
-      btn.classList.remove('bg-brutal-gray', 'text-brutal-light/70', 'border-brutal-light/10');
-      btn.classList.add('active', 'bg-brutal-yellow', 'text-brutal-dark', 'shadow-brutal');
-
-      const filterValue = btn.getAttribute('data-filter');
-
-      cards.forEach(card => {
-        const categories = (card.getAttribute('data-categories') || '').split(' ');
-        if (filterValue === 'all' || categories.includes(filterValue)) {
-          card.classList.remove('hidden');
-        } else {
-          card.classList.add('hidden');
-        }
-      });
-
-      if (grid.updateCarouselDots) {
-        grid.updateCarouselDots();
-      }
+      const val = btn.getAttribute('data-filter');
+      applyFilter(val);
     });
   });
+
+  // Check URL param ?filter=...
+  const urlParams = new URLSearchParams(window.location.search);
+  const paramFilter = urlParams.get('filter');
+  if (paramFilter) {
+    applyFilter(paramFilter.toLowerCase());
+  } else {
+    // Default filter is 'live' per master specification
+    applyFilter('live');
+  }
 })();
 
 

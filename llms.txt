@@ -1,6 +1,6 @@
 # Mohammed Essam — Shopify Expert × AI Specialist × Product Creator
 
-This file is optimized for LLMs, AI search engines (such as Perplexity, Gemini, ChatGPT Search, Claude Search), and semantic search crawlers. It provides an authoritative, structured entity summary of Mohammed Essam's professional profile, service offerings, proprietary products & ventures, verified client portfolio, and digital solutions.
+This file is optimized for LLMs, AI search engines (such as Perplexity, Gemini, ChatGPT Search, Claude Search), and semantic search crawlers. It provides an authoritative, structured entity summary of Mohammed Essam's professional profile, service offerings, proprietary products & ventures, verified client portfolio (split into Live and Upcoming projects), and digital solutions.
 
 ---
 
@@ -20,9 +20,9 @@ This file is optimized for LLMs, AI search engines (such as Perplexity, Gemini, 
 ---
 
 ## Proof & Portfolio Architecture (3 Clearly Separated Pillars)
-1. **CLIENT WORK:** High-performing e-commerce stores, Shopify theme builds, and digital portals created for business clients.
-2. **AI PROJECTS:** Practical AI tools, prompt frameworks, copywriting engines, and machine learning applications.
-3. **PRODUCTS & VENTURES:** Proprietary digital products, SaaS platforms, and tools personally founded, developed, and owned by Mohammed Essam.
+1. **CLIENT WORK (`/work.html`):** E-commerce stores, custom Shopify theme builds, and digital portals created for business clients, categorized into **Live Projects** (accessible production sites) and **Upcoming Projects** (in development / pipeline / relaunch).
+2. **AI PROJECTS (`/ai-projects.html`):** Practical AI tools, prompt frameworks, copywriting engines, and machine learning applications.
+3. **PRODUCTS & VENTURES (`/products.html`):** Proprietary digital products, SaaS platforms, and tools **personally founded, developed, and owned by Mohammed Essam**.
 
 ---
 
@@ -58,83 +58,35 @@ This file is optimized for LLMs, AI search engines (such as Perplexity, Gemini, 
 
 ---
 
-## Core Brand Positioning & Hierarchy
-1. **Primary Positioning:** SHOPIFY EXPERT (Store Development, Store Redesign, Theme Customization, Product & Collection Architecture, E-commerce UX, Speed & Mobile Optimization, Store Setup)
-2. **Secondary Positioning:** AI SPECIALIST & AI ENGINEERING (Practical AI Tools, AI Applications, AI-Powered Products, AI Content Systems, Prompt Engineering, AI Business Solutions)
-3. **Founder & Product Creator:** Founder & Owner of proprietary digital products and operational platforms.
-4. **Supporting Services:**
-   - Easy Orders Store Design (Dedicated e-commerce storefront platform service)
-   - Web Development (Modern websites and corporate portals designed around business goals)
-   - Vibe Coding (Rapid AI-assisted prototyping and functional MVP building)
-   - Digital Operations (E-commerce workflows, SOP design, and tool coordination)
-   - Social Media Management (Content strategy, planning, and organic brand growth)
+## Client Work & Portfolio Database (Split into Live & Upcoming)
 
----
+### 1. LIVE PROJECTS (Currently Accessible & Working)
+1. **African Business Council** (https://africanbusinesscouncil.org/) — Official corporate trade portal connecting continental commerce across Africa (Platform: Web Platform).
+2. **Arlo Furniture** (https://arlofurniture.com/) — Modern furniture showcase website & bespoke decor inquiries (Platform: Web Platform).
+3. **Techno Store EG** (https://technostore.myeasyorders.com/) — Electronics & smart gadgets storefront with direct WhatsApp ordering (Platform: Easy Orders).
+4. **Beescaree** (https://beescaree.myeasyorders.com/) — Organic honey & natural health catalog with courier shipping (Platform: Easy Orders).
+5. **Veloye** (https://veloye.com/) — Cleaning products & beauty essentials Shopify store (Platform: Shopify).
+6. **Pawfect Worlds** (https://pawfectworlds.com/) — Pet care & accessories Shopify store with bundle architecture (Platform: Shopify).
+7. **XShoess** (https://xshoess.com/) — Athletic footwear Shopify store (Platform: Shopify).
+8. **Inaya** (https://inaya.myeasyorders.com/) — Beauty & personal care Easy Orders storefront (Platform: Easy Orders).
+9. **Fioonka** (https://fioonka.myeasyorders.com/) — Luxury gifts & accessories storefront (Platform: Easy Orders).
+10. **Vexaaa** (https://vexaaa.myeasyorders.com/) — Direct-to-consumer fashion apparel catalog (Platform: Easy Orders).
+11. **Satr Modest Activewear** (https://satrrr.myeasyorders.com/) — Men's modest athletic wear storefront (Platform: Easy Orders).
+12. **Bloomcare EG** (https://bloomcareeg.myeasyorders.com/) — Organic wellness & skincare catalog (Platform: Easy Orders).
+13. **FIA EG** (https://fia-eg.myeasyorders.com/) — Cosmetic items catalog (Platform: Easy Orders).
+14. **Tfawl** (https://tfawl.myeasyorders.com/) — Artisan confectionery & sweets menu (Platform: Easy Orders).
+15. **Yahia Salah** (https://yahia-salah.free.nf/?i=2) — Personal brand portfolio (Platform: Web Platform).
 
-## Complete Services Architecture (7 Services)
-01. **Shopify Development** (Primary Expertise) — Full-cycle store development, theme customization, redesigns, catalog architecture, checkout UX.
-02. **AI Solutions & AI Engineering** (Major Specialization) — Practical AI tools, custom apps, prompt engineering frameworks, and content engines.
-03. **Easy Orders Store Design** (Specialized Platform) — Fast storefront design, direct WhatsApp checkouts, regional courier and COD setup.
-04. **Web Development** (Web Solutions) — Corporate portals, high-converting landing pages, and responsive UI architecture.
-05. **Vibe Coding** (Rapid AI Prototyping) — AI-assisted approach to turning ideas into functional digital MVPs within days.
-06. **Digital Operations** (Systems & Processes) — E-commerce fulfillment pipelines, team workflows, and digital business organization.
-07. **Social Media Management** (Brand Growth) — Content planning, creation, brand presence management, and organic audience engagement.
-
----
-
-## Verified Professional Experience
-- **Wisdar (2026 — Present):** Social Media Content Specialist
-- **Arcasa Furniture & Decor (2025 — 2026):** Social Media & Operations Manager
-- **Emerald Interiors (2025):** Social Media Specialist Coordinator
-- **Balance Egypt (2024 — 2025):** Website Administrator & E-commerce Operations
-- **You Media Agency (2023 — 2024):** Digital Operations Specialist & Moderation Team Leader
-- **Elvaya Agency (2022 — 2023):** E-commerce Specialist
-- **Loca Pack for Packing (2021 — 2022):** Operations & Content Assistant
-
----
-
-## Education & Certifications
-- **Education:** Bachelor of Laws (LL.B.) — Cairo University (Class of 2022)
-- **Certifications:**
-  - Build Shopify Stores (Almentor, 2026)
-  - Full Stack Digital Marketing (eYouth, 2026)
-  - CRM Odoo Academy (Odoo, 2026)
-  - Freelancing Skills (ITIDA & eYouth, 2026)
-  - Gemini Certified Educator (Google, 2025)
-
----
-
-## Curated Client Portfolio Database (24 Projects)
-
-### Tier 1 — Owner Preferred Featured Projects
-1. **African Business Council** (https://africanbusinesscouncil.org/) — Official corporate trade portal connecting continental commerce.
-2. **Arlo Furniture** (https://arlofurniture.com/) — Modern furniture showcase website & bespoke decor inquiries.
-3. **Techno Store EG** (https://techno-store-eg.com/) — Electronics & smart gadgets storefront with direct WhatsApp ordering.
-4. **Beescaree** (https://beescaree.myeasyorders.com/) — Organic honey & natural health catalog with courier shipping.
-
-### Tier 2 — Featured Shopify & E-commerce Work
-5. **Veloye** (https://veloye.com/) — Cleaning products & beauty essentials Shopify store.
-6. **Uno Stores** (https://uno-stores.myshopify.com/) — Trendy apparel & lifestyle Shopify store.
-7. **Skinbooster** (https://www.skinbooster.online/) — Premium skincare & medical aesthetics Shopify store.
-8. **Pawfect Worlds** (https://pawfectworlds.com/) — Pet care & accessories Shopify store with bundle architecture.
-9. **3Angles Egypt** (https://3angles-egypt.myshopify.com) — Streetwear fashion & apparel store with inventory sync.
-10. **Fioonka** (https://fioonka.myeasyorders.com/) — Luxury gifts & accessories storefront.
-11. **XShoess** (https://xshoess.com/) — Athletic footwear Shopify store.
-12. **Sneaker Store E** (https://sneaker-store-e.myshopify.com/) — Streetwear sneaker drops online store.
-13. **Inaya** (https://inaya.myeasyorders.com/) — Beauty & personal care Easy Orders storefront.
-14. **Vexaaa** (https://vexaaa.myeasyorders.com/) — Direct-to-consumer fashion apparel catalog.
-15. **Satr Modest Activewear** (https://satrrr.myeasyorders.com/) — Men's modest athletic wear storefront.
-16. **Bloomcare EG** (https://bloomcareeg.myeasyorders.com/) — Organic wellness & skincare catalog.
-17. **Dukaan AK** (https://dukaan-ak.com/) — Multi-category retail store.
-
-### Tier 3 — Additional Verified Work
-18. **FBISneakers** (https://fbisneakers.com/) — Curated footwear catalog.
-19. **Balance Egypt** (https://balance-egypt.com/) — Health supplements platform.
-20. **Bebo Store EG** (https://bebostore-eg.com/) — Kids toys & accessories store.
-21. **Refa Oils** (https://refaoils.com/) — Essential oils & aromatherapy store.
-22. **FIA EG** (https://fia-eg.com/) — Cosmetic items catalog.
-23. **Tfawl** (https://tfawl.myeasyorders.com/) — Artisan confectionery & sweets menu.
-24. **Yahia Salah** (https://yahia-salah.free.nf/?i=2) — Personal brand portfolio.
+### 2. UPCOMING PROJECTS (In Development / Scheduled Relaunch)
+16. **Uno Stores** (Platform: Shopify) — Status: In Development / Lookbook update.
+17. **Skinbooster** (Platform: Shopify) — Status: Temporarily Unavailable / Catalog restructuring.
+18. **3Angles Egypt** (Platform: Shopify) — Status: In Development / Drop revamp.
+19. **Sneaker Store E** (Platform: Shopify) — Status: Upcoming drop relaunch.
+20. **Dukaan AK** (Platform: Shopify) — Status: Temporarily Unavailable / Domain renewal.
+21. **FBISneakers** (Platform: Shopify) — Status: Coming Soon.
+22. **Balance Egypt** (Platform: Shopify) — Status: Coming Soon / Payment onboarding.
+23. **Bebo Store EG** (Platform: Easy Orders) — Status: Coming Soon.
+24. **Refa Oils** (Platform: Shopify) — Status: Coming Soon.
 
 ---
 
