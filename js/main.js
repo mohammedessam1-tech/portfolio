@@ -1,5 +1,5 @@
 /* ═══════════════════════════════════════════════════════
-   Mohammed Essam — Neo-Brutalist Portfolio
+   Mohammed Essam — Multi-Page Portfolio Website
    Main JavaScript
 ═══════════════════════════════════════════════════════ */
 
@@ -58,14 +58,12 @@
     ctx.lineWidth   = 2;
 
     if (s.type === 'rect') {
-      // Brutalist rectangle
       ctx.strokeRect(-s.size / 2, -s.size / 2, s.size, s.size);
       if (Math.random() < 0.01) {
         ctx.fillRect(-s.size / 2, -s.size / 2, s.size, s.size);
         ctx.globalAlpha = s.alpha * 0.2;
       }
     } else {
-      // Circle
       ctx.beginPath();
       ctx.arc(0, 0, s.size / 2, 0, Math.PI * 2);
       ctx.stroke();
@@ -78,7 +76,6 @@
     s.y += s.vy;
     s.rotation += s.rotSpeed;
 
-    // Wrap around edges
     const padding = s.size;
     if (s.x < -padding) s.x = canvas.width  + padding;
     if (s.x > canvas.width  + padding) s.x = -padding;
@@ -86,7 +83,6 @@
     if (s.y > canvas.height + padding) s.y = -padding;
   }
 
-  // Mouse interaction
   let mouse = { x: -1000, y: -1000 };
   canvas.addEventListener('mousemove', (e) => {
     const rect = canvas.getBoundingClientRect();
@@ -106,7 +102,6 @@
       const force = (120 - dist) / 120 * 0.8;
       s.vx += (dx / dist) * force;
       s.vy += (dy / dist) * force;
-      // Cap velocity
       const speed = Math.sqrt(s.vx * s.vx + s.vy * s.vy);
       if (speed > 2) {
         s.vx = (s.vx / speed) * 2;
@@ -136,59 +131,60 @@
 })();
 
 
-// ─── Navbar: Scroll Effect + Active Link ─────────────────
+// ─── Navbar: Scroll Effect + Active Link (Multi-Page) ─────
 (function initNavbar() {
   const navbar = document.getElementById('navbar');
-  const sections = document.querySelectorAll('section[id]');
   const navLinks = document.querySelectorAll('.nav-link');
   const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
 
   function updateNavbar() {
-    if (window.scrollY > 60) {
+    if (!navbar) return;
+    if (window.scrollY > 40) {
       navbar.classList.add('scrolled');
     } else {
       navbar.classList.remove('scrolled');
     }
   }
 
-  function updateActiveLink() {
-    let current = '';
-    sections.forEach(section => {
-      const top    = section.offsetTop - 100;
-      const bottom = top + section.offsetHeight;
-      if (window.scrollY >= top && window.scrollY < bottom) {
-        current = section.id;
+  function highlightActiveRoute() {
+    const path = window.location.pathname.toLowerCase();
+    const currentPage = path.substring(path.lastIndexOf('/') + 1) || 'index.html';
+
+    function isMatch(href) {
+      if (!href) return false;
+      const cleanHref = href.split('?')[0].split('#')[0].toLowerCase();
+      const linkPage = cleanHref.substring(cleanHref.lastIndexOf('/') + 1) || 'index.html';
+      
+      if (currentPage === '' || currentPage === 'index.html') {
+        return linkPage === '' || linkPage === 'index.html';
       }
-    });
+      return linkPage.startsWith(currentPage.replace('.html', '')) || currentPage.startsWith(linkPage.replace('.html', ''));
+    }
+
     navLinks.forEach(link => {
-      link.classList.remove('active');
-      if (link.getAttribute('href') === `#${current}`) {
+      if (isMatch(link.getAttribute('href'))) {
         link.classList.add('active');
       }
     });
+
     mobileNavLinks.forEach(link => {
-      link.classList.remove('active');
-      if (link.getAttribute('href') === `#${current}`) {
+      if (isMatch(link.getAttribute('href'))) {
         link.classList.add('active');
       }
     });
   }
 
-  window.addEventListener('scroll', () => {
-    updateNavbar();
-    updateActiveLink();
-  }, { passive: true });
-
+  window.addEventListener('scroll', updateNavbar, { passive: true });
   updateNavbar();
-  updateActiveLink();
+  highlightActiveRoute();
 })();
 
 
 // ─── Mobile Menu Toggle ───────────────────────────────────
 (function initMobileMenu() {
-  const btn        = document.getElementById('menu-btn');
-  const menu       = document.getElementById('mobile-menu');
-  const icon       = document.getElementById('menu-icon');
+  const btn         = document.getElementById('menu-btn');
+  const menu        = document.getElementById('mobile-menu');
+  const icon        = document.getElementById('menu-icon');
   const mobileLinks = document.querySelectorAll('.mobile-nav-link');
 
   if (!btn || !menu) return;
@@ -197,16 +193,16 @@
     const isOpen = force !== undefined ? force : !menu.classList.contains('open');
     if (isOpen) {
       menu.classList.remove('hidden');
-      // Small tick to allow CSS transition
       requestAnimationFrame(() => menu.classList.add('open'));
     } else {
       menu.classList.remove('open');
-      // Wait for CSS transition to finish before hiding
       menu.addEventListener('transitionend', () => {
         if (!menu.classList.contains('open')) menu.classList.add('hidden');
       }, { once: true });
     }
-    icon.className = isOpen ? 'fas fa-times text-xl' : 'fas fa-bars text-xl';
+    if (icon) {
+      icon.className = isOpen ? 'fas fa-times text-xl' : 'fas fa-bars text-xl';
+    }
   }
 
   btn.addEventListener('click', () => toggleMenu());
@@ -226,7 +222,6 @@
 // ─── Scroll Reveal Animations ─────────────────────────────
 (function initReveal() {
   const revealEls = document.querySelectorAll('.reveal-up, .reveal-right');
-
   if (!revealEls.length) return;
 
   const observer = new IntersectionObserver((entries) => {
@@ -242,39 +237,14 @@
     });
   }, {
     threshold: 0.1,
-    rootMargin: '0px 0px -60px 0px',
+    rootMargin: '0px 0px -40px 0px',
   });
 
   revealEls.forEach(el => observer.observe(el));
 })();
 
 
-// ─── Skill Bar Animations ─────────────────────────────────
-(function initSkillBars() {
-  const bars = document.querySelectorAll('.skill-bar');
-  if (!bars.length) return;
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const bar  = entry.target;
-        const fill = bar.querySelector('.bar-fill');
-        const pct  = bar.dataset.pct || '0';
-        if (fill) {
-          setTimeout(() => {
-            fill.style.width = pct + '%';
-          }, 200);
-        }
-        observer.unobserve(bar);
-      }
-    });
-  }, { threshold: 0.3 });
-
-  bars.forEach(bar => observer.observe(bar));
-})();
-
-
-// ─── Counter Animation for Hero Stats ────────────────────
+// ─── Counter Animation for Stats ─────────────────────────
 (function initCounters() {
   const statItems = document.querySelectorAll('.stat-item');
   if (!statItems.length) return;
@@ -286,7 +256,7 @@
     function step(timestamp) {
       if (!startTime) startTime = timestamp;
       const progress = Math.min((timestamp - startTime) / duration, 1);
-      const eased    = 1 - Math.pow(1 - progress, 3); // ease out cubic
+      const eased    = 1 - Math.pow(1 - progress, 3);
       el.textContent = Math.floor(eased * (end - start) + start) + suffix;
       if (progress < 1) requestAnimationFrame(step);
     }
@@ -296,233 +266,46 @@
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        const numEl  = entry.target.querySelector('span:first-child');
+        const numEl  = entry.target.querySelector('span:first-child') || entry.target;
         if (!numEl) return;
 
         const text   = numEl.textContent.trim();
         const num    = parseInt(text.replace(/\D/g, ''), 10);
-        const suffix = text.replace(/[0-9]/g, '');
 
         if (!isNaN(num)) {
-          animateValue(numEl, 0, num, 1500);
+          animateValue(numEl, 0, num, 1200);
         }
         observer.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.5 });
+  }, { threshold: 0.4 });
 
   statItems.forEach(el => observer.observe(el));
 })();
 
 
-// ─── Portfolio Card Tilt Effect ───────────────────────────
-(function initCardTilt() {
-  if (window.matchMedia('(pointer: coarse)').matches) return; // skip touch
+// ─── Category Filtering for Work / Portfolio Page ─────────
+(function initWorkFilters() {
+  const filterBtns = document.querySelectorAll('.work-filter-btn');
+  const grid       = document.getElementById('work-grid');
+  if (!grid || !filterBtns.length) return;
 
-  const cards = document.querySelectorAll('.project-card');
-
-  cards.forEach(card => {
-    card.addEventListener('mousemove', (e) => {
-      const rect   = card.getBoundingClientRect();
-      const cx     = rect.left + rect.width  / 2;
-      const cy     = rect.top  + rect.height / 2;
-      const dx     = (e.clientX - cx) / (rect.width  / 2);
-      const dy     = (e.clientY - cy) / (rect.height / 2);
-      const tiltX  = dy * -5;
-      const tiltY  = dx *  5;
-      card.style.transform = `perspective(600px) rotateX(${tiltX}deg) rotateY(${tiltY}deg) translateY(-8px) translateX(-8px)`;
-    });
-
-    card.addEventListener('mouseleave', () => {
-      card.style.transform = '';
-      card.style.transition = 'transform 0.4s ease, box-shadow 0.3s ease, border-color 0.3s ease';
-    });
-
-    card.addEventListener('mouseenter', () => {
-      card.style.transition = 'none';
-    });
-  });
-})();
-
-
-// ─── Smooth Scroll for All Anchor Links ──────────────────
-(function initSmoothScroll() {
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', (e) => {
-      const targetId = anchor.getAttribute('href');
-      if (targetId === '#') return;
-      const target = document.querySelector(targetId);
-      if (!target) return;
-      e.preventDefault();
-      const offset = 80; // nav height
-      const top    = target.getBoundingClientRect().top + window.scrollY - offset;
-      window.scrollTo({ top, behavior: 'smooth' });
-    });
-  });
-})();
-
-
-// ─── Cursor Sparkle Effect (desktop) ─────────────────────
-(function initSparkle() {
-  if (window.matchMedia('(pointer: coarse)').matches) return;
-
-  const COLORS = ['#FFE600', '#FF5C00', '#FF2D78', '#00E5FF', '#00FF88'];
-  let lastSparkle = 0;
-
-  document.addEventListener('mousemove', (e) => {
-    const now = Date.now();
-    if (now - lastSparkle < 80) return;
-    lastSparkle = now;
-
-    const sparkle = document.createElement('div');
-    sparkle.style.cssText = `
-      position: fixed;
-      left: ${e.clientX}px;
-      top: ${e.clientY}px;
-      width: 6px;
-      height: 6px;
-      background: ${COLORS[Math.floor(Math.random() * COLORS.length)]};
-      pointer-events: none;
-      z-index: 99999;
-      transform: translate(-50%, -50%);
-      border-radius: 0;
-      transition: transform 0.4s ease, opacity 0.4s ease;
-    `;
-    document.body.appendChild(sparkle);
-
-    requestAnimationFrame(() => {
-      sparkle.style.transform = `translate(${-10 + Math.random() * 20}px, ${-20 - Math.random() * 30}px) rotate(45deg)`;
-      sparkle.style.opacity   = '0';
-    });
-
-    setTimeout(() => sparkle.remove(), 500);
-  });
-})();
-
-
-// ─── Upcoming Cards: Particle on Hover ───────────────────
-(function initUpcomingCards() {
-  const cards = document.querySelectorAll('.upcoming-card');
-  if (!cards.length || window.matchMedia('(pointer: coarse)').matches) return;
-
-  cards.forEach(card => {
-    card.addEventListener('mouseenter', () => {
-      // Small shake animation
-      card.style.transition = 'transform 0.05s ease';
-      let count = 0;
-      const shake = setInterval(() => {
-        if (count >= 4) {
-          clearInterval(shake);
-          card.style.transform = '';
-          return;
-        }
-        const dir = count % 2 === 0 ? 1 : -1;
-        card.style.transform = `translateX(${dir * 2}px)`;
-        count++;
-      }, 50);
-    });
-  });
-})();
-
-
-// ─── Init: Noise Overlay ─────────────────────────────────
-(function addNoiseOverlay() {
-  const noise = document.createElement('div');
-  noise.className = 'noise-overlay';
-  document.body.appendChild(noise);
-})();
-
-
-// ─── Log ──────────────────────────────────────────────────
-console.log('%c🚀 Mohammed Essam Portfolio', 'color:#FFE600;font-size:16px;font-weight:bold;');
-console.log('%c📧 mohammed@mohammedessam.online', 'color:#00E5FF;');
-console.log('%c🌐 https://linktr.ee/Mohammed_Essam1', 'color:#00FF88;');
-
-
-// ─── Live Page Hits Counter ─────────────────────────────────
-(function initHitsCounter() {
-  const counterCard = document.getElementById('counter-card');
-  const countEl = document.getElementById('visitor-count');
-  if (!countEl || !counterCard) return;
-
-  // Local fallback storage (starts at 258 and increments if API is offline)
-  let localViews = parseInt(localStorage.getItem('admin_local_views') || '258');
-  localViews += 1;
-  localStorage.setItem('admin_local_views', localViews.toString());
-
-  // We use the free public countapi clone service
-  // Key: mohammedessam_portfolio_pageviews
-  fetch('https://countapi.mileshilliard.com/api/v1/hit/mohammedessam_portfolio_pageviews')
-    .then(response => response.json())
-    .then(data => {
-      if (data && typeof data.value !== 'undefined') {
-        countEl.textContent = data.value.toLocaleString();
-        // Sync local count with server
-        localStorage.setItem('admin_local_views', data.value.toString());
-      } else {
-        countEl.textContent = localViews.toLocaleString();
-      }
-    })
-    .catch(() => {
-      // Fallback to local views if API is offline
-      countEl.textContent = localViews.toLocaleString();
-    });
-
-  // Only show the counter card if the URL contains "?admin=true" or "?stats"
-  const urlParams = new URLSearchParams(window.location.search);
-  if (urlParams.has('admin') || urlParams.has('stats')) {
-    counterCard.classList.remove('hidden');
-  }
-})();
-
-
-// ─── Dynamic Portfolio Screenshots ────────────────────────
-(function initDynamicScreenshots() {
-  const portfolioGrid = document.getElementById('portfolio-grid');
-  if (!portfolioGrid) return;
-
-  const cards = portfolioGrid.querySelectorAll('a.project-card');
-  cards.forEach(card => {
-    const img = card.querySelector('img');
-    const url = card.getAttribute('href');
-    if (img && url && url.startsWith('http')) {
-      const originalSrc = img.getAttribute('src');
-      const encodedUrl = encodeURIComponent(url);
-      const screenshotSrc = `https://api.microlink.io?url=${encodedUrl}&screenshot=true&embed=screenshot.url`;
-
-      img.onerror = function() {
-        img.onerror = null; // Prevent infinite loops
-        img.src = originalSrc;
-      };
-
-      img.src = screenshotSrc;
-    }
-  });
-})();
-
-
-// ─── Marketing Experience Filters ──────────────────────────
-(function initMarketingFilters() {
-  const filterBtns = document.querySelectorAll('.marketing-filter-btn');
-  const grid       = document.getElementById('marketing-grid');
-  if (!grid) return;
-  const cards      = grid.querySelectorAll('.project-card');
+  const cards = grid.querySelectorAll('.project-card');
 
   filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
-      // Toggle active states on buttons
       filterBtns.forEach(b => {
-        b.classList.remove('active', 'bg-brutal-pink', 'text-brutal-dark', 'shadow-brutal');
+        b.classList.remove('active', 'bg-brutal-yellow', 'text-brutal-dark', 'shadow-brutal');
         b.classList.add('bg-brutal-gray', 'text-brutal-light/70', 'border-brutal-light/10');
       });
 
       btn.classList.remove('bg-brutal-gray', 'text-brutal-light/70', 'border-brutal-light/10');
-      btn.classList.add('active', 'bg-brutal-pink', 'text-brutal-dark', 'shadow-brutal');
+      btn.classList.add('active', 'bg-brutal-yellow', 'text-brutal-dark', 'shadow-brutal');
 
       const filterValue = btn.getAttribute('data-filter');
 
       cards.forEach(card => {
-        const categories = card.getAttribute('data-categories').split(' ');
+        const categories = (card.getAttribute('data-categories') || '').split(' ');
         if (filterValue === 'all' || categories.includes(filterValue)) {
           card.classList.remove('hidden');
         } else {
@@ -530,7 +313,6 @@ console.log('%c🌐 https://linktr.ee/Mohammed_Essam1', 'color:#00FF88;');
         }
       });
 
-      // Update dots if the carousel update method exists
       if (grid.updateCarouselDots) {
         grid.updateCarouselDots();
       }
@@ -539,33 +321,76 @@ console.log('%c🌐 https://linktr.ee/Mohammed_Essam1', 'color:#00FF88;');
 })();
 
 
-// ─── Carousel Dots Pagination ──────────────────────────────
+// ─── Contact Form & Pre-selection Helper ──────────────────
+(function initContactHelper() {
+  const serviceSelect = document.getElementById('service-select');
+  const contactForm    = document.getElementById('contact-form');
+  const formStatus     = document.getElementById('form-status');
+
+  const params = new URLSearchParams(window.location.search);
+  const requestedService = params.get('service');
+  if (serviceSelect && requestedService) {
+    const options = Array.from(serviceSelect.options);
+    const match = options.find(opt => opt.value.toLowerCase().includes(requestedService.toLowerCase()));
+    if (match) {
+      serviceSelect.value = match.value;
+    }
+  }
+
+  if (contactForm) {
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      
+      const name = (document.getElementById('name-input')?.value || '').trim();
+      const email = (document.getElementById('email-input')?.value || '').trim();
+      const company = (document.getElementById('company-input')?.value || '').trim();
+      const service = serviceSelect?.value || 'Project Inquiry';
+      const budget = document.getElementById('budget-select')?.value || 'Not specified';
+      const message = (document.getElementById('message-input')?.value || '').trim();
+
+      const companyInfo = company ? ` [Company/Brand: ${company}]` : '';
+      const textMessage = `Hello Mohammed, my name is ${name} (${email})${companyInfo}. I'm interested in: ${service} (Budget: ${budget}). Details: ${message}`;
+
+      const encodedMsg = encodeURIComponent(textMessage);
+      const whatsappUrl = `https://wa.me/201018923563?text=${encodedMsg}`;
+
+      if (formStatus) {
+        formStatus.className = 'mt-4 p-4 border-2 border-brutal-green bg-brutal-green/10 text-brutal-green font-mono text-sm';
+        formStatus.textContent = 'Opening WhatsApp to send your inquiry directly...';
+        formStatus.classList.remove('hidden');
+      }
+
+      setTimeout(() => {
+        window.open(whatsappUrl, '_blank');
+      }, 600);
+    });
+  }
+})();
+
+
+// ─── Carousel Dots Pagination (Mobile) ────────────────────
 (function initCarouselDots() {
   const carousels = document.querySelectorAll('.carousel-snap');
 
   carousels.forEach(carousel => {
-    // Create dots container
     const dotsContainer = document.createElement('div');
     dotsContainer.className = 'carousel-dots flex justify-center items-center gap-2.5 mt-6 md:hidden';
     carousel.parentNode.insertBefore(dotsContainer, carousel.nextSibling);
 
     function updateDots() {
-      // Clear existing dots
       dotsContainer.innerHTML = '';
       
-      // Get all visible children in the carousel
       const children = Array.from(carousel.children).filter(el => {
         return !el.classList.contains('hidden') && el.offsetHeight > 0;
       });
 
-      if (children.length <= 1) return; // No dots needed if only 1 item
+      if (children.length <= 1) return;
 
       children.forEach((child, index) => {
         const dot = document.createElement('button');
         dot.className = 'w-2.5 h-2.5 rounded-full border border-brutal-light/30 bg-brutal-light/10 transition-all duration-200 cursor-pointer focus:outline-none';
         dot.setAttribute('aria-label', `Go to slide ${index + 1}`);
 
-        // Click to scroll to item
         dot.addEventListener('click', () => {
           carousel.scrollTo({
             left: child.offsetLeft - carousel.offsetLeft,
@@ -590,9 +415,7 @@ console.log('%c🌐 https://linktr.ee/Mohammed_Essam1', 'color:#00FF88;');
       if (dots.length === 0) return;
 
       const scrollLeft = carousel.scrollLeft;
-      const width = carousel.clientWidth;
       
-      // Find which child is closest to the left scroll edge
       let activeIndex = 0;
       let minDiff = Infinity;
 
@@ -613,10 +436,8 @@ console.log('%c🌐 https://linktr.ee/Mohammed_Essam1', 'color:#00FF88;');
       });
     }
 
-    // Initialize dots on load
     updateDots();
 
-    // Listen to scroll event
     let scrollTimeout;
     carousel.addEventListener('scroll', () => {
       clearTimeout(scrollTimeout);
@@ -628,7 +449,60 @@ console.log('%c🌐 https://linktr.ee/Mohammed_Essam1', 'color:#00FF88;');
       }, 50);
     }, { passive: true });
 
-    // Expose update dots method on the element for filtering purposes
     carousel.updateCarouselDots = updateDots;
   });
 })();
+
+
+// ─── Dynamic Portfolio Screenshots (Auto Fallback) ───────
+(function initDynamicScreenshots() {
+  const cards = document.querySelectorAll('.project-card');
+  cards.forEach(card => {
+    const img = card.querySelector('img');
+    const url = card.getAttribute('data-live-url') || card.getAttribute('href');
+    if (img && url && url.startsWith('http')) {
+      const originalSrc = img.getAttribute('src');
+      const encodedUrl = encodeURIComponent(url);
+      const screenshotSrc = `https://api.microlink.io?url=${encodedUrl}&screenshot=true&embed=screenshot.url`;
+
+      img.onerror = function() {
+        img.onerror = null;
+        img.src = originalSrc;
+      };
+
+      img.src = screenshotSrc;
+    }
+  });
+})();
+
+
+// ─── Live Page Hits Counter ──────────────────────────────
+(function initHitsCounter() {
+  const counterCard = document.getElementById('counter-card');
+  const countEl = document.getElementById('visitor-count');
+  if (!countEl || !counterCard) return;
+
+  let localViews = parseInt(localStorage.getItem('admin_local_views') || '4822');
+  localViews += 1;
+  localStorage.setItem('admin_local_views', localViews.toString());
+
+  fetch('https://countapi.mileshilliard.com/api/v1/hit/mohammedessam_portfolio_pageviews')
+    .then(response => response.json())
+    .then(data => {
+      if (data && typeof data.value !== 'undefined') {
+        countEl.textContent = data.value.toLocaleString();
+        localStorage.setItem('admin_local_views', data.value.toString());
+      } else {
+        countEl.textContent = localViews.toLocaleString();
+      }
+    })
+    .catch(() => {
+      countEl.textContent = localViews.toLocaleString();
+    });
+
+  const urlParams = new URLSearchParams(window.location.search);
+  if (urlParams.has('admin') || urlParams.has('stats')) {
+    counterCard.classList.remove('hidden');
+  }
+})();
+

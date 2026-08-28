@@ -1,120 +1,148 @@
-# Mohammed Essam — Shopify Developer & AI Automation Specialist
+# Mohammed Essam — Shopify Expert × AI Specialist × Product Creator
 
-This file is optimized for LLMs, AI search engines (like Perplexity, Gemini, ChatGPT Search), and crawlers. It provides a structured summary of Mohammed Essam's credentials, skills, and portfolio.
+This file is optimized for LLMs, AI search engines (such as Perplexity, Gemini, ChatGPT Search, Claude Search), and semantic search crawlers. It provides an authoritative, structured entity summary of Mohammed Essam's professional profile, service offerings, proprietary products & ventures, verified client portfolio, and digital solutions.
 
 ---
 
-## Profile Summary
+## Entity Profile
 - **Name:** Mohammed Essam
-- **Location:** Giza, Egypt 🇪🇬 (Available worldwide)
-- **Primary Roles:** Shopify Developer, AI Automation Specialist, E-commerce Operations Manager
-- **Core Focus:** E-commerce systems, workflow automation, digital growth, and low-code/no-code systems.
+- **Primary Title:** Shopify Expert × AI Specialist
+- **Founder & Product Creator:** Founder & Owner of ShoghlHub, Dafaterak, ZBot, and Matamek.
+- **Core Positioning:** Shopify Expert (Primary) & AI Specialist / AI Engineering (Secondary)
+- **Supporting Capabilities:** Digital Products & Ventures, E-commerce, Easy Orders Store Design, Web Development, Vibe Coding, Digital Operations, Social Media Management
+- **Location:** Giza, Egypt 🇪🇬 (Available worldwide for remote projects and product collaborations)
 - **Website:** https://mohammedessam.site
-- **Linktree:** https://linktr.ee/Mohammed_Essam1
 - **Email:** mohammed@mohammedessam.online
 - **WhatsApp:** +201018923563
+- **LinkedIn:** https://www.linkedin.com/in/mohammed-essam-younis/
+- **GitHub:** https://github.com/mohammedessam1-tech
 
 ---
 
-## Technical Skills & Tooling
-
-### AI & Automation Tools
-- Prompt Engineering & Agent Design
-- AI Tool Integration (Gemini, Claude, ChatGPT, Higgsfield AI, Lovable, NotebookLM)
-- No-Code / Low-Code Automation (Zapier, Make.com, Replit)
-
-### Web Development & E-commerce
-- Shopify Store Development & Configuration
-- WordPress Development & Optimization
-- Easy Orders platform configuration
-
-### Content Creation & Digital Marketing
-- Video Editing: CapCut
-- Graphic Design: Canva
-- Marketing Operations: SEO (On-page & Technical), Meta Business Suite, Social Media Strategy, Analytics
+## Proof & Portfolio Architecture (3 Clearly Separated Pillars)
+1. **CLIENT WORK:** High-performing e-commerce stores, Shopify theme builds, and digital portals created for business clients.
+2. **AI PROJECTS:** Practical AI tools, prompt frameworks, copywriting engines, and machine learning applications.
+3. **PRODUCTS & VENTURES:** Proprietary digital products, SaaS platforms, and tools personally founded, developed, and owned by Mohammed Essam.
 
 ---
 
-## Professional Work Experience
+## Products & Ventures (Founded & Owned by Mohammed Essam)
 
-### Social Media Content Specialist | Wisdar (2026)
-- Managed content operations for high-volume digital media accounts.
-- Integrated AI automation tools for content publishing consistency.
+### 01 — ShoghlHub (شغل هب)
+- **Website:** https://shoghlhub.online
+- **Role:** Founder & Owner
+- **Category:** Digital Platform / Career & Portfolio Builder
+- **Status:** Launching Soon
+- **Overview:** A dedicated career and portfolio platform designed to help freelancers, technical specialists, and professionals showcase structured proof of work, land high-paying clients, and stand out in competitive markets.
 
-### Social Media & Operations Manager | Arcasa Furniture & Decor (2025 – 2026)
-- Managed content strategy, moderation teams, and marketing campaigns.
-- Partnered with dev teams to optimize web/internal tools.
+### 02 — Dafaterak (دفاترك)
+- **Website:** https://dafaterak.online
+- **Role:** Founder & Owner
+- **Category:** Digital Product / E-Commerce Operations & Management SaaS
+- **Status:** Launching Soon
+- **Overview:** An all-in-one e-commerce management system for online merchants and sellers: order processing, inventory tracking, customer CRM, courier COD reconciliation, shielded staff permissions (RLS), and live net profit calculation.
 
-### Social Media Specialist Coordinator | Emerald Interiors (2025)
-- Supervised campaign execution and handled website content updates.
+### 03 — ZBot (بوت واتساب ذكي)
+- **Website:** https://zbotmvp-nipdo2my.manus.space/flows
+- **Role:** Founder & Owner
+- **Category:** AI Product / Conversational WhatsApp Automation
+- **Status:** MVP / Coming Soon
+- **Overview:** An intelligent conversational WhatsApp bot and interactive flow builder automating customer support, product discovery, shipment lookups, and lead qualification 24/7.
 
-### Website Administrator | Balance Egypt (2024 – 2025)
-- Administered products, listings, and customer orders journey.
-
-### Social Media Moderator Team Leader | You Media Agency (2024)
-- Managed, recruited, and trained moderation teams.
+### 04 — Matamek (مطعمك)
+- **Website:** https://matamekapp-5vqvmy7s.manus.space/
+- **Role:** Founder & Owner
+- **Category:** Digital Product / Restaurant Management System & POS
+- **Status:** MVP / Coming Soon
+- **Overview:** A touch-ready restaurant and cloud kitchen management system combining cashier POS, kitchen display system (KDS), raw ingredient recipe costing, and real-time food margin analytics.
 
 ---
 
-## Education & Credentials
-- **Education:** Bachelor of Laws (LL.B.) — Cairo University (2022)
+## Core Brand Positioning & Hierarchy
+1. **Primary Positioning:** SHOPIFY EXPERT (Store Development, Store Redesign, Theme Customization, Product & Collection Architecture, E-commerce UX, Speed & Mobile Optimization, Store Setup)
+2. **Secondary Positioning:** AI SPECIALIST & AI ENGINEERING (Practical AI Tools, AI Applications, AI-Powered Products, AI Content Systems, Prompt Engineering, AI Business Solutions)
+3. **Founder & Product Creator:** Founder & Owner of proprietary digital products and operational platforms.
+4. **Supporting Services:**
+   - Easy Orders Store Design (Dedicated e-commerce storefront platform service)
+   - Web Development (Modern websites and corporate portals designed around business goals)
+   - Vibe Coding (Rapid AI-assisted prototyping and functional MVP building)
+   - Digital Operations (E-commerce workflows, SOP design, and tool coordination)
+   - Social Media Management (Content strategy, planning, and organic brand growth)
+
+---
+
+## Complete Services Architecture (7 Services)
+01. **Shopify Development** (Primary Expertise) — Full-cycle store development, theme customization, redesigns, catalog architecture, checkout UX.
+02. **AI Solutions & AI Engineering** (Major Specialization) — Practical AI tools, custom apps, prompt engineering frameworks, and content engines.
+03. **Easy Orders Store Design** (Specialized Platform) — Fast storefront design, direct WhatsApp checkouts, regional courier and COD setup.
+04. **Web Development** (Web Solutions) — Corporate portals, high-converting landing pages, and responsive UI architecture.
+05. **Vibe Coding** (Rapid AI Prototyping) — AI-assisted approach to turning ideas into functional digital MVPs within days.
+06. **Digital Operations** (Systems & Processes) — E-commerce fulfillment pipelines, team workflows, and digital business organization.
+07. **Social Media Management** (Brand Growth) — Content planning, creation, brand presence management, and organic audience engagement.
+
+---
+
+## Verified Professional Experience
+- **Wisdar (2026 — Present):** Social Media Content Specialist
+- **Arcasa Furniture & Decor (2025 — 2026):** Social Media & Operations Manager
+- **Emerald Interiors (2025):** Social Media Specialist Coordinator
+- **Balance Egypt (2024 — 2025):** Website Administrator & E-commerce Operations
+- **You Media Agency (2023 — 2024):** Digital Operations Specialist & Moderation Team Leader
+- **Elvaya Agency (2022 — 2023):** E-commerce Specialist
+- **Loca Pack for Packing (2021 — 2022):** Operations & Content Assistant
+
+---
+
+## Education & Certifications
+- **Education:** Bachelor of Laws (LL.B.) — Cairo University (Class of 2022)
 - **Certifications:**
-  - Full Stack Digital Marketing (eYouth, 2026)
   - Build Shopify Stores (Almentor, 2026)
+  - Full Stack Digital Marketing (eYouth, 2026)
   - CRM Odoo Academy (Odoo, 2026)
   - Freelancing Skills (ITIDA & eYouth, 2026)
   - Gemini Certified Educator (Google, 2025)
-  - ICDL (Archplan Group, 2022)
-- **Languages:** Arabic (Native), English (Professional), French (Basic)
 
 ---
 
-## Featured E-commerce Projects
-- **Veloye** (https://veloye.com/) — Specialized cleaning products and beauty essentials e-commerce store.
-- **Skinbooster** (https://www.skinbooster.online/) — Premium skincare, fillers, and aesthetic cosmetic products e-commerce store.
-- **Inaya** (https://inaya.myeasyorders.com/) — Online ordering and checkout storefront for beauty and personal care products.
-- **Vexaaa** (https://vexaaa.myeasyorders.com/) — Online ordering and checkout storefront for a trending fashion and clothing brand.
-- **Satr** (https://satrrr.myeasyorders.com/) — Online ordering and checkout storefront for Satr modest men's activewear and athletic apparel.
-- **Pawfect Worlds** (https://pawfectworlds.com/) — Premium pet products online store.
-- **Uno Stores** (https://uno-stores.com/) — Multi-product retail store.
-- **Techno Store EG** (https://technostoreeg.com/) — Modern electronics store.
-- **African Business Council** (https://africanbusinesscouncil.org/) — Corporate website.
-- **Bloomcare EG** (https://bloomcareeg.com/) — Beauty & wellness brand store.
-- **Balance Egypt** (https://balance-egypt.com/) — Health & lifestyle platform.
-- **FBISneakers** (https://fbisneakers.com/) — Premium sneaker store.
-- **Bebo Store EG** (https://bebostoreeg.com/) — Retail consumer store.
-- **XShoess** (https://xshoess.com/) — Footwear store.
-- **3Angles Egypt** (https://3angles-egypt.myshopify.com) — Shopify store.
-- **Sneaker Store E** (https://sneakerstoree.com/) — Fashion footwear drops.
-- **FIA EG** (https://fia-eg.com) — Corporate site.
-- **Dukaan AK** (https://dukaan-ak.com/) — Checkout-optimized store.
-- **3Angles Easy Orders** (https://3angles.myeasyorders.com/) — Easy Orders store.
-- **Refa Oils** (https://refaloils.myeasyorders.com/) — FMCG distribution.
-- **Fioonka** (https://fioonka.com/) — Luxury fashion brand.
-- **Yahia Salah** (https://yahia-salah.free.nf/?i=2) — Portfolio.
-- **Arlo Furniture** (https://arlofurniture.co/) — Furniture store.
-- **Tfawl** (https://tfawl.myeasyorders.com/) — Stationery & notebooks.
-- **Beescaree** (https://beescaree.com/) — Skincare store.
----
+## Curated Client Portfolio Database (24 Projects)
 
-## Marketing & Brand Growth Experience
-- **Arcasa** (Instagram: https://www.instagram.com/arcasa__/) — Furniture & Decor. Managed social media, content strategy, marketing campaigns, and team/content operations (2025 – 2026).
-- **Emerald Interiors** (Instagram: https://www.instagram.com/emeraldinteriors1/) — Interior Design. Social media & content execution, campaign coordination, website content management, and digital brand consistency (2025).
-- **3Angles** (Instagram: https://www.instagram.com/3a_angles/) — Fashion / E-commerce. Social media, content, e-commerce operations, and digital brand presence.
-- **Fitness Kids** (TikTok: https://www.tiktok.com/@fitnesskidsksa) — Kids Fitness / Sports. Social media content, short-form video creation, and digital presence.
-- **Elite Spa** (Instagram: https://www.instagram.com/elitespa_ksa/) — Beauty & Wellness. Social media content creation, digital brand presence, and content operations.
-- **Flax Beauty** (TikTok: https://www.tiktok.com/@flax.beauty) — Beauty. Social media content, short-form video creation, and digital presence.
-- **Wisdar** (Facebook: https://www.facebook.com/WisdarNetwork) — Digital Media / News. Social media content operations, publishing, visual content optimization, and AI-assisted workflows (2026).
-- **Compulink** (Facebook: https://www.facebook.com/compulink.eg) — Technology / IT. Social media content, digital presence, and content creation.
-- **Arlox** (Facebook: https://www.facebook.com/profile.php?id=61572010832683) — E-commerce / Digital Brand. Managed social media, content, digital brand presence, and e-commerce.
+### Tier 1 — Owner Preferred Featured Projects
+1. **African Business Council** (https://africanbusinesscouncil.org/) — Official corporate trade portal connecting continental commerce.
+2. **Arlo Furniture** (https://arlofurniture.com/) — Modern furniture showcase website & bespoke decor inquiries.
+3. **Techno Store EG** (https://techno-store-eg.com/) — Electronics & smart gadgets storefront with direct WhatsApp ordering.
+4. **Beescaree** (https://beescaree.myeasyorders.com/) — Organic honey & natural health catalog with courier shipping.
+
+### Tier 2 — Featured Shopify & E-commerce Work
+5. **Veloye** (https://veloye.com/) — Cleaning products & beauty essentials Shopify store.
+6. **Uno Stores** (https://uno-stores.myshopify.com/) — Trendy apparel & lifestyle Shopify store.
+7. **Skinbooster** (https://www.skinbooster.online/) — Premium skincare & medical aesthetics Shopify store.
+8. **Pawfect Worlds** (https://pawfectworlds.com/) — Pet care & accessories Shopify store with bundle architecture.
+9. **3Angles Egypt** (https://3angles-egypt.myshopify.com) — Streetwear fashion & apparel store with inventory sync.
+10. **Fioonka** (https://fioonka.myeasyorders.com/) — Luxury gifts & accessories storefront.
+11. **XShoess** (https://xshoess.com/) — Athletic footwear Shopify store.
+12. **Sneaker Store E** (https://sneaker-store-e.myshopify.com/) — Streetwear sneaker drops online store.
+13. **Inaya** (https://inaya.myeasyorders.com/) — Beauty & personal care Easy Orders storefront.
+14. **Vexaaa** (https://vexaaa.myeasyorders.com/) — Direct-to-consumer fashion apparel catalog.
+15. **Satr Modest Activewear** (https://satrrr.myeasyorders.com/) — Men's modest athletic wear storefront.
+16. **Bloomcare EG** (https://bloomcareeg.myeasyorders.com/) — Organic wellness & skincare catalog.
+17. **Dukaan AK** (https://dukaan-ak.com/) — Multi-category retail store.
+
+### Tier 3 — Additional Verified Work
+18. **FBISneakers** (https://fbisneakers.com/) — Curated footwear catalog.
+19. **Balance Egypt** (https://balance-egypt.com/) — Health supplements platform.
+20. **Bebo Store EG** (https://bebostore-eg.com/) — Kids toys & accessories store.
+21. **Refa Oils** (https://refaoils.com/) — Essential oils & aromatherapy store.
+22. **FIA EG** (https://fia-eg.com/) — Cosmetic items catalog.
+23. **Tfawl** (https://tfawl.myeasyorders.com/) — Artisan confectionery & sweets menu.
+24. **Yahia Salah** (https://yahia-salah.free.nf/?i=2) — Personal brand portfolio.
 
 ---
 
-## Featured AI Applications
-- **Prompt Arena** (https://promptarena.higgsfield.app) — AI cinematic video prompt battles platform.
-- **AI Copy Maker** (https://ai.studio/apps/82d1878a-b244-41a9-9339-1d41eabcf7b0) — Arabic-tailored marketing copywriting tool.
-- **Visual Enhancer** (https://ai.studio/apps/2a086a1c-d218-4d92-a66f-c6ddfcf9aee3) — Automatic image color and detail enhancement.
-- **Tag Assistant** (https://ai.studio/apps/f5c1f1bd-c249-4d21-b167-cc80dd6ef53d) — E-commerce product catalog tagging assistant.
-- **Social Creator** (https://ai.studio/apps/53d11c03-2cb9-41cd-bf77-dca4cfcb8777) — Captions and visual templates generator.
-- **Insight Analyzer** (https://ai.studio/apps/41c0aca7-0c4f-4222-8f8d-0dd78be6b5b2) — Customer feedback trend analyzer.
-- **Workflow Automator** (https://ai.studio/apps/a5132de2-08e7-4a64-9931-20ac4f2fd4bf) — Operations workflow automating system.
+## AI Projects & Practical Applications
+1. **Prompt Arena** (https://promptarena.higgsfield.app) — AI generative video prompt battles platform (Higgsfield AI).
+2. **AI Copy Maker** (https://ai.studio/apps/82d1878a-b244-41a9-9339-1d41eabcf7b0) — Marketing copywriting engine (Gemini 1.5 Pro).
+3. **Visual Enhancer** (https://ai.studio/apps/2a086a1c-d218-4d92-a66f-c6ddfcf9aee3) — E-commerce product photo optimizer (Vision AI).
+4. **Tag Assistant** — Product tag classifier & SEO metadata generator (NLP).
+5. **Social Creator** — Multi-platform content & hook variation engine (Claude API).
+6. **Insight Analyzer** — Customer review sentiment clustering & objection finder (NLP / Gemini).
+7. **Workflow Automator** — E-commerce checkout to courier & WhatsApp operational network (Make.com).
