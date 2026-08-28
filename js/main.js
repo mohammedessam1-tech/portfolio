@@ -499,24 +499,91 @@
 })();
 
 
-// ─── Dynamic Portfolio Screenshots (Auto Fallback) ───────
-(function initDynamicScreenshots() {
-  const cards = document.querySelectorAll('.project-card');
-  cards.forEach(card => {
-    const img = card.querySelector('img');
-    const url = card.getAttribute('data-live-url') || card.getAttribute('href');
-    if (img && url && url.startsWith('http')) {
-      const originalSrc = img.getAttribute('src');
-      const encodedUrl = encodeURIComponent(url);
-      const screenshotSrc = `https://api.microlink.io?url=${encodedUrl}&screenshot=true&embed=screenshot.url`;
 
-      img.onerror = function() {
-        img.onerror = null;
-        img.src = originalSrc;
-      };
+// ─── Project Preview Modal / Lightbox Controller ─────────
+(function initProjectPreviewModal() {
+  const modal = document.getElementById('project-preview-modal');
+  if (!modal) return;
 
-      img.src = screenshotSrc;
+  const modalImg = document.getElementById('modal-img');
+  const modalTitle = document.getElementById('modal-title');
+  const modalDesc = document.getElementById('modal-desc');
+  const modalIndustry = document.getElementById('modal-industry');
+  const modalPlatform = document.getElementById('modal-platform');
+  const modalStatusBadge = document.getElementById('modal-status-badge');
+  const modalLiveLink = document.getElementById('modal-live-link');
+  const modalCaseLink = document.getElementById('modal-case-link');
+  const closeBtn = document.getElementById('modal-close-btn');
+
+  function openModal(data) {
+    if (!modal) return;
+    if (modalImg) modalImg.src = data.img || '';
+    if (modalTitle) modalTitle.textContent = data.title || 'Project Preview';
+    if (modalDesc) modalDesc.textContent = data.desc || '';
+    if (modalIndustry) modalIndustry.textContent = data.industry || 'E-Commerce';
+    if (modalPlatform) modalPlatform.textContent = data.platform || 'Shopify';
+    
+    if (modalStatusBadge) {
+      modalStatusBadge.textContent = data.status || 'LIVE';
+      if ((data.status || '').includes('LIVE')) {
+        modalStatusBadge.className = 'font-mono text-xs font-bold px-2.5 py-1 bg-brutal-green text-brutal-dark uppercase tracking-wider';
+      } else {
+        modalStatusBadge.className = 'font-mono text-xs font-bold px-2.5 py-1 bg-brutal-cyan text-brutal-dark uppercase tracking-wider';
+      }
     }
+
+    if (modalLiveLink) {
+      if (data.liveUrl && data.liveUrl.startsWith('http')) {
+        modalLiveLink.href = data.liveUrl;
+        modalLiveLink.classList.remove('hidden');
+      } else {
+        modalLiveLink.classList.add('hidden');
+      }
+    }
+
+    if (modalCaseLink) {
+      if (data.caseStudy && !data.caseStudy.includes('None')) {
+        modalCaseLink.href = data.caseStudy;
+        modalCaseLink.classList.remove('hidden');
+      } else {
+        modalCaseLink.classList.add('hidden');
+      }
+    }
+
+    modal.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeModal() {
+    modal.classList.add('hidden');
+    document.body.style.overflow = '';
+  }
+
+  // Attach click listeners to all project card preview triggers
+  document.querySelectorAll('.project-preview-trigger').forEach(trigger => {
+    trigger.addEventListener('click', (e) => {
+      e.preventDefault();
+      const card = trigger.closest('.project-card') || trigger;
+      const data = {
+        title: card.getAttribute('data-preview-title') || card.querySelector('h3')?.textContent || '',
+        desc: card.getAttribute('data-preview-desc') || card.querySelector('p')?.textContent || '',
+        img: card.getAttribute('data-preview-img') || card.querySelector('img')?.getAttribute('src') || '',
+        industry: card.getAttribute('data-preview-industry') || '',
+        platform: card.getAttribute('data-preview-platform') || '',
+        status: card.getAttribute('data-status') || 'LIVE',
+        liveUrl: card.getAttribute('data-live-url') || '',
+        caseStudy: card.getAttribute('data-case-study') || ''
+      };
+      openModal(data);
+    });
+  });
+
+  if (closeBtn) closeBtn.addEventListener('click', closeModal);
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) closeModal();
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && !modal.classList.contains('hidden')) closeModal();
   });
 })();
 

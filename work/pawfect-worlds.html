@@ -374,6 +374,50 @@
     </div>
   </footer>
 
+  
+  <!-- ════════════════════════════════════════════════ PROJECT PREVIEW MODAL ═══ -->
+  <div id="project-preview-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-sm transition-opacity duration-300">
+    <div class="relative w-full max-w-4xl bg-brutal-dark border-4 border-brutal-yellow shadow-brutal-yellow overflow-hidden flex flex-col max-h-[90vh]">
+      
+      <!-- Modal Header -->
+      <div class="flex items-center justify-between p-4 bg-brutal-gray border-b-2 border-brutal-light/20">
+        <div class="flex items-center gap-3">
+          <span id="modal-status-badge" class="font-mono text-xs font-bold px-2.5 py-1 bg-brutal-green text-brutal-dark uppercase tracking-wider">LIVE</span>
+          <h3 id="modal-title" class="font-mono font-bold text-lg sm:text-xl text-brutal-light truncate">Project Name</h3>
+        </div>
+        <button id="modal-close-btn" class="w-8 h-8 flex items-center justify-center bg-brutal-dark text-brutal-yellow border border-brutal-yellow hover:bg-brutal-yellow hover:text-brutal-dark transition-all font-mono font-bold text-lg">✕</button>
+      </div>
+
+      <!-- Modal Body / Screenshot -->
+      <div class="overflow-y-auto p-4 sm:p-6 space-y-4 bg-brutal-dark">
+        <div class="relative overflow-hidden border-2 border-brutal-light/20 bg-black flex items-center justify-center">
+          <img id="modal-img" src="" alt="Project Preview Screenshot" class="w-full h-auto max-h-[55vh] object-contain" />
+        </div>
+        
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pt-2">
+          <div>
+            <div class="flex items-center gap-2 font-mono text-xs text-brutal-yellow mb-1">
+              <span id="modal-industry">Industry</span>
+              <span>•</span>
+              <span id="modal-platform" class="text-brutal-light/60">Platform</span>
+            </div>
+            <p id="modal-desc" class="font-grotesk text-sm text-brutal-light/80 leading-relaxed max-w-xl">Project description...</p>
+          </div>
+
+          <div class="flex items-center gap-3 shrink-0">
+            <a id="modal-live-link" href="#" target="_blank" rel="noopener noreferrer" class="hidden inline-flex items-center gap-2 bg-brutal-yellow text-brutal-dark font-mono font-bold text-xs uppercase px-5 py-3 border-2 border-brutal-dark shadow-brutal hover:bg-brutal-orange transition-all">
+              Visit Live Site ↗
+            </a>
+            <a id="modal-case-link" href="#" class="hidden inline-flex items-center gap-2 border-2 border-brutal-yellow text-brutal-yellow font-mono font-bold text-xs uppercase px-4 py-3 hover:bg-brutal-yellow hover:text-brutal-dark transition-all">
+              Case Study →
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
   <!-- Floating Stats Card -->
   <div id="counter-card" class="hidden fixed bottom-4 right-4 z-50 bg-brutal-gray border-2 border-brutal-yellow p-4 shadow-brutal font-mono text-xs text-brutal-light">
     <div class="flex items-center justify-between gap-4">

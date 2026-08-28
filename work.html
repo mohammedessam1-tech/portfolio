@@ -199,8 +199,8 @@
       <!-- Category & Status Filter Tabs (Live is Default Active) -->
       <div class="reveal-up flex flex-wrap gap-2 pt-4 font-mono text-xs uppercase font-bold" id="filter-bar">
         <button class="work-filter-btn px-4 py-2 bg-brutal-gray text-brutal-light/70 border-2 border-brutal-light/10 hover:border-brutal-yellow hover:text-brutal-yellow transition-all duration-200 cursor-pointer" data-filter="all">All (24)</button>
-        <button class="work-filter-btn active px-4 py-2 bg-brutal-yellow text-brutal-dark border-2 border-brutal-dark shadow-brutal transition-all duration-200 cursor-pointer" data-filter="live">Live Projects (19)</button>
-        <button class="work-filter-btn px-4 py-2 bg-brutal-gray text-brutal-light/70 border-2 border-brutal-light/10 hover:border-brutal-yellow hover:text-brutal-yellow transition-all duration-200 cursor-pointer" data-filter="upcoming">Upcoming (5)</button>
+        <button class="work-filter-btn active px-4 py-2 bg-brutal-yellow text-brutal-dark border-2 border-brutal-dark shadow-brutal transition-all duration-200 cursor-pointer" data-filter="live">Live Projects (18)</button>
+        <button class="work-filter-btn px-4 py-2 bg-brutal-gray text-brutal-light/70 border-2 border-brutal-light/10 hover:border-brutal-yellow hover:text-brutal-yellow transition-all duration-200 cursor-pointer" data-filter="upcoming">Upcoming (6)</button>
         <button class="work-filter-btn px-4 py-2 bg-brutal-gray text-brutal-light/70 border-2 border-brutal-light/10 hover:border-brutal-yellow hover:text-brutal-yellow transition-all duration-200 cursor-pointer" data-filter="shopify">Shopify</button>
         <button class="work-filter-btn px-4 py-2 bg-brutal-gray text-brutal-light/70 border-2 border-brutal-light/10 hover:border-brutal-yellow hover:text-brutal-yellow transition-all duration-200 cursor-pointer" data-filter="ecommerce">E-commerce</button>
         <button class="work-filter-btn px-4 py-2 bg-brutal-gray text-brutal-light/70 border-2 border-brutal-light/10 hover:border-brutal-yellow hover:text-brutal-yellow transition-all duration-200 cursor-pointer" data-filter="easyorders">Easy Orders</button>
@@ -221,19 +221,34 @@
           </div>
           <h2 class="font-mono font-bold text-3xl sm:text-4xl text-brutal-light">LIVE PROJECTS</h2>
         </div>
-        <span class="font-mono text-xs text-brutal-light/50">19 Active Production Sites</span>
+        <span class="font-mono text-xs text-brutal-light/50">18 Active Production Sites</span>
       </div>
 
       <div id="live-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
         
     <!-- Live Card: African Business Council -->
-    <div class="reveal-up project-card group bg-brutal-dark border-4 border-brutal-light/10 hover:border-brutal-yellow transition-all duration-300 flex flex-col justify-between overflow-hidden shadow-brutal hover:shadow-brutal-yellow" data-categories="live websites" data-status="live" data-live-url="https://africanbusinesscouncil.org/">
+    <div class="reveal-up project-card group bg-brutal-dark border-4 border-brutal-light/10 hover:border-brutal-yellow transition-all duration-300 flex flex-col justify-between overflow-hidden shadow-brutal hover:shadow-brutal-yellow" 
+         data-categories="live websites" 
+         data-status="live" 
+         data-live-url="https://africanbusinesscouncil.org/"
+         data-case-study="work/african-business-council.html"
+         data-preview-title="African Business Council"
+         data-preview-desc="Official corporate trade portal for the African Business Council connecting continental commerce, governments, and private sector trade networks across Africa."
+         data-preview-img="images/projects/africanbusiness.jpg"
+         data-preview-industry="Corporate / Trade Network"
+         data-preview-platform="Web Platform">
       <div>
-        <div class="relative overflow-hidden h-48 bg-black">
-          <img src="images/projects/africanbusiness.jpg" alt="African Business Council — Mohammed Essam Project" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
-          <div class="absolute top-3 right-3 bg-brutal-dark/95 border border-brutal-green px-2.5 py-0.5 font-mono text-[10px] text-brutal-green font-bold uppercase tracking-wider flex items-center gap-1.5 shadow-brutal">
+        <div class="relative overflow-hidden h-52 bg-black cursor-pointer project-preview-trigger group">
+          <img src="images/projects/africanbusiness.jpg" alt="African Business Council — Mohammed Essam Project Preview Screenshot" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+          <div class="absolute top-3 right-3 bg-brutal-dark/95 border border-brutal-green px-2.5 py-0.5 font-mono text-[10px] text-brutal-green font-bold uppercase tracking-wider flex items-center gap-1.5 shadow-brutal z-10">
             <span class="w-1.5 h-1.5 bg-brutal-green rounded-full animate-pulse"></span>
             LIVE
+          </div>
+          <!-- Hover Overlay -->
+          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-200">
+            <span class="bg-brutal-dark/95 border-2 border-brutal-yellow text-brutal-yellow px-3 py-1.5 font-mono text-xs font-bold uppercase tracking-wider shadow-brutal flex items-center gap-2">
+              <i class="fas fa-search-plus"></i> View Preview
+            </span>
           </div>
         </div>
         <div class="p-6">
@@ -254,13 +269,28 @@
     </div>
     
     <!-- Live Card: Arlo Furniture -->
-    <div class="reveal-up project-card group bg-brutal-dark border-4 border-brutal-light/10 hover:border-brutal-yellow transition-all duration-300 flex flex-col justify-between overflow-hidden shadow-brutal hover:shadow-brutal-yellow" data-categories="live websites ecommerce" data-status="live" data-live-url="https://arlofurniture.co/">
+    <div class="reveal-up project-card group bg-brutal-dark border-4 border-brutal-light/10 hover:border-brutal-yellow transition-all duration-300 flex flex-col justify-between overflow-hidden shadow-brutal hover:shadow-brutal-yellow" 
+         data-categories="live websites ecommerce" 
+         data-status="live" 
+         data-live-url="https://arlofurniture.co/"
+         data-case-study="work/arlo-furniture.html"
+         data-preview-title="Arlo Furniture"
+         data-preview-desc="Modern furniture showcase website displaying bespoke seasonal collections, custom dimension specs, and specialized quote inquiries."
+         data-preview-img="images/projects/arlofurniture.jpg"
+         data-preview-industry="Home Furniture & Decor"
+         data-preview-platform="Web Platform">
       <div>
-        <div class="relative overflow-hidden h-48 bg-black">
-          <img src="images/projects/arlofurniture.jpg" alt="Arlo Furniture — Mohammed Essam Project" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
-          <div class="absolute top-3 right-3 bg-brutal-dark/95 border border-brutal-green px-2.5 py-0.5 font-mono text-[10px] text-brutal-green font-bold uppercase tracking-wider flex items-center gap-1.5 shadow-brutal">
+        <div class="relative overflow-hidden h-52 bg-black cursor-pointer project-preview-trigger group">
+          <img src="images/projects/arlofurniture.jpg" alt="Arlo Furniture — Mohammed Essam Project Preview Screenshot" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+          <div class="absolute top-3 right-3 bg-brutal-dark/95 border border-brutal-green px-2.5 py-0.5 font-mono text-[10px] text-brutal-green font-bold uppercase tracking-wider flex items-center gap-1.5 shadow-brutal z-10">
             <span class="w-1.5 h-1.5 bg-brutal-green rounded-full animate-pulse"></span>
             LIVE
+          </div>
+          <!-- Hover Overlay -->
+          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-200">
+            <span class="bg-brutal-dark/95 border-2 border-brutal-yellow text-brutal-yellow px-3 py-1.5 font-mono text-xs font-bold uppercase tracking-wider shadow-brutal flex items-center gap-2">
+              <i class="fas fa-search-plus"></i> View Preview
+            </span>
           </div>
         </div>
         <div class="p-6">
@@ -281,13 +311,28 @@
     </div>
     
     <!-- Live Card: Techno Store EG -->
-    <div class="reveal-up project-card group bg-brutal-dark border-4 border-brutal-light/10 hover:border-brutal-yellow transition-all duration-300 flex flex-col justify-between overflow-hidden shadow-brutal hover:shadow-brutal-yellow" data-categories="live easyorders ecommerce" data-status="live" data-live-url="https://www.technostore-egy.com/">
+    <div class="reveal-up project-card group bg-brutal-dark border-4 border-brutal-light/10 hover:border-brutal-yellow transition-all duration-300 flex flex-col justify-between overflow-hidden shadow-brutal hover:shadow-brutal-yellow" 
+         data-categories="live easyorders ecommerce" 
+         data-status="live" 
+         data-live-url="https://www.technostore-egy.com/"
+         data-case-study="work/techno-store-eg.html"
+         data-preview-title="Techno Store EG"
+         data-preview-desc="Consumer electronics and smart gadgets ordering storefront with fast direct-to-WhatsApp delivery tracking and bundle offerings."
+         data-preview-img="images/projects/technostore.jpg"
+         data-preview-industry="Electronics & Smart Gadgets"
+         data-preview-platform="Easy Orders / Web">
       <div>
-        <div class="relative overflow-hidden h-48 bg-black">
-          <img src="images/projects/technostore.jpg" alt="Techno Store EG — Mohammed Essam Project" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
-          <div class="absolute top-3 right-3 bg-brutal-dark/95 border border-brutal-green px-2.5 py-0.5 font-mono text-[10px] text-brutal-green font-bold uppercase tracking-wider flex items-center gap-1.5 shadow-brutal">
+        <div class="relative overflow-hidden h-52 bg-black cursor-pointer project-preview-trigger group">
+          <img src="images/projects/technostore.jpg" alt="Techno Store EG — Mohammed Essam Project Preview Screenshot" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+          <div class="absolute top-3 right-3 bg-brutal-dark/95 border border-brutal-green px-2.5 py-0.5 font-mono text-[10px] text-brutal-green font-bold uppercase tracking-wider flex items-center gap-1.5 shadow-brutal z-10">
             <span class="w-1.5 h-1.5 bg-brutal-green rounded-full animate-pulse"></span>
             LIVE
+          </div>
+          <!-- Hover Overlay -->
+          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-200">
+            <span class="bg-brutal-dark/95 border-2 border-brutal-yellow text-brutal-yellow px-3 py-1.5 font-mono text-xs font-bold uppercase tracking-wider shadow-brutal flex items-center gap-2">
+              <i class="fas fa-search-plus"></i> View Preview
+            </span>
           </div>
         </div>
         <div class="p-6">
@@ -308,13 +353,28 @@
     </div>
     
     <!-- Live Card: Veloye -->
-    <div class="reveal-up project-card group bg-brutal-dark border-4 border-brutal-light/10 hover:border-brutal-yellow transition-all duration-300 flex flex-col justify-between overflow-hidden shadow-brutal hover:shadow-brutal-yellow" data-categories="live shopify ecommerce" data-status="live" data-live-url="https://veloye.com/">
+    <div class="reveal-up project-card group bg-brutal-dark border-4 border-brutal-light/10 hover:border-brutal-yellow transition-all duration-300 flex flex-col justify-between overflow-hidden shadow-brutal hover:shadow-brutal-yellow" 
+         data-categories="live shopify ecommerce" 
+         data-status="live" 
+         data-live-url="https://veloye.com/"
+         data-case-study="work/veloye.html"
+         data-preview-title="Veloye"
+         data-preview-desc="Specialized cleaning products and beauty essentials e-commerce store with modern conversion checkout UX and product bundles."
+         data-preview-img="images/projects/veloye.jpg"
+         data-preview-industry="Beauty & Cleaning Essentials"
+         data-preview-platform="Shopify">
       <div>
-        <div class="relative overflow-hidden h-48 bg-black">
-          <img src="images/projects/veloye.jpg" alt="Veloye — Mohammed Essam Project" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
-          <div class="absolute top-3 right-3 bg-brutal-dark/95 border border-brutal-green px-2.5 py-0.5 font-mono text-[10px] text-brutal-green font-bold uppercase tracking-wider flex items-center gap-1.5 shadow-brutal">
+        <div class="relative overflow-hidden h-52 bg-black cursor-pointer project-preview-trigger group">
+          <img src="images/projects/veloye.jpg" alt="Veloye — Mohammed Essam Project Preview Screenshot" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+          <div class="absolute top-3 right-3 bg-brutal-dark/95 border border-brutal-green px-2.5 py-0.5 font-mono text-[10px] text-brutal-green font-bold uppercase tracking-wider flex items-center gap-1.5 shadow-brutal z-10">
             <span class="w-1.5 h-1.5 bg-brutal-green rounded-full animate-pulse"></span>
             LIVE
+          </div>
+          <!-- Hover Overlay -->
+          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-200">
+            <span class="bg-brutal-dark/95 border-2 border-brutal-yellow text-brutal-yellow px-3 py-1.5 font-mono text-xs font-bold uppercase tracking-wider shadow-brutal flex items-center gap-2">
+              <i class="fas fa-search-plus"></i> View Preview
+            </span>
           </div>
         </div>
         <div class="p-6">
@@ -335,13 +395,28 @@
     </div>
     
     <!-- Live Card: Uno Stores -->
-    <div class="reveal-up project-card group bg-brutal-dark border-4 border-brutal-light/10 hover:border-brutal-yellow transition-all duration-300 flex flex-col justify-between overflow-hidden shadow-brutal hover:shadow-brutal-yellow" data-categories="live shopify ecommerce" data-status="live" data-live-url="https://uno-stores.com/">
+    <div class="reveal-up project-card group bg-brutal-dark border-4 border-brutal-light/10 hover:border-brutal-yellow transition-all duration-300 flex flex-col justify-between overflow-hidden shadow-brutal hover:shadow-brutal-yellow" 
+         data-categories="live shopify ecommerce" 
+         data-status="live" 
+         data-live-url="https://uno-stores.com/"
+         data-case-study="work/uno-stores.html"
+         data-preview-title="Uno Stores"
+         data-preview-desc="Custom streetwear and lifestyle apparel online store with dynamic collection architecture, lookbook showcases, and size selectors."
+         data-preview-img="images/projects/uno-stores.jpg"
+         data-preview-industry="Apparel & Lifestyle"
+         data-preview-platform="Shopify">
       <div>
-        <div class="relative overflow-hidden h-48 bg-black">
-          <img src="images/projects/uno-stores.jpg" alt="Uno Stores — Mohammed Essam Project" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
-          <div class="absolute top-3 right-3 bg-brutal-dark/95 border border-brutal-green px-2.5 py-0.5 font-mono text-[10px] text-brutal-green font-bold uppercase tracking-wider flex items-center gap-1.5 shadow-brutal">
+        <div class="relative overflow-hidden h-52 bg-black cursor-pointer project-preview-trigger group">
+          <img src="images/projects/uno-stores.jpg" alt="Uno Stores — Mohammed Essam Project Preview Screenshot" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+          <div class="absolute top-3 right-3 bg-brutal-dark/95 border border-brutal-green px-2.5 py-0.5 font-mono text-[10px] text-brutal-green font-bold uppercase tracking-wider flex items-center gap-1.5 shadow-brutal z-10">
             <span class="w-1.5 h-1.5 bg-brutal-green rounded-full animate-pulse"></span>
             LIVE
+          </div>
+          <!-- Hover Overlay -->
+          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-200">
+            <span class="bg-brutal-dark/95 border-2 border-brutal-yellow text-brutal-yellow px-3 py-1.5 font-mono text-xs font-bold uppercase tracking-wider shadow-brutal flex items-center gap-2">
+              <i class="fas fa-search-plus"></i> View Preview
+            </span>
           </div>
         </div>
         <div class="p-6">
@@ -362,13 +437,28 @@
     </div>
     
     <!-- Live Card: Skinbooster -->
-    <div class="reveal-up project-card group bg-brutal-dark border-4 border-brutal-light/10 hover:border-brutal-yellow transition-all duration-300 flex flex-col justify-between overflow-hidden shadow-brutal hover:shadow-brutal-yellow" data-categories="live easyorders ecommerce" data-status="live" data-live-url="https://skinbooster.myeasyorders.com/">
+    <div class="reveal-up project-card group bg-brutal-dark border-4 border-brutal-light/10 hover:border-brutal-yellow transition-all duration-300 flex flex-col justify-between overflow-hidden shadow-brutal hover:shadow-brutal-yellow" 
+         data-categories="live easyorders ecommerce" 
+         data-status="live" 
+         data-live-url="https://skinbooster.myeasyorders.com/"
+         data-case-study="work/skinbooster.html"
+         data-preview-title="Skinbooster"
+         data-preview-desc="Medical aesthetics, fillers, and clinical skincare e-commerce platform with specialized product categories and direct order flow."
+         data-preview-img="images/projects/skinbooster.jpg"
+         data-preview-industry="Medical Aesthetics & Skincare"
+         data-preview-platform="Easy Orders">
       <div>
-        <div class="relative overflow-hidden h-48 bg-black">
-          <img src="images/projects/skinbooster.jpg" alt="Skinbooster — Mohammed Essam Project" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
-          <div class="absolute top-3 right-3 bg-brutal-dark/95 border border-brutal-green px-2.5 py-0.5 font-mono text-[10px] text-brutal-green font-bold uppercase tracking-wider flex items-center gap-1.5 shadow-brutal">
+        <div class="relative overflow-hidden h-52 bg-black cursor-pointer project-preview-trigger group">
+          <img src="images/projects/skinbooster.jpg" alt="Skinbooster — Mohammed Essam Project Preview Screenshot" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+          <div class="absolute top-3 right-3 bg-brutal-dark/95 border border-brutal-green px-2.5 py-0.5 font-mono text-[10px] text-brutal-green font-bold uppercase tracking-wider flex items-center gap-1.5 shadow-brutal z-10">
             <span class="w-1.5 h-1.5 bg-brutal-green rounded-full animate-pulse"></span>
             LIVE
+          </div>
+          <!-- Hover Overlay -->
+          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-200">
+            <span class="bg-brutal-dark/95 border-2 border-brutal-yellow text-brutal-yellow px-3 py-1.5 font-mono text-xs font-bold uppercase tracking-wider shadow-brutal flex items-center gap-2">
+              <i class="fas fa-search-plus"></i> View Preview
+            </span>
           </div>
         </div>
         <div class="p-6">
@@ -388,41 +478,29 @@
       </div>
     </div>
     
-    <!-- Live Card: Pawfect Worlds -->
-    <div class="reveal-up project-card group bg-brutal-dark border-4 border-brutal-light/10 hover:border-brutal-yellow transition-all duration-300 flex flex-col justify-between overflow-hidden shadow-brutal hover:shadow-brutal-yellow" data-categories="live shopify ecommerce" data-status="live" data-live-url="https://pawfectworlds.com/">
-      <div>
-        <div class="relative overflow-hidden h-48 bg-black">
-          <img src="images/projects/pawfectworlds.jpg" alt="Pawfect Worlds — Mohammed Essam Project" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
-          <div class="absolute top-3 right-3 bg-brutal-dark/95 border border-brutal-green px-2.5 py-0.5 font-mono text-[10px] text-brutal-green font-bold uppercase tracking-wider flex items-center gap-1.5 shadow-brutal">
-            <span class="w-1.5 h-1.5 bg-brutal-green rounded-full animate-pulse"></span>
-            LIVE
-          </div>
-        </div>
-        <div class="p-6">
-          <div class="flex items-center justify-between gap-2 mb-2 font-mono text-xs text-brutal-yellow">
-            <span>Pet Care & Lifestyle</span>
-            <span class="text-brutal-light/40">Platform: Shopify</span>
-          </div>
-          <h3 class="font-mono font-bold text-xl text-brutal-light group-hover:text-brutal-yellow transition-colors duration-200 mb-2">Pawfect Worlds</h3>
-          <p class="text-sm font-grotesk text-brutal-light/70 leading-relaxed">
-            Premium pet products online store with multi-category filtering, custom variant swatches, and automated drawer cart flow.
-          </p>
-        </div>
-      </div>
-      <div class="p-6 pt-0 flex items-center justify-between font-mono border-t border-brutal-light/10 pt-4">
-        <div><a href="work/pawfect-worlds.html" class="text-brutal-yellow hover:underline font-bold text-xs">VIEW CASE STUDY →</a></div>
-        <div><a href="https://pawfectworlds.com/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 bg-brutal-yellow text-brutal-dark px-3 py-1.5 font-mono text-xs font-bold border border-brutal-dark shadow-brutal hover:bg-brutal-orange transition-all">VIEW PROJECT ↗</a></div>
-      </div>
-    </div>
-    
     <!-- Live Card: 3Angles Egypt -->
-    <div class="reveal-up project-card group bg-brutal-dark border-4 border-brutal-light/10 hover:border-brutal-yellow transition-all duration-300 flex flex-col justify-between overflow-hidden shadow-brutal hover:shadow-brutal-yellow" data-categories="live easyorders ecommerce" data-status="live" data-live-url="https://3angles.myeasyorders.com/">
+    <div class="reveal-up project-card group bg-brutal-dark border-4 border-brutal-light/10 hover:border-brutal-yellow transition-all duration-300 flex flex-col justify-between overflow-hidden shadow-brutal hover:shadow-brutal-yellow" 
+         data-categories="live easyorders ecommerce" 
+         data-status="live" 
+         data-live-url="https://3angles.myeasyorders.com/"
+         data-case-study="work/3angles.html"
+         data-preview-title="3Angles Egypt"
+         data-preview-desc="Multi-channel streetwear fashion storefront with full catalog drops, lookbooks, size charts, and direct WhatsApp checkout."
+         data-preview-img="images/projects/3angles.jpg"
+         data-preview-industry="Streetwear & Fashion"
+         data-preview-platform="Easy Orders">
       <div>
-        <div class="relative overflow-hidden h-48 bg-black">
-          <img src="images/projects/3angles.jpg" alt="3Angles Egypt — Mohammed Essam Project" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
-          <div class="absolute top-3 right-3 bg-brutal-dark/95 border border-brutal-green px-2.5 py-0.5 font-mono text-[10px] text-brutal-green font-bold uppercase tracking-wider flex items-center gap-1.5 shadow-brutal">
+        <div class="relative overflow-hidden h-52 bg-black cursor-pointer project-preview-trigger group">
+          <img src="images/projects/3angles.jpg" alt="3Angles Egypt — Mohammed Essam Project Preview Screenshot" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+          <div class="absolute top-3 right-3 bg-brutal-dark/95 border border-brutal-green px-2.5 py-0.5 font-mono text-[10px] text-brutal-green font-bold uppercase tracking-wider flex items-center gap-1.5 shadow-brutal z-10">
             <span class="w-1.5 h-1.5 bg-brutal-green rounded-full animate-pulse"></span>
             LIVE
+          </div>
+          <!-- Hover Overlay -->
+          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-200">
+            <span class="bg-brutal-dark/95 border-2 border-brutal-yellow text-brutal-yellow px-3 py-1.5 font-mono text-xs font-bold uppercase tracking-wider shadow-brutal flex items-center gap-2">
+              <i class="fas fa-search-plus"></i> View Preview
+            </span>
           </div>
         </div>
         <div class="p-6">
@@ -443,13 +521,28 @@
     </div>
     
     <!-- Live Card: XShoess -->
-    <div class="reveal-up project-card group bg-brutal-dark border-4 border-brutal-light/10 hover:border-brutal-yellow transition-all duration-300 flex flex-col justify-between overflow-hidden shadow-brutal hover:shadow-brutal-yellow" data-categories="live shopify ecommerce" data-status="live" data-live-url="https://xshoess.com/">
+    <div class="reveal-up project-card group bg-brutal-dark border-4 border-brutal-light/10 hover:border-brutal-yellow transition-all duration-300 flex flex-col justify-between overflow-hidden shadow-brutal hover:shadow-brutal-yellow" 
+         data-categories="live shopify ecommerce" 
+         data-status="live" 
+         data-live-url="https://xshoess.com/"
+         data-case-study=""
+         data-preview-title="XShoess"
+         data-preview-desc="Performance athletic shoes store featuring high-res imagery, interactive size selectors, and promo flash sale banners."
+         data-preview-img="images/projects/xshoess.jpg"
+         data-preview-industry="Athletic Footwear"
+         data-preview-platform="Shopify">
       <div>
-        <div class="relative overflow-hidden h-48 bg-black">
-          <img src="images/projects/xshoess.jpg" alt="XShoess — Mohammed Essam Project" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
-          <div class="absolute top-3 right-3 bg-brutal-dark/95 border border-brutal-green px-2.5 py-0.5 font-mono text-[10px] text-brutal-green font-bold uppercase tracking-wider flex items-center gap-1.5 shadow-brutal">
+        <div class="relative overflow-hidden h-52 bg-black cursor-pointer project-preview-trigger group">
+          <img src="images/projects/xshoess.jpg" alt="XShoess — Mohammed Essam Project Preview Screenshot" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+          <div class="absolute top-3 right-3 bg-brutal-dark/95 border border-brutal-green px-2.5 py-0.5 font-mono text-[10px] text-brutal-green font-bold uppercase tracking-wider flex items-center gap-1.5 shadow-brutal z-10">
             <span class="w-1.5 h-1.5 bg-brutal-green rounded-full animate-pulse"></span>
             LIVE
+          </div>
+          <!-- Hover Overlay -->
+          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-200">
+            <span class="bg-brutal-dark/95 border-2 border-brutal-yellow text-brutal-yellow px-3 py-1.5 font-mono text-xs font-bold uppercase tracking-wider shadow-brutal flex items-center gap-2">
+              <i class="fas fa-search-plus"></i> View Preview
+            </span>
           </div>
         </div>
         <div class="p-6">
@@ -470,13 +563,28 @@
     </div>
     
     <!-- Live Card: Sneaker Store E -->
-    <div class="reveal-up project-card group bg-brutal-dark border-4 border-brutal-light/10 hover:border-brutal-yellow transition-all duration-300 flex flex-col justify-between overflow-hidden shadow-brutal hover:shadow-brutal-yellow" data-categories="live ecommerce websites" data-status="live" data-live-url="https://sneakerstoree.com/">
+    <div class="reveal-up project-card group bg-brutal-dark border-4 border-brutal-light/10 hover:border-brutal-yellow transition-all duration-300 flex flex-col justify-between overflow-hidden shadow-brutal hover:shadow-brutal-yellow" 
+         data-categories="live ecommerce websites" 
+         data-status="live" 
+         data-live-url="https://sneakerstoree.com/"
+         data-case-study=""
+         data-preview-title="Sneaker Store E"
+         data-preview-desc="Streetwear sneakers online shop with custom Elementor layout, WooCommerce product catalog, and WhatsApp checkout integration."
+         data-preview-img="images/projects/sneakerstoree.jpg"
+         data-preview-industry="Footwear & Streetwear"
+         data-preview-platform="WordPress / WooCommerce">
       <div>
-        <div class="relative overflow-hidden h-48 bg-black">
-          <img src="images/projects/sneakerstoree.jpg" alt="Sneaker Store E — Mohammed Essam Project" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
-          <div class="absolute top-3 right-3 bg-brutal-dark/95 border border-brutal-green px-2.5 py-0.5 font-mono text-[10px] text-brutal-green font-bold uppercase tracking-wider flex items-center gap-1.5 shadow-brutal">
+        <div class="relative overflow-hidden h-52 bg-black cursor-pointer project-preview-trigger group">
+          <img src="images/projects/sneakerstoree.jpg" alt="Sneaker Store E — Mohammed Essam Project Preview Screenshot" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+          <div class="absolute top-3 right-3 bg-brutal-dark/95 border border-brutal-green px-2.5 py-0.5 font-mono text-[10px] text-brutal-green font-bold uppercase tracking-wider flex items-center gap-1.5 shadow-brutal z-10">
             <span class="w-1.5 h-1.5 bg-brutal-green rounded-full animate-pulse"></span>
             LIVE
+          </div>
+          <!-- Hover Overlay -->
+          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-200">
+            <span class="bg-brutal-dark/95 border-2 border-brutal-yellow text-brutal-yellow px-3 py-1.5 font-mono text-xs font-bold uppercase tracking-wider shadow-brutal flex items-center gap-2">
+              <i class="fas fa-search-plus"></i> View Preview
+            </span>
           </div>
         </div>
         <div class="p-6">
@@ -497,13 +605,28 @@
     </div>
     
     <!-- Live Card: Inaya -->
-    <div class="reveal-up project-card group bg-brutal-dark border-4 border-brutal-light/10 hover:border-brutal-yellow transition-all duration-300 flex flex-col justify-between overflow-hidden shadow-brutal hover:shadow-brutal-yellow" data-categories="live easyorders ecommerce" data-status="live" data-live-url="https://inaya.myeasyorders.com/">
+    <div class="reveal-up project-card group bg-brutal-dark border-4 border-brutal-light/10 hover:border-brutal-yellow transition-all duration-300 flex flex-col justify-between overflow-hidden shadow-brutal hover:shadow-brutal-yellow" 
+         data-categories="live easyorders ecommerce" 
+         data-status="live" 
+         data-live-url="https://inaya.myeasyorders.com/"
+         data-case-study="work/inaya.html"
+         data-preview-title="Inaya"
+         data-preview-desc="Online beauty and personal care storefront with fast direct-to-WhatsApp ordering, variant selectors, and mobile social UX."
+         data-preview-img="images/projects/inaya.jpg"
+         data-preview-industry="Beauty & Personal Care"
+         data-preview-platform="Easy Orders">
       <div>
-        <div class="relative overflow-hidden h-48 bg-black">
-          <img src="images/projects/inaya.jpg" alt="Inaya — Mohammed Essam Project" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
-          <div class="absolute top-3 right-3 bg-brutal-dark/95 border border-brutal-green px-2.5 py-0.5 font-mono text-[10px] text-brutal-green font-bold uppercase tracking-wider flex items-center gap-1.5 shadow-brutal">
+        <div class="relative overflow-hidden h-52 bg-black cursor-pointer project-preview-trigger group">
+          <img src="images/projects/inaya.jpg" alt="Inaya — Mohammed Essam Project Preview Screenshot" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+          <div class="absolute top-3 right-3 bg-brutal-dark/95 border border-brutal-green px-2.5 py-0.5 font-mono text-[10px] text-brutal-green font-bold uppercase tracking-wider flex items-center gap-1.5 shadow-brutal z-10">
             <span class="w-1.5 h-1.5 bg-brutal-green rounded-full animate-pulse"></span>
             LIVE
+          </div>
+          <!-- Hover Overlay -->
+          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-200">
+            <span class="bg-brutal-dark/95 border-2 border-brutal-yellow text-brutal-yellow px-3 py-1.5 font-mono text-xs font-bold uppercase tracking-wider shadow-brutal flex items-center gap-2">
+              <i class="fas fa-search-plus"></i> View Preview
+            </span>
           </div>
         </div>
         <div class="p-6">
@@ -524,13 +647,28 @@
     </div>
     
     <!-- Live Card: Vexaaa -->
-    <div class="reveal-up project-card group bg-brutal-dark border-4 border-brutal-light/10 hover:border-brutal-yellow transition-all duration-300 flex flex-col justify-between overflow-hidden shadow-brutal hover:shadow-brutal-yellow" data-categories="live easyorders ecommerce" data-status="live" data-live-url="https://vexaaa.myeasyorders.com/">
+    <div class="reveal-up project-card group bg-brutal-dark border-4 border-brutal-light/10 hover:border-brutal-yellow transition-all duration-300 flex flex-col justify-between overflow-hidden shadow-brutal hover:shadow-brutal-yellow" 
+         data-categories="live easyorders ecommerce" 
+         data-status="live" 
+         data-live-url="https://vexaaa.myeasyorders.com/"
+         data-case-study=""
+         data-preview-title="Vexaaa"
+         data-preview-desc="Direct-to-consumer online fashion ordering catalog with mobile-first checkout, size guides, and localized COD delivery."
+         data-preview-img="images/projects/vexaaa.jpg"
+         data-preview-industry="Fashion & Apparel"
+         data-preview-platform="Easy Orders">
       <div>
-        <div class="relative overflow-hidden h-48 bg-black">
-          <img src="images/projects/vexaaa.jpg" alt="Vexaaa — Mohammed Essam Project" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
-          <div class="absolute top-3 right-3 bg-brutal-dark/95 border border-brutal-green px-2.5 py-0.5 font-mono text-[10px] text-brutal-green font-bold uppercase tracking-wider flex items-center gap-1.5 shadow-brutal">
+        <div class="relative overflow-hidden h-52 bg-black cursor-pointer project-preview-trigger group">
+          <img src="images/projects/vexaaa.jpg" alt="Vexaaa — Mohammed Essam Project Preview Screenshot" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+          <div class="absolute top-3 right-3 bg-brutal-dark/95 border border-brutal-green px-2.5 py-0.5 font-mono text-[10px] text-brutal-green font-bold uppercase tracking-wider flex items-center gap-1.5 shadow-brutal z-10">
             <span class="w-1.5 h-1.5 bg-brutal-green rounded-full animate-pulse"></span>
             LIVE
+          </div>
+          <!-- Hover Overlay -->
+          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-200">
+            <span class="bg-brutal-dark/95 border-2 border-brutal-yellow text-brutal-yellow px-3 py-1.5 font-mono text-xs font-bold uppercase tracking-wider shadow-brutal flex items-center gap-2">
+              <i class="fas fa-search-plus"></i> View Preview
+            </span>
           </div>
         </div>
         <div class="p-6">
@@ -551,13 +689,28 @@
     </div>
     
     <!-- Live Card: Satr Modest Activewear -->
-    <div class="reveal-up project-card group bg-brutal-dark border-4 border-brutal-light/10 hover:border-brutal-yellow transition-all duration-300 flex flex-col justify-between overflow-hidden shadow-brutal hover:shadow-brutal-yellow" data-categories="live easyorders ecommerce" data-status="live" data-live-url="https://satrrr.myeasyorders.com/">
+    <div class="reveal-up project-card group bg-brutal-dark border-4 border-brutal-light/10 hover:border-brutal-yellow transition-all duration-300 flex flex-col justify-between overflow-hidden shadow-brutal hover:shadow-brutal-yellow" 
+         data-categories="live easyorders ecommerce" 
+         data-status="live" 
+         data-live-url="https://satrrr.myeasyorders.com/"
+         data-case-study=""
+         data-preview-title="Satr Modest Activewear"
+         data-preview-desc="Online ordering and checkout storefront for Satr modest men's activewear with responsive size charts and variant filters."
+         data-preview-img="images/projects/satr.jpg"
+         data-preview-industry="Men's Modest Activewear"
+         data-preview-platform="Easy Orders">
       <div>
-        <div class="relative overflow-hidden h-48 bg-black">
-          <img src="images/projects/satr.jpg" alt="Satr Modest Activewear — Mohammed Essam Project" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
-          <div class="absolute top-3 right-3 bg-brutal-dark/95 border border-brutal-green px-2.5 py-0.5 font-mono text-[10px] text-brutal-green font-bold uppercase tracking-wider flex items-center gap-1.5 shadow-brutal">
+        <div class="relative overflow-hidden h-52 bg-black cursor-pointer project-preview-trigger group">
+          <img src="images/projects/satr.jpg" alt="Satr Modest Activewear — Mohammed Essam Project Preview Screenshot" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+          <div class="absolute top-3 right-3 bg-brutal-dark/95 border border-brutal-green px-2.5 py-0.5 font-mono text-[10px] text-brutal-green font-bold uppercase tracking-wider flex items-center gap-1.5 shadow-brutal z-10">
             <span class="w-1.5 h-1.5 bg-brutal-green rounded-full animate-pulse"></span>
             LIVE
+          </div>
+          <!-- Hover Overlay -->
+          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-200">
+            <span class="bg-brutal-dark/95 border-2 border-brutal-yellow text-brutal-yellow px-3 py-1.5 font-mono text-xs font-bold uppercase tracking-wider shadow-brutal flex items-center gap-2">
+              <i class="fas fa-search-plus"></i> View Preview
+            </span>
           </div>
         </div>
         <div class="p-6">
@@ -578,13 +731,28 @@
     </div>
     
     <!-- Live Card: Bloomcare EG -->
-    <div class="reveal-up project-card group bg-brutal-dark border-4 border-brutal-light/10 hover:border-brutal-yellow transition-all duration-300 flex flex-col justify-between overflow-hidden shadow-brutal hover:shadow-brutal-yellow" data-categories="live easyorders ecommerce" data-status="live" data-live-url="https://bloomcare.myeasyorders.com/">
+    <div class="reveal-up project-card group bg-brutal-dark border-4 border-brutal-light/10 hover:border-brutal-yellow transition-all duration-300 flex flex-col justify-between overflow-hidden shadow-brutal hover:shadow-brutal-yellow" 
+         data-categories="live easyorders ecommerce" 
+         data-status="live" 
+         data-live-url="https://bloomcare.myeasyorders.com/"
+         data-case-study=""
+         data-preview-title="Bloomcare EG"
+         data-preview-desc="Natural skincare and wellness cosmetics catalog with simplified ordering and mobile campaign checkout landing pages."
+         data-preview-img="images/projects/bloomcare.jpg"
+         data-preview-industry="Organic Wellness & Skincare"
+         data-preview-platform="Easy Orders">
       <div>
-        <div class="relative overflow-hidden h-48 bg-black">
-          <img src="images/projects/bloomcare.jpg" alt="Bloomcare EG — Mohammed Essam Project" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
-          <div class="absolute top-3 right-3 bg-brutal-dark/95 border border-brutal-green px-2.5 py-0.5 font-mono text-[10px] text-brutal-green font-bold uppercase tracking-wider flex items-center gap-1.5 shadow-brutal">
+        <div class="relative overflow-hidden h-52 bg-black cursor-pointer project-preview-trigger group">
+          <img src="images/projects/bloomcare.jpg" alt="Bloomcare EG — Mohammed Essam Project Preview Screenshot" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+          <div class="absolute top-3 right-3 bg-brutal-dark/95 border border-brutal-green px-2.5 py-0.5 font-mono text-[10px] text-brutal-green font-bold uppercase tracking-wider flex items-center gap-1.5 shadow-brutal z-10">
             <span class="w-1.5 h-1.5 bg-brutal-green rounded-full animate-pulse"></span>
             LIVE
+          </div>
+          <!-- Hover Overlay -->
+          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-200">
+            <span class="bg-brutal-dark/95 border-2 border-brutal-yellow text-brutal-yellow px-3 py-1.5 font-mono text-xs font-bold uppercase tracking-wider shadow-brutal flex items-center gap-2">
+              <i class="fas fa-search-plus"></i> View Preview
+            </span>
           </div>
         </div>
         <div class="p-6">
@@ -605,13 +773,28 @@
     </div>
     
     <!-- Live Card: FBISneakers -->
-    <div class="reveal-up project-card group bg-brutal-dark border-4 border-brutal-light/10 hover:border-brutal-yellow transition-all duration-300 flex flex-col justify-between overflow-hidden shadow-brutal hover:shadow-brutal-yellow" data-categories="live shopify ecommerce" data-status="live" data-live-url="https://fbisneakers.myshopify.com/">
+    <div class="reveal-up project-card group bg-brutal-dark border-4 border-brutal-light/10 hover:border-brutal-yellow transition-all duration-300 flex flex-col justify-between overflow-hidden shadow-brutal hover:shadow-brutal-yellow" 
+         data-categories="live shopify ecommerce" 
+         data-status="live" 
+         data-live-url="https://fbisneakers.myshopify.com/"
+         data-case-study=""
+         data-preview-title="FBISneakers"
+         data-preview-desc="Curated sneaker catalog (Vlt Kicks) with dynamic size selector, instant cart drawer, and mobile-optimized checkout experience."
+         data-preview-img="images/projects/fbisneakers.jpg"
+         data-preview-industry="Footwear & Sneakers"
+         data-preview-platform="Shopify">
       <div>
-        <div class="relative overflow-hidden h-48 bg-black">
-          <img src="images/projects/fbisneakers.jpg" alt="FBISneakers — Mohammed Essam Project" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
-          <div class="absolute top-3 right-3 bg-brutal-dark/95 border border-brutal-green px-2.5 py-0.5 font-mono text-[10px] text-brutal-green font-bold uppercase tracking-wider flex items-center gap-1.5 shadow-brutal">
+        <div class="relative overflow-hidden h-52 bg-black cursor-pointer project-preview-trigger group">
+          <img src="images/projects/fbisneakers.jpg" alt="FBISneakers — Mohammed Essam Project Preview Screenshot" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+          <div class="absolute top-3 right-3 bg-brutal-dark/95 border border-brutal-green px-2.5 py-0.5 font-mono text-[10px] text-brutal-green font-bold uppercase tracking-wider flex items-center gap-1.5 shadow-brutal z-10">
             <span class="w-1.5 h-1.5 bg-brutal-green rounded-full animate-pulse"></span>
             LIVE
+          </div>
+          <!-- Hover Overlay -->
+          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-200">
+            <span class="bg-brutal-dark/95 border-2 border-brutal-yellow text-brutal-yellow px-3 py-1.5 font-mono text-xs font-bold uppercase tracking-wider shadow-brutal flex items-center gap-2">
+              <i class="fas fa-search-plus"></i> View Preview
+            </span>
           </div>
         </div>
         <div class="p-6">
@@ -632,13 +815,28 @@
     </div>
     
     <!-- Live Card: Bebo Store EG -->
-    <div class="reveal-up project-card group bg-brutal-dark border-4 border-brutal-light/10 hover:border-brutal-yellow transition-all duration-300 flex flex-col justify-between overflow-hidden shadow-brutal hover:shadow-brutal-yellow" data-categories="live easyorders ecommerce websites" data-status="live" data-live-url="https://www.bebostoreegy.com/">
+    <div class="reveal-up project-card group bg-brutal-dark border-4 border-brutal-light/10 hover:border-brutal-yellow transition-all duration-300 flex flex-col justify-between overflow-hidden shadow-brutal hover:shadow-brutal-yellow" 
+         data-categories="live easyorders ecommerce websites" 
+         data-status="live" 
+         data-live-url="https://www.bebostoreegy.com/"
+         data-case-study=""
+         data-preview-title="Bebo Store EG"
+         data-preview-desc="Multi-brand global sneakers and footwear catalog with direct WhatsApp ordering and fast domestic courier delivery."
+         data-preview-img="images/projects/bebostore.jpg"
+         data-preview-industry="Footwear & Sneakers"
+         data-preview-platform="Web Platform">
       <div>
-        <div class="relative overflow-hidden h-48 bg-black">
-          <img src="images/projects/bebostore.jpg" alt="Bebo Store EG — Mohammed Essam Project" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
-          <div class="absolute top-3 right-3 bg-brutal-dark/95 border border-brutal-green px-2.5 py-0.5 font-mono text-[10px] text-brutal-green font-bold uppercase tracking-wider flex items-center gap-1.5 shadow-brutal">
+        <div class="relative overflow-hidden h-52 bg-black cursor-pointer project-preview-trigger group">
+          <img src="images/projects/bebostore.jpg" alt="Bebo Store EG — Mohammed Essam Project Preview Screenshot" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+          <div class="absolute top-3 right-3 bg-brutal-dark/95 border border-brutal-green px-2.5 py-0.5 font-mono text-[10px] text-brutal-green font-bold uppercase tracking-wider flex items-center gap-1.5 shadow-brutal z-10">
             <span class="w-1.5 h-1.5 bg-brutal-green rounded-full animate-pulse"></span>
             LIVE
+          </div>
+          <!-- Hover Overlay -->
+          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-200">
+            <span class="bg-brutal-dark/95 border-2 border-brutal-yellow text-brutal-yellow px-3 py-1.5 font-mono text-xs font-bold uppercase tracking-wider shadow-brutal flex items-center gap-2">
+              <i class="fas fa-search-plus"></i> View Preview
+            </span>
           </div>
         </div>
         <div class="p-6">
@@ -659,13 +857,28 @@
     </div>
     
     <!-- Live Card: Refa Oils -->
-    <div class="reveal-up project-card group bg-brutal-dark border-4 border-brutal-light/10 hover:border-brutal-yellow transition-all duration-300 flex flex-col justify-between overflow-hidden shadow-brutal hover:shadow-brutal-yellow" data-categories="live easyorders ecommerce" data-status="live" data-live-url="https://refaloils.myeasyorders.com/">
+    <div class="reveal-up project-card group bg-brutal-dark border-4 border-brutal-light/10 hover:border-brutal-yellow transition-all duration-300 flex flex-col justify-between overflow-hidden shadow-brutal hover:shadow-brutal-yellow" 
+         data-categories="live easyorders ecommerce" 
+         data-status="live" 
+         data-live-url="https://refaloils.myeasyorders.com/"
+         data-case-study=""
+         data-preview-title="Refa Oils"
+         data-preview-desc="Natural essential oils and aromatherapy wellness store with product catalog release and direct messaging checkout."
+         data-preview-img="images/projects/refaloils.jpg"
+         data-preview-industry="Organic Oils & Care"
+         data-preview-platform="Easy Orders">
       <div>
-        <div class="relative overflow-hidden h-48 bg-black">
-          <img src="images/projects/refaloils.jpg" alt="Refa Oils — Mohammed Essam Project" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
-          <div class="absolute top-3 right-3 bg-brutal-dark/95 border border-brutal-green px-2.5 py-0.5 font-mono text-[10px] text-brutal-green font-bold uppercase tracking-wider flex items-center gap-1.5 shadow-brutal">
+        <div class="relative overflow-hidden h-52 bg-black cursor-pointer project-preview-trigger group">
+          <img src="images/projects/refaloils.jpg" alt="Refa Oils — Mohammed Essam Project Preview Screenshot" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+          <div class="absolute top-3 right-3 bg-brutal-dark/95 border border-brutal-green px-2.5 py-0.5 font-mono text-[10px] text-brutal-green font-bold uppercase tracking-wider flex items-center gap-1.5 shadow-brutal z-10">
             <span class="w-1.5 h-1.5 bg-brutal-green rounded-full animate-pulse"></span>
             LIVE
+          </div>
+          <!-- Hover Overlay -->
+          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-200">
+            <span class="bg-brutal-dark/95 border-2 border-brutal-yellow text-brutal-yellow px-3 py-1.5 font-mono text-xs font-bold uppercase tracking-wider shadow-brutal flex items-center gap-2">
+              <i class="fas fa-search-plus"></i> View Preview
+            </span>
           </div>
         </div>
         <div class="p-6">
@@ -686,13 +899,28 @@
     </div>
     
     <!-- Live Card: FIA EG -->
-    <div class="reveal-up project-card group bg-brutal-dark border-4 border-brutal-light/10 hover:border-brutal-yellow transition-all duration-300 flex flex-col justify-between overflow-hidden shadow-brutal hover:shadow-brutal-yellow" data-categories="live shopify ecommerce" data-status="live" data-live-url="https://fia-eg.myshopify.com/">
+    <div class="reveal-up project-card group bg-brutal-dark border-4 border-brutal-light/10 hover:border-brutal-yellow transition-all duration-300 flex flex-col justify-between overflow-hidden shadow-brutal hover:shadow-brutal-yellow" 
+         data-categories="live shopify ecommerce" 
+         data-status="live" 
+         data-live-url="https://fia-eg.myshopify.com/"
+         data-case-study=""
+         data-preview-title="FIA EG"
+         data-preview-desc="Cosmetics and beauty products Shopify store optimized for mobile social traffic arriving from Instagram and TikTok ad campaigns."
+         data-preview-img="images/projects/fia.jpg"
+         data-preview-industry="Beauty & Cosmetics"
+         data-preview-platform="Shopify">
       <div>
-        <div class="relative overflow-hidden h-48 bg-black">
-          <img src="images/projects/fia.jpg" alt="FIA EG — Mohammed Essam Project" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
-          <div class="absolute top-3 right-3 bg-brutal-dark/95 border border-brutal-green px-2.5 py-0.5 font-mono text-[10px] text-brutal-green font-bold uppercase tracking-wider flex items-center gap-1.5 shadow-brutal">
+        <div class="relative overflow-hidden h-52 bg-black cursor-pointer project-preview-trigger group">
+          <img src="images/projects/fia.jpg" alt="FIA EG — Mohammed Essam Project Preview Screenshot" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+          <div class="absolute top-3 right-3 bg-brutal-dark/95 border border-brutal-green px-2.5 py-0.5 font-mono text-[10px] text-brutal-green font-bold uppercase tracking-wider flex items-center gap-1.5 shadow-brutal z-10">
             <span class="w-1.5 h-1.5 bg-brutal-green rounded-full animate-pulse"></span>
             LIVE
+          </div>
+          <!-- Hover Overlay -->
+          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-200">
+            <span class="bg-brutal-dark/95 border-2 border-brutal-yellow text-brutal-yellow px-3 py-1.5 font-mono text-xs font-bold uppercase tracking-wider shadow-brutal flex items-center gap-2">
+              <i class="fas fa-search-plus"></i> View Preview
+            </span>
           </div>
         </div>
         <div class="p-6">
@@ -713,13 +941,28 @@
     </div>
     
     <!-- Live Card: Tfawl -->
-    <div class="reveal-up project-card group bg-brutal-dark border-4 border-brutal-light/10 hover:border-brutal-yellow transition-all duration-300 flex flex-col justify-between overflow-hidden shadow-brutal hover:shadow-brutal-yellow" data-categories="live easyorders ecommerce" data-status="live" data-live-url="https://tfawl.myeasyorders.com/">
+    <div class="reveal-up project-card group bg-brutal-dark border-4 border-brutal-light/10 hover:border-brutal-yellow transition-all duration-300 flex flex-col justify-between overflow-hidden shadow-brutal hover:shadow-brutal-yellow" 
+         data-categories="live easyorders ecommerce" 
+         data-status="live" 
+         data-live-url="https://tfawl.myeasyorders.com/"
+         data-case-study=""
+         data-preview-title="Tfawl"
+         data-preview-desc="Artisan confectionary and sweets online menu with direct WhatsApp checkout and custom event catering orders."
+         data-preview-img="images/projects/tfawl.jpg"
+         data-preview-industry="Artisan Sweets & Food"
+         data-preview-platform="Easy Orders">
       <div>
-        <div class="relative overflow-hidden h-48 bg-black">
-          <img src="images/projects/tfawl.jpg" alt="Tfawl — Mohammed Essam Project" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
-          <div class="absolute top-3 right-3 bg-brutal-dark/95 border border-brutal-green px-2.5 py-0.5 font-mono text-[10px] text-brutal-green font-bold uppercase tracking-wider flex items-center gap-1.5 shadow-brutal">
+        <div class="relative overflow-hidden h-52 bg-black cursor-pointer project-preview-trigger group">
+          <img src="images/projects/tfawl.jpg" alt="Tfawl — Mohammed Essam Project Preview Screenshot" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+          <div class="absolute top-3 right-3 bg-brutal-dark/95 border border-brutal-green px-2.5 py-0.5 font-mono text-[10px] text-brutal-green font-bold uppercase tracking-wider flex items-center gap-1.5 shadow-brutal z-10">
             <span class="w-1.5 h-1.5 bg-brutal-green rounded-full animate-pulse"></span>
             LIVE
+          </div>
+          <!-- Hover Overlay -->
+          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-200">
+            <span class="bg-brutal-dark/95 border-2 border-brutal-yellow text-brutal-yellow px-3 py-1.5 font-mono text-xs font-bold uppercase tracking-wider shadow-brutal flex items-center gap-2">
+              <i class="fas fa-search-plus"></i> View Preview
+            </span>
           </div>
         </div>
         <div class="p-6">
@@ -756,18 +999,72 @@
           </div>
           <h2 class="font-mono font-bold text-3xl sm:text-4xl text-brutal-light">UPCOMING PROJECTS</h2>
         </div>
-        <span class="font-mono text-xs text-brutal-light/50">5 Projects In Pipeline / Relaunch</span>
+        <span class="font-mono text-xs text-brutal-light/50">6 Projects In Pipeline / Relaunch</span>
       </div>
 
       <div id="upcoming-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
         
-    <!-- Upcoming Card: Beescaree -->
-    <div class="reveal-up project-card group bg-brutal-dark border-4 border-brutal-light/10 hover:border-brutal-cyan transition-all duration-300 flex flex-col justify-between overflow-hidden shadow-brutal hover:shadow-brutal-cyan" data-categories="upcoming easyorders ecommerce" data-status="upcoming">
+    <!-- Upcoming Card: Pawfect Worlds -->
+    <div class="reveal-up project-card group bg-brutal-dark border-4 border-brutal-light/10 hover:border-brutal-cyan transition-all duration-300 flex flex-col justify-between overflow-hidden shadow-brutal hover:shadow-brutal-cyan" 
+         data-categories="upcoming shopify ecommerce" 
+         data-status="upcoming"
+         data-case-study="work/pawfect-worlds.html"
+         data-preview-title="Pawfect Worlds"
+         data-preview-desc="Premium pet care and accessories store undergoing scheduled payment updates and catalog restructuring."
+         data-preview-img="images/projects/pawfectworlds.jpg"
+         data-preview-industry="Pet Care & Lifestyle"
+         data-preview-platform="Shopify">
       <div>
-        <div class="relative overflow-hidden h-48 bg-black">
-          <img src="images/projects/beescaree.jpg" alt="Beescaree — Mohammed Essam Project" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90 group-hover:opacity-100" loading="lazy" />
-          <div class="absolute top-3 right-3 bg-brutal-dark/95 border text-brutal-pink border-brutal-pink px-2.5 py-0.5 font-mono text-[10px] font-bold uppercase tracking-wider shadow-brutal">
+        <div class="relative overflow-hidden h-52 bg-black cursor-pointer project-preview-trigger group">
+          <img src="images/projects/pawfectworlds.jpg" alt="Pawfect Worlds — Mohammed Essam Project Preview Screenshot" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90 group-hover:opacity-100" loading="lazy" />
+          <div class="absolute top-3 right-3 bg-brutal-dark/95 border text-brutal-pink border-brutal-pink px-2.5 py-0.5 font-mono text-[10px] font-bold uppercase tracking-wider shadow-brutal z-10">
             TEMPORARILY UNAVAILABLE
+          </div>
+          <!-- Hover Overlay -->
+          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-200">
+            <span class="bg-brutal-dark/95 border-2 border-brutal-cyan text-brutal-cyan px-3 py-1.5 font-mono text-xs font-bold uppercase tracking-wider shadow-brutal flex items-center gap-2">
+              <i class="fas fa-search-plus"></i> View Preview
+            </span>
+          </div>
+        </div>
+        <div class="p-6">
+          <div class="flex items-center justify-between gap-2 mb-2 font-mono text-xs text-brutal-cyan">
+            <span>Pet Care & Lifestyle</span>
+            <span class="text-brutal-light/40">Platform: Shopify</span>
+          </div>
+          <h3 class="font-mono font-bold text-xl text-brutal-light group-hover:text-brutal-cyan transition-colors duration-200 mb-2">Pawfect Worlds</h3>
+          <p class="text-sm font-grotesk text-brutal-light/70 leading-relaxed">
+            Premium pet care and accessories store undergoing scheduled payment updates and catalog restructuring.
+          </p>
+        </div>
+      </div>
+      <div class="p-6 pt-0 flex items-center justify-between font-mono border-t border-brutal-light/10 pt-4">
+        <div><a href="work/pawfect-worlds.html" class="text-brutal-cyan hover:underline font-bold text-xs">VIEW CASE STUDY →</a></div>
+        <span class="font-mono text-[10px] uppercase text-brutal-light/40 tracking-wider">Client Proof Archive</span>
+      </div>
+    </div>
+    
+    <!-- Upcoming Card: Beescaree -->
+    <div class="reveal-up project-card group bg-brutal-dark border-4 border-brutal-light/10 hover:border-brutal-cyan transition-all duration-300 flex flex-col justify-between overflow-hidden shadow-brutal hover:shadow-brutal-cyan" 
+         data-categories="upcoming easyorders ecommerce" 
+         data-status="upcoming"
+         data-case-study="work/beescaree.html"
+         data-preview-title="Beescaree"
+         data-preview-desc="Pure organic honey products and natural health catalog with direct ordering and domestic courier delivery. Under scheduled domain renewal."
+         data-preview-img="images/projects/beescaree.jpg"
+         data-preview-industry="Organic Health & Care"
+         data-preview-platform="Easy Orders / Web">
+      <div>
+        <div class="relative overflow-hidden h-52 bg-black cursor-pointer project-preview-trigger group">
+          <img src="images/projects/beescaree.jpg" alt="Beescaree — Mohammed Essam Project Preview Screenshot" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90 group-hover:opacity-100" loading="lazy" />
+          <div class="absolute top-3 right-3 bg-brutal-dark/95 border text-brutal-pink border-brutal-pink px-2.5 py-0.5 font-mono text-[10px] font-bold uppercase tracking-wider shadow-brutal z-10">
+            TEMPORARILY UNAVAILABLE
+          </div>
+          <!-- Hover Overlay -->
+          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-200">
+            <span class="bg-brutal-dark/95 border-2 border-brutal-cyan text-brutal-cyan px-3 py-1.5 font-mono text-xs font-bold uppercase tracking-wider shadow-brutal flex items-center gap-2">
+              <i class="fas fa-search-plus"></i> View Preview
+            </span>
           </div>
         </div>
         <div class="p-6">
@@ -788,12 +1085,26 @@
     </div>
     
     <!-- Upcoming Card: Fioonka -->
-    <div class="reveal-up project-card group bg-brutal-dark border-4 border-brutal-light/10 hover:border-brutal-cyan transition-all duration-300 flex flex-col justify-between overflow-hidden shadow-brutal hover:shadow-brutal-cyan" data-categories="upcoming easyorders ecommerce" data-status="upcoming">
+    <div class="reveal-up project-card group bg-brutal-dark border-4 border-brutal-light/10 hover:border-brutal-cyan transition-all duration-300 flex flex-col justify-between overflow-hidden shadow-brutal hover:shadow-brutal-cyan" 
+         data-categories="upcoming easyorders ecommerce" 
+         data-status="upcoming"
+         data-case-study=""
+         data-preview-title="Fioonka"
+         data-preview-desc="Curated luxury gift items, bouquets, and women's accessories store with direct WhatsApp ordering. Under scheduled catalog restructuring."
+         data-preview-img="images/projects/fioonka.jpg"
+         data-preview-industry="Gifts & Accessories"
+         data-preview-platform="Easy Orders / Web">
       <div>
-        <div class="relative overflow-hidden h-48 bg-black">
-          <img src="images/projects/fioonka.jpg" alt="Fioonka — Mohammed Essam Project" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90 group-hover:opacity-100" loading="lazy" />
-          <div class="absolute top-3 right-3 bg-brutal-dark/95 border text-brutal-pink border-brutal-pink px-2.5 py-0.5 font-mono text-[10px] font-bold uppercase tracking-wider shadow-brutal">
+        <div class="relative overflow-hidden h-52 bg-black cursor-pointer project-preview-trigger group">
+          <img src="images/projects/fioonka.jpg" alt="Fioonka — Mohammed Essam Project Preview Screenshot" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90 group-hover:opacity-100" loading="lazy" />
+          <div class="absolute top-3 right-3 bg-brutal-dark/95 border text-brutal-pink border-brutal-pink px-2.5 py-0.5 font-mono text-[10px] font-bold uppercase tracking-wider shadow-brutal z-10">
             TEMPORARILY UNAVAILABLE
+          </div>
+          <!-- Hover Overlay -->
+          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-200">
+            <span class="bg-brutal-dark/95 border-2 border-brutal-cyan text-brutal-cyan px-3 py-1.5 font-mono text-xs font-bold uppercase tracking-wider shadow-brutal flex items-center gap-2">
+              <i class="fas fa-search-plus"></i> View Preview
+            </span>
           </div>
         </div>
         <div class="p-6">
@@ -814,12 +1125,26 @@
     </div>
     
     <!-- Upcoming Card: Dukaan AK -->
-    <div class="reveal-up project-card group bg-brutal-dark border-4 border-brutal-light/10 hover:border-brutal-cyan transition-all duration-300 flex flex-col justify-between overflow-hidden shadow-brutal hover:shadow-brutal-cyan" data-categories="upcoming shopify ecommerce" data-status="upcoming">
+    <div class="reveal-up project-card group bg-brutal-dark border-4 border-brutal-light/10 hover:border-brutal-cyan transition-all duration-300 flex flex-col justify-between overflow-hidden shadow-brutal hover:shadow-brutal-cyan" 
+         data-categories="upcoming shopify ecommerce" 
+         data-status="upcoming"
+         data-case-study=""
+         data-preview-title="Dukaan AK"
+         data-preview-desc="Multi-category retail store with automated supplier inventory feeds, awaiting scheduled domain renewal."
+         data-preview-img="images/projects/dukaan.jpg"
+         data-preview-industry="Multi-Category Retail"
+         data-preview-platform="Shopify">
       <div>
-        <div class="relative overflow-hidden h-48 bg-black">
-          <img src="images/projects/dukaan.jpg" alt="Dukaan AK — Mohammed Essam Project" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90 group-hover:opacity-100" loading="lazy" />
-          <div class="absolute top-3 right-3 bg-brutal-dark/95 border text-brutal-pink border-brutal-pink px-2.5 py-0.5 font-mono text-[10px] font-bold uppercase tracking-wider shadow-brutal">
+        <div class="relative overflow-hidden h-52 bg-black cursor-pointer project-preview-trigger group">
+          <img src="images/projects/dukaan.jpg" alt="Dukaan AK — Mohammed Essam Project Preview Screenshot" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90 group-hover:opacity-100" loading="lazy" />
+          <div class="absolute top-3 right-3 bg-brutal-dark/95 border text-brutal-pink border-brutal-pink px-2.5 py-0.5 font-mono text-[10px] font-bold uppercase tracking-wider shadow-brutal z-10">
             TEMPORARILY UNAVAILABLE
+          </div>
+          <!-- Hover Overlay -->
+          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-200">
+            <span class="bg-brutal-dark/95 border-2 border-brutal-cyan text-brutal-cyan px-3 py-1.5 font-mono text-xs font-bold uppercase tracking-wider shadow-brutal flex items-center gap-2">
+              <i class="fas fa-search-plus"></i> View Preview
+            </span>
           </div>
         </div>
         <div class="p-6">
@@ -840,12 +1165,26 @@
     </div>
     
     <!-- Upcoming Card: Balance Egypt -->
-    <div class="reveal-up project-card group bg-brutal-dark border-4 border-brutal-light/10 hover:border-brutal-cyan transition-all duration-300 flex flex-col justify-between overflow-hidden shadow-brutal hover:shadow-brutal-cyan" data-categories="upcoming ecommerce websites" data-status="upcoming">
+    <div class="reveal-up project-card group bg-brutal-dark border-4 border-brutal-light/10 hover:border-brutal-cyan transition-all duration-300 flex flex-col justify-between overflow-hidden shadow-brutal hover:shadow-brutal-cyan" 
+         data-categories="upcoming ecommerce websites" 
+         data-status="upcoming"
+         data-case-study=""
+         data-preview-title="Balance Egypt"
+         data-preview-desc="Health supplements and sports nutrition store platform undergoing payment gateway and inventory onboarding."
+         data-preview-img="images/projects/balance.jpg"
+         data-preview-industry="Fitness & Nutrition"
+         data-preview-platform="Web Platform">
       <div>
-        <div class="relative overflow-hidden h-48 bg-black">
-          <img src="images/projects/balance.jpg" alt="Balance Egypt — Mohammed Essam Project" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90 group-hover:opacity-100" loading="lazy" />
-          <div class="absolute top-3 right-3 bg-brutal-dark/95 border text-brutal-cyan border-brutal-cyan px-2.5 py-0.5 font-mono text-[10px] font-bold uppercase tracking-wider shadow-brutal">
+        <div class="relative overflow-hidden h-52 bg-black cursor-pointer project-preview-trigger group">
+          <img src="images/projects/balance.jpg" alt="Balance Egypt — Mohammed Essam Project Preview Screenshot" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90 group-hover:opacity-100" loading="lazy" />
+          <div class="absolute top-3 right-3 bg-brutal-dark/95 border text-brutal-cyan border-brutal-cyan px-2.5 py-0.5 font-mono text-[10px] font-bold uppercase tracking-wider shadow-brutal z-10">
             COMING SOON
+          </div>
+          <!-- Hover Overlay -->
+          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-200">
+            <span class="bg-brutal-dark/95 border-2 border-brutal-cyan text-brutal-cyan px-3 py-1.5 font-mono text-xs font-bold uppercase tracking-wider shadow-brutal flex items-center gap-2">
+              <i class="fas fa-search-plus"></i> View Preview
+            </span>
           </div>
         </div>
         <div class="p-6">
@@ -866,12 +1205,26 @@
     </div>
     
     <!-- Upcoming Card: Yahia Salah -->
-    <div class="reveal-up project-card group bg-brutal-dark border-4 border-brutal-light/10 hover:border-brutal-cyan transition-all duration-300 flex flex-col justify-between overflow-hidden shadow-brutal hover:shadow-brutal-cyan" data-categories="upcoming websites" data-status="upcoming">
+    <div class="reveal-up project-card group bg-brutal-dark border-4 border-brutal-light/10 hover:border-brutal-cyan transition-all duration-300 flex flex-col justify-between overflow-hidden shadow-brutal hover:shadow-brutal-cyan" 
+         data-categories="upcoming websites" 
+         data-status="upcoming"
+         data-case-study=""
+         data-preview-title="Yahia Salah"
+         data-preview-desc="Personal brand portfolio website with custom layout and creative project showcases. Domain DNS migration in progress."
+         data-preview-img="images/projects/yahia.jpg"
+         data-preview-industry="Portfolio / Personal Brand"
+         data-preview-platform="Web Platform">
       <div>
-        <div class="relative overflow-hidden h-48 bg-black">
-          <img src="images/projects/yahia.jpg" alt="Yahia Salah — Mohammed Essam Project" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90 group-hover:opacity-100" loading="lazy" />
-          <div class="absolute top-3 right-3 bg-brutal-dark/95 border text-brutal-pink border-brutal-pink px-2.5 py-0.5 font-mono text-[10px] font-bold uppercase tracking-wider shadow-brutal">
+        <div class="relative overflow-hidden h-52 bg-black cursor-pointer project-preview-trigger group">
+          <img src="images/projects/yahia.jpg" alt="Yahia Salah — Mohammed Essam Project Preview Screenshot" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90 group-hover:opacity-100" loading="lazy" />
+          <div class="absolute top-3 right-3 bg-brutal-dark/95 border text-brutal-pink border-brutal-pink px-2.5 py-0.5 font-mono text-[10px] font-bold uppercase tracking-wider shadow-brutal z-10">
             TEMPORARILY UNAVAILABLE
+          </div>
+          <!-- Hover Overlay -->
+          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-200">
+            <span class="bg-brutal-dark/95 border-2 border-brutal-cyan text-brutal-cyan px-3 py-1.5 font-mono text-xs font-bold uppercase tracking-wider shadow-brutal flex items-center gap-2">
+              <i class="fas fa-search-plus"></i> View Preview
+            </span>
           </div>
         </div>
         <div class="p-6">
@@ -979,6 +1332,50 @@
       </div>
     </div>
   </footer>
+
+  
+  <!-- ════════════════════════════════════════════════ PROJECT PREVIEW MODAL ═══ -->
+  <div id="project-preview-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-sm transition-opacity duration-300">
+    <div class="relative w-full max-w-4xl bg-brutal-dark border-4 border-brutal-yellow shadow-brutal-yellow overflow-hidden flex flex-col max-h-[90vh]">
+      
+      <!-- Modal Header -->
+      <div class="flex items-center justify-between p-4 bg-brutal-gray border-b-2 border-brutal-light/20">
+        <div class="flex items-center gap-3">
+          <span id="modal-status-badge" class="font-mono text-xs font-bold px-2.5 py-1 bg-brutal-green text-brutal-dark uppercase tracking-wider">LIVE</span>
+          <h3 id="modal-title" class="font-mono font-bold text-lg sm:text-xl text-brutal-light truncate">Project Name</h3>
+        </div>
+        <button id="modal-close-btn" class="w-8 h-8 flex items-center justify-center bg-brutal-dark text-brutal-yellow border border-brutal-yellow hover:bg-brutal-yellow hover:text-brutal-dark transition-all font-mono font-bold text-lg">✕</button>
+      </div>
+
+      <!-- Modal Body / Screenshot -->
+      <div class="overflow-y-auto p-4 sm:p-6 space-y-4 bg-brutal-dark">
+        <div class="relative overflow-hidden border-2 border-brutal-light/20 bg-black flex items-center justify-center">
+          <img id="modal-img" src="" alt="Project Preview Screenshot" class="w-full h-auto max-h-[55vh] object-contain" />
+        </div>
+        
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pt-2">
+          <div>
+            <div class="flex items-center gap-2 font-mono text-xs text-brutal-yellow mb-1">
+              <span id="modal-industry">Industry</span>
+              <span>•</span>
+              <span id="modal-platform" class="text-brutal-light/60">Platform</span>
+            </div>
+            <p id="modal-desc" class="font-grotesk text-sm text-brutal-light/80 leading-relaxed max-w-xl">Project description...</p>
+          </div>
+
+          <div class="flex items-center gap-3 shrink-0">
+            <a id="modal-live-link" href="#" target="_blank" rel="noopener noreferrer" class="hidden inline-flex items-center gap-2 bg-brutal-yellow text-brutal-dark font-mono font-bold text-xs uppercase px-5 py-3 border-2 border-brutal-dark shadow-brutal hover:bg-brutal-orange transition-all">
+              Visit Live Site ↗
+            </a>
+            <a id="modal-case-link" href="#" class="hidden inline-flex items-center gap-2 border-2 border-brutal-yellow text-brutal-yellow font-mono font-bold text-xs uppercase px-4 py-3 hover:bg-brutal-yellow hover:text-brutal-dark transition-all">
+              Case Study →
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
 
   <!-- Floating Stats Card -->
   <div id="counter-card" class="hidden fixed bottom-4 right-4 z-50 bg-brutal-gray border-2 border-brutal-yellow p-4 shadow-brutal font-mono text-xs text-brutal-light">
