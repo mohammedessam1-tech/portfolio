@@ -218,8 +218,8 @@
             <a href="../contact.html?service=easyorders" class="bg-brutal-yellow text-brutal-dark font-mono font-bold text-sm uppercase tracking-widest px-8 py-4 border-4 border-brutal-dark shadow-brutal hover:bg-brutal-orange transition-all">
               Start Easy Orders Project →
             </a>
-            <a href="../work.html" class="bg-transparent text-brutal-yellow font-mono font-bold text-sm uppercase tracking-widest px-8 py-4 border-4 border-brutal-yellow hover:bg-brutal-yellow hover:text-brutal-dark transition-all">
-              View Easy Orders Work
+            <a href="#featured-easyorders-work" class="bg-transparent text-brutal-yellow font-mono font-bold text-sm uppercase tracking-widest px-8 py-4 border-4 border-brutal-yellow hover:bg-brutal-yellow hover:text-brutal-dark transition-all">
+              View Easy Orders Stores ↓
             </a>
           </div>
         </div>
@@ -348,41 +348,86 @@
   </section>
 
   <!-- FEATURED EASY ORDERS WORK PREVIEW -->
-  <section class="py-20 bg-brutal-gray border-t-4 border-brutal-yellow">
+  <section id="featured-easyorders-work" class="py-20 bg-brutal-gray border-t-4 border-brutal-yellow">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-12 gap-4">
         <div>
           <span class="font-mono text-xs font-bold text-brutal-yellow uppercase tracking-widest block mb-2">// Proof of Work</span>
           <h2 class="font-mono font-bold text-3xl sm:text-4xl text-brutal-light">FEATURED EASY ORDERS PROJECTS</h2>
         </div>
-        <a href="../work.html" class="font-mono text-sm font-bold text-brutal-yellow hover:underline">View All Easy Orders Work →</a>
+        <a href="../work.html?filter=easyorders" class="font-mono text-sm font-bold text-brutal-yellow hover:underline">View All Easy Orders Work →</a>
       </div>
 
       <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        <div class="bg-brutal-dark border-2 border-brutal-light/10 hover:border-brutal-yellow p-4 transition-all">
-          <img src="../images/projects/inaya.jpg" alt="Inaya" class="w-full h-36 object-cover mb-3" />
-          <h3 class="font-mono font-bold text-base text-brutal-light mb-1">Inaya</h3>
-          <span class="font-mono text-[10px] text-brutal-yellow uppercase block mb-2">Beauty & Personal Care</span>
-          <a href="../work/inaya.html" class="font-mono text-xs text-brutal-yellow hover:underline">View Case Study →</a>
+        
+        <!-- Redbul CuP -->
+        <div class="bg-brutal-dark border-2 border-brutal-light/10 hover:border-brutal-yellow p-4 transition-all flex flex-col justify-between shadow-brutal">
+          <div>
+            <div class="relative overflow-hidden h-36 bg-black mb-3 cursor-pointer project-preview-trigger group">
+              <img src="../images/projects/redbulcup.jpg" alt="Redbul CuP" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+              <div class="absolute top-2 right-2 bg-brutal-dark/95 border border-brutal-green px-2 py-0.5 font-mono text-[9px] text-brutal-green font-bold uppercase tracking-wider flex items-center gap-1 shadow-brutal">
+                <span class="w-1.5 h-1.5 bg-brutal-green rounded-full animate-pulse"></span>
+                LIVE
+              </div>
+            </div>
+            <h3 class="font-mono font-bold text-base text-brutal-light mb-1">Redbul CuP</h3>
+            <span class="font-mono text-[10px] text-brutal-yellow uppercase block mb-2">Drinkware & Tumblers</span>
+            <p class="text-xs font-grotesk text-brutal-light/70 mb-3">Viral beverage cups e-commerce storefront with fast direct checkout across Saudi Arabia.</p>
+          </div>
+          <a href="https://www.redbulcup.store/" target="_blank" rel="noopener noreferrer" class="font-mono text-xs text-brutal-yellow hover:underline font-bold">Live Storefront ↗</a>
         </div>
-        <div class="bg-brutal-dark border-2 border-brutal-light/10 hover:border-brutal-yellow p-4 transition-all">
-          <img src="../images/projects/technostore.jpg" alt="Techno Store EG" class="w-full h-36 object-cover mb-3" />
-          <h3 class="font-mono font-bold text-base text-brutal-light mb-1">Techno Store EG</h3>
-          <span class="font-mono text-[10px] text-brutal-yellow uppercase block mb-2">Electronics & Gadgets</span>
-          <a href="../work/techno-store-eg.html" class="font-mono text-xs text-brutal-yellow hover:underline">View Case Study →</a>
+
+        <!-- Inaya -->
+        <div class="bg-brutal-dark border-2 border-brutal-light/10 hover:border-brutal-yellow p-4 transition-all flex flex-col justify-between shadow-brutal">
+          <div>
+            <div class="relative overflow-hidden h-36 bg-black mb-3 cursor-pointer project-preview-trigger group">
+              <img src="../images/projects/inaya.jpg" alt="Inaya" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+              <div class="absolute top-2 right-2 bg-brutal-dark/95 border border-brutal-green px-2 py-0.5 font-mono text-[9px] text-brutal-green font-bold uppercase tracking-wider flex items-center gap-1 shadow-brutal">
+                <span class="w-1.5 h-1.5 bg-brutal-green rounded-full animate-pulse"></span>
+                LIVE
+              </div>
+            </div>
+            <h3 class="font-mono font-bold text-base text-brutal-light mb-1">Inaya</h3>
+            <span class="font-mono text-[10px] text-brutal-yellow uppercase block mb-2">Beauty & Personal Care</span>
+            <p class="text-xs font-grotesk text-brutal-light/70 mb-3">Organic beauty and cosmetics storefront with WhatsApp order routing.</p>
+          </div>
+          <a href="../work/inaya.html" class="font-mono text-xs text-brutal-yellow hover:underline font-bold">View Case Study →</a>
         </div>
-        <div class="bg-brutal-dark border-2 border-brutal-light/10 hover:border-brutal-yellow p-4 transition-all">
-          <img src="../images/projects/beescaree.jpg" alt="Beescaree" class="w-full h-36 object-cover mb-3" />
-          <h3 class="font-mono font-bold text-base text-brutal-light mb-1">Beescaree</h3>
-          <span class="font-mono text-[10px] text-brutal-yellow uppercase block mb-2">Organic Health & Honey</span>
-          <a href="../work/beescaree.html" class="font-mono text-xs text-brutal-yellow hover:underline">View Case Study →</a>
+
+        <!-- Techno Store EG -->
+        <div class="bg-brutal-dark border-2 border-brutal-light/10 hover:border-brutal-yellow p-4 transition-all flex flex-col justify-between shadow-brutal">
+          <div>
+            <div class="relative overflow-hidden h-36 bg-black mb-3 cursor-pointer project-preview-trigger group">
+              <img src="../images/projects/technostore.jpg" alt="Techno Store EG" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+              <div class="absolute top-2 right-2 bg-brutal-dark/95 border border-brutal-green px-2 py-0.5 font-mono text-[9px] text-brutal-green font-bold uppercase tracking-wider flex items-center gap-1 shadow-brutal">
+                <span class="w-1.5 h-1.5 bg-brutal-green rounded-full animate-pulse"></span>
+                LIVE
+              </div>
+            </div>
+            <h3 class="font-mono font-bold text-base text-brutal-light mb-1">Techno Store EG</h3>
+            <span class="font-mono text-[10px] text-brutal-yellow uppercase block mb-2">Electronics & Gadgets</span>
+            <p class="text-xs font-grotesk text-brutal-light/70 mb-3">Smart gadgets ordering storefront with bundle promotions.</p>
+          </div>
+          <a href="../work/techno-store-eg.html" class="font-mono text-xs text-brutal-yellow hover:underline font-bold">View Case Study →</a>
         </div>
-        <div class="bg-brutal-dark border-2 border-brutal-light/10 hover:border-brutal-yellow p-4 transition-all">
-          <img src="../images/projects/satr.jpg" alt="Satr" class="w-full h-36 object-cover mb-3" />
-          <h3 class="font-mono font-bold text-base text-brutal-light mb-1">Satr Modest Activewear</h3>
-          <span class="font-mono text-[10px] text-brutal-yellow uppercase block mb-2">Men's Athletic Apparel</span>
-          <a href="https://satrrr.myeasyorders.com/" target="_blank" rel="noopener noreferrer" class="font-mono text-xs text-brutal-yellow hover:underline">Live Storefront ↗</a>
+
+        <!-- Satr -->
+        <div class="bg-brutal-dark border-2 border-brutal-light/10 hover:border-brutal-yellow p-4 transition-all flex flex-col justify-between shadow-brutal">
+          <div>
+            <div class="relative overflow-hidden h-36 bg-black mb-3 cursor-pointer project-preview-trigger group">
+              <img src="../images/projects/satr.jpg" alt="Satr Modest Activewear" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+              <div class="absolute top-2 right-2 bg-brutal-dark/95 border border-brutal-green px-2 py-0.5 font-mono text-[9px] text-brutal-green font-bold uppercase tracking-wider flex items-center gap-1 shadow-brutal">
+                <span class="w-1.5 h-1.5 bg-brutal-green rounded-full animate-pulse"></span>
+                LIVE
+              </div>
+            </div>
+            <h3 class="font-mono font-bold text-base text-brutal-light mb-1">Satr Modest Activewear</h3>
+            <span class="font-mono text-[10px] text-brutal-yellow uppercase block mb-2">Men's Athletic Apparel</span>
+            <p class="text-xs font-grotesk text-brutal-light/70 mb-3">Modest sportswear catalog with responsive size charts.</p>
+          </div>
+          <a href="https://satrrr.myeasyorders.com/" target="_blank" rel="noopener noreferrer" class="font-mono text-xs text-brutal-yellow hover:underline font-bold">Live Storefront ↗</a>
         </div>
+
       </div>
     </div>
   </section>
