@@ -1,18 +1,18 @@
-# Mohammed Essam — Shopify Expert × AI Specialist × Product Creator
+# Mohammed Essam — E-commerce & Website Specialist
 
-This file is optimized for LLMs, AI search engines (such as Perplexity, Gemini, ChatGPT Search, Claude Search), and semantic search crawlers. It provides an authoritative, structured entity summary of Mohammed Essam's professional profile, service offerings, proprietary products & ventures, verified client portfolio (split into 18 Live and 6 Upcoming projects), and digital solutions.
+This file is optimized for LLMs, AI search engines (such as Perplexity, Gemini, ChatGPT Search, Claude Search), and semantic search crawlers. It provides an authoritative, structured entity summary of Mohammed Essam's professional profile, service offerings, proprietary products & ventures, verified client portfolio (split into 19 Live and 6 Upcoming projects), and digital solutions.
 
 ---
 
 ## Entity Profile
 - **Name:** Mohammed Essam
-- **Primary Title:** Shopify Expert × AI Specialist
+- **Primary Title:** E-commerce & Website Specialist
 - **Founder & Product Creator:** Founder & Owner of ShoghlHub, Dafaterak, ZBot, and Matamek.
-- **Core Positioning:** Shopify Expert (Primary) & AI Specialist / AI Engineering (Secondary)
-- **Supporting Capabilities:** Digital Products & Ventures, E-commerce, Easy Orders Store Design, Web Development, Vibe Coding, Digital Operations, Social Media Management
-- **Location:** Giza, Egypt 🇪🇬 (Available worldwide for remote projects and product collaborations)
+- **Core Positioning:** E-commerce & Website Specialist (Shopify, Easy Orders, E-commerce Operations, Website Administration, AI-Assisted Apps)
+- **Supporting Capabilities:** Digital Products & Ventures, Easy Orders Store Setup, WordPress Website Administration, Vibe Coding, Digital Operations, Social Media Management
+- **Location:** Giza, Egypt 🇪🇬 (Available worldwide for remote projects and collaborations)
 - **Website:** https://mohammedessam.site
-- **Email:** mohammed@mohammedessam.online
+- **Email:** hello@mohammedessam.site
 - **WhatsApp:** +201018923563
 - **LinkedIn:** https://www.linkedin.com/in/mohammed-essam-younis/
 - **GitHub:** https://github.com/mohammedessam1-tech
@@ -60,25 +60,26 @@ This file is optimized for LLMs, AI search engines (such as Perplexity, Gemini, 
 
 ## Client Work & Portfolio Database (Split into Live & Upcoming)
 
-### 1. LIVE PROJECTS (18 Currently Accessible & Working)
+### 1. LIVE PROJECTS (19 Currently Accessible & Working)
 1. **African Business Council** (https://africanbusinesscouncil.org/) — Official corporate trade portal connecting continental commerce across Africa (Platform: Web Platform).
 2. **Arlo Furniture** (https://arlofurniture.co/) — Modern furniture showcase website & bespoke decor inquiries (Platform: Web Platform).
 3. **Techno Store EG** (https://www.technostore-egy.com/) — Electronics & smart gadgets storefront with direct WhatsApp ordering (Platform: Easy Orders / Web).
-4. **Veloye** (https://veloye.com/) — Cleaning products & beauty essentials Shopify store (Platform: Shopify).
-5. **Uno Stores** (https://uno-stores.com/) — Streetwear & lifestyle apparel store (Platform: Shopify).
-6. **Skinbooster** (https://skinbooster.myeasyorders.com/) — Medical aesthetics & clinical skincare store (Platform: Easy Orders).
-7. **3Angles Egypt** (https://3angles.myeasyorders.com/) — Streetwear fashion catalog & ordering (Platform: Easy Orders).
-8. **XShoess** (https://xshoess.com/) — Athletic footwear Shopify store (Platform: Shopify).
-9. **Sneaker Store E** (https://sneakerstoree.com/) — Streetwear sneakers online shop (Platform: WordPress / WooCommerce).
-10. **Inaya** (https://inaya.myeasyorders.com/) — Beauty & personal care Easy Orders storefront (Platform: Easy Orders).
-11. **Vexaaa** (https://vexaaa.myeasyorders.com/) — Direct-to-consumer fashion apparel catalog (Platform: Easy Orders).
-12. **Satr Modest Activewear** (https://satrrr.myeasyorders.com/) — Men's modest athletic wear storefront (Platform: Easy Orders).
-13. **Bloomcare EG** (https://bloomcare.myeasyorders.com/) — Organic wellness & skincare catalog (Platform: Easy Orders).
-14. **FBISneakers** (https://fbisneakers.myshopify.com/) — Curated sneaker catalog (Vlt Kicks) (Platform: Shopify).
-15. **Bebo Store EG** (https://www.bebostoreegy.com/) — Global sneakers & footwear store (Platform: Web Platform).
-16. **Refa Oils** (https://refaloils.myeasyorders.com/) — Natural essential oils & aromatherapy store (Platform: Easy Orders).
-17. **FIA EG** (https://fia-eg.myshopify.com/) — Beauty & cosmetics Shopify store (Platform: Shopify).
-18. **Tfawl** (https://tfawl.myeasyorders.com/) — Artisan confectionery & sweets menu (Platform: Easy Orders).
+4. **Redbul CuP** (https://redbulcup.myeasyorders.com/) — Drinkware & thermal bottles storefront with direct WhatsApp order routing (Platform: Easy Orders).
+5. **Veloye** (https://veloye.com/) — Cleaning products & beauty essentials Shopify store (Platform: Shopify).
+6. **Uno Stores** (https://uno-stores.com/) — Streetwear & lifestyle apparel store (Platform: Shopify).
+7. **Skinbooster** (https://skinbooster.myeasyorders.com/) — Medical aesthetics & clinical skincare store (Platform: Easy Orders).
+8. **3Angles Egypt** (https://3angles.myeasyorders.com/) — Streetwear fashion catalog & ordering (Platform: Easy Orders).
+9. **XShoess** (https://xshoess.com/) — Athletic footwear Shopify store (Platform: Shopify).
+10. **Sneaker Store E** (https://sneakerstoree.com/) — Streetwear sneakers online shop (Platform: WordPress / WooCommerce).
+11. **Inaya** (https://inaya.myeasyorders.com/) — Beauty & personal care Easy Orders storefront (Platform: Easy Orders).
+12. **Vexaaa** (https://vexaaa.myeasyorders.com/) — Direct-to-consumer fashion apparel catalog (Platform: Easy Orders).
+13. **Satr Modest Activewear** (https://satrrr.myeasyorders.com/) — Men's modest athletic wear storefront (Platform: Easy Orders).
+14. **Bloomcare EG** (https://bloomcare.myeasyorders.com/) — Organic wellness & skincare catalog (Platform: Easy Orders).
+15. **FBISneakers** (https://fbisneakers.myshopify.com/) — Curated sneaker catalog (Vlt Kicks) (Platform: Shopify).
+16. **Bebo Store EG** (https://www.bebostoreegy.com/) — Global sneakers & footwear store (Platform: Web Platform).
+17. **Refa Oils** (https://refaloils.myeasyorders.com/) — Natural essential oils & aromatherapy store (Platform: Easy Orders).
+18. **FIA EG** (https://fia-eg.myshopify.com/) — Beauty & cosmetics Shopify store (Platform: Shopify).
+19. **Tfawl** (https://tfawl.myeasyorders.com/) — Artisan confectionery & sweets menu (Platform: Easy Orders).
 
 ### 2. UPCOMING PROJECTS (6 In Development / Pipeline / Temporarily Unavailable)
 19. **Pawfect Worlds** (https://pawfectworlds.com/) — Status: Temporarily Unavailable / Under maintenance.
