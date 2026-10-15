@@ -6,6 +6,9 @@
   <title>Contact Mohammed Essam — Start a Project | E-commerce & Website Specialist</title>
   <meta name="description" content="Get in touch with Mohammed Essam for Shopify store setup, Easy Orders storefronts, website administration, e-commerce operations, and AI-assisted workflow solutions." />
   <link rel="canonical" href="https://mohammedessam.site/contact.html" />
+  <link rel="alternate" hreflang="en" href="https://mohammedessam.site/contact.html" />
+  <link rel="alternate" hreflang="ar" href="https://mohammedessam.site/ar/contact.html" />
+  <link rel="alternate" hreflang="x-default" href="https://mohammedessam.site/contact.html" />
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="images/favicon.png?v=3" />
@@ -80,7 +83,7 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css" />
@@ -154,13 +157,30 @@
           <li><a href="products.html" class="nav-link px-2.5 py-2 border-b-2 border-transparent hover:border-brutal-green hover:text-brutal-green transition-all duration-200 ">Products</a></li>
           <li><a href="ai-projects.html" class="nav-link px-2.5 py-2 border-b-2 border-transparent hover:border-brutal-yellow hover:text-brutal-yellow transition-all duration-200 ">AI Projects</a></li>
           <li><a href="contact.html" class="nav-link px-2.5 py-2 border-b-2 border-transparent hover:border-brutal-yellow hover:text-brutal-yellow transition-all duration-200 active">Contact</a></li>
-          <li><a href="contact.html" class="ml-2 px-4 py-2 bg-brutal-yellow text-brutal-dark border-2 border-brutal-yellow font-bold hover:bg-transparent hover:text-brutal-yellow transition-all duration-200 shadow-brutal text-xs">Start a Project</a></li>
+          
+          <!-- Language Switcher in Navigation -->
+          <li class="mx-1">
+            <div class="lang-switcher inline-flex items-center border-2 border-brutal-yellow font-mono text-xs font-bold bg-brutal-dark">
+              <a href="ar/contact.html" data-lang-switch="ar" class="px-2 py-1 text-brutal-light hover:text-brutal-yellow transition-colors" title="التحويل للغة العربية">العربية</a>
+              <span class="text-brutal-light/30">|</span>
+              <span class="px-2 py-1 bg-brutal-yellow text-brutal-dark font-extrabold cursor-default">English</span>
+            </div>
+          </li>
+          
+          <li><a href="contact.html" class="ml-1 px-4 py-2 bg-brutal-yellow text-brutal-dark border-2 border-brutal-yellow font-bold hover:bg-transparent hover:text-brutal-yellow transition-all duration-200 shadow-brutal text-xs">Start a Project</a></li>
         </ul>
 
-        <!-- Mobile Menu Button -->
-        <button id="menu-btn" class="lg:hidden text-brutal-yellow p-2 border-2 border-brutal-yellow hover:bg-brutal-yellow hover:text-brutal-dark transition-all duration-200" aria-label="Toggle menu">
-          <i id="menu-icon" class="fas fa-bars text-xl"></i>
-        </button>
+        <!-- Mobile Bar: Language Switcher + Menu Button -->
+        <div class="flex items-center gap-2 lg:hidden">
+          <div class="lang-switcher inline-flex items-center border-2 border-brutal-yellow font-mono text-[11px] font-bold bg-brutal-dark">
+            <a href="ar/contact.html" data-lang-switch="ar" class="px-2 py-1 text-brutal-light hover:text-brutal-yellow transition-colors">العربية</a>
+            <span class="text-brutal-light/30">|</span>
+            <span class="px-2 py-1 bg-brutal-yellow text-brutal-dark font-extrabold">EN</span>
+          </div>
+          <button id="menu-btn" class="text-brutal-yellow p-2 border-2 border-brutal-yellow hover:bg-brutal-yellow hover:text-brutal-dark transition-all duration-200" aria-label="Toggle menu">
+            <i id="menu-icon" class="fas fa-bars text-xl"></i>
+          </button>
+        </div>
 
       </div>
     </div>
@@ -175,6 +195,16 @@
         <li><a href="products.html" class="mobile-nav-link block px-3 py-3 border-l-4 border-transparent hover:border-brutal-green hover:text-brutal-green transition-all duration-200 ">Products & Ventures</a></li>
         <li><a href="ai-projects.html" class="mobile-nav-link block px-3 py-3 border-l-4 border-transparent hover:border-brutal-yellow hover:text-brutal-yellow transition-all duration-200 ">AI Projects</a></li>
         <li><a href="contact.html" class="mobile-nav-link block px-3 py-3 border-l-4 border-transparent hover:border-brutal-yellow hover:text-brutal-yellow transition-all duration-200 active">Contact</a></li>
+        <li class="pt-2 border-t border-brutal-light/10">
+          <div class="flex items-center justify-between px-3 py-2 bg-brutal-dark border border-brutal-yellow/40">
+            <span class="text-xs text-brutal-light/60">Language / اللغة</span>
+            <div class="lang-switcher inline-flex items-center border-2 border-brutal-yellow font-mono text-xs font-bold bg-brutal-dark">
+              <a href="ar/contact.html" data-lang-switch="ar" class="px-2.5 py-1 text-brutal-light hover:text-brutal-yellow transition-colors">العربية</a>
+              <span class="text-brutal-light/30">|</span>
+              <span class="px-2.5 py-1 bg-brutal-yellow text-brutal-dark font-extrabold">English</span>
+            </div>
+          </div>
+        </li>
         <li><a href="contact.html" class="mobile-nav-link block px-3 py-3 bg-brutal-yellow text-brutal-dark hover:bg-brutal-orange transition-all duration-200 text-center font-bold">Start a Project</a></li>
       </ul>
     </div>
@@ -207,7 +237,9 @@
         <div class="lg:col-span-7 bg-brutal-dark border-4 border-brutal-yellow p-8 shadow-brutal-yellow">
           <h2 class="font-mono font-bold text-2xl text-brutal-yellow mb-6 uppercase">// Project Inquiry Form</h2>
           
-          <form id="contact-form" class="space-y-5 font-mono text-sm">
+          <form id="contact-form" class="space-y-5 font-mono text-sm" novalidate>
+            <!-- Honeypot anti-spam field -->
+            <input type="text" name="_honey" id="bot-field" style="display:none" tabindex="-1" autocomplete="off" />
             
             <div class="grid sm:grid-cols-2 gap-4">
               <!-- Name -->
@@ -223,45 +255,94 @@
               </div>
             </div>
 
-            <!-- Company / Brand -->
-            <div>
-              <label for="company-input" class="block text-xs uppercase tracking-wider text-brutal-light/80 mb-2">Company / Brand Name</label>
-              <input type="text" id="company-input" placeholder="e.g. Acme Stores or Brand Name" class="w-full bg-brutal-gray border-2 border-brutal-light/20 p-3 text-brutal-light focus:outline-none focus:border-brutal-yellow font-grotesk" />
+            <div class="grid sm:grid-cols-2 gap-4">
+              <!-- Company / Brand -->
+              <div>
+                <label for="company-input" class="block text-xs uppercase tracking-wider text-brutal-light/80 mb-2">Company / Brand Name</label>
+                <input type="text" id="company-input" placeholder="e.g. Acme Stores or Brand Name" class="w-full bg-brutal-gray border-2 border-brutal-light/20 p-3 text-brutal-light focus:outline-none focus:border-brutal-yellow font-grotesk" />
+              </div>
+
+              <!-- Phone / WhatsApp Number -->
+              <div>
+                <label for="phone-input" class="block text-xs uppercase tracking-wider text-brutal-light/80 mb-2">Phone / WhatsApp Number</label>
+                <input type="tel" id="phone-input" placeholder="e.g. +20 101 234 5678" class="w-full bg-brutal-gray border-2 border-brutal-light/20 p-3 text-brutal-light focus:outline-none focus:border-brutal-yellow font-grotesk" />
+              </div>
             </div>
 
-            <!-- Service Selection per Master Prompt -->
-            <div>
-              <label for="service-select" class="block text-xs uppercase tracking-wider text-brutal-light/80 mb-2">Service Needed *</label>
-              <select id="service-select" class="w-full bg-brutal-gray border-2 border-brutal-light/20 p-3 text-brutal-light focus:outline-none focus:border-brutal-yellow">
-                <option value="Shopify Development">Shopify Development</option>
-                <option value="AI Solutions">AI Solutions</option>
-                <option value="AI Engineering">AI Engineering</option>
-                <option value="Easy Orders Store Design">Easy Orders Store Design</option>
-                <option value="Web Development">Web Development</option>
-                <option value="Vibe Coding">Vibe Coding</option>
-                <option value="Digital Operations">Digital Operations</option>
-                <option value="Social Media Management">Social Media Management</option>
-                <option value="Other">Other</option>
-              </select>
+            <div class="grid sm:grid-cols-2 gap-4">
+              <!-- Business / Activity Type -->
+              <div>
+                <label for="business-type-select" class="block text-xs uppercase tracking-wider text-brutal-light/80 mb-2">Business / Activity Type *</label>
+                <select id="business-type-select" class="w-full bg-brutal-gray border-2 border-brutal-light/20 p-3 text-brutal-light focus:outline-none focus:border-brutal-yellow">
+                  <option value="E-Commerce Store / D2C Brand" selected>E-Commerce Store / D2C Brand</option>
+                  <option value="Retail / Wholesale Business">Retail / Wholesale Business</option>
+                  <option value="Service Business / Agency">Service Business / Agency</option>
+                  <option value="Restaurant / Cafe / F&B">Restaurant / Cafe / F&B</option>
+                  <option value="Tech Startup / Software">Tech Startup / Software</option>
+                  <option value="Personal Brand / Creator">Personal Brand / Creator</option>
+                  <option value="Other">Other Business Type</option>
+                </select>
+              </div>
+
+              <!-- Current Website Situation -->
+              <div>
+                <label for="website-situation-select" class="block text-xs uppercase tracking-wider text-brutal-light/80 mb-2">Current Website Situation *</label>
+                <select id="website-situation-select" class="w-full bg-brutal-gray border-2 border-brutal-light/20 p-3 text-brutal-light focus:outline-none focus:border-brutal-yellow">
+                  <option value="Starting from scratch (No website yet)" selected>Starting from scratch (No website yet)</option>
+                  <option value="Have a Shopify store (Need redesign / CRO / dev)">Have a Shopify store (Need redesign / CRO)</option>
+                  <option value="Have an Easy Orders store (Need optimization)">Have an Easy Orders store (Need setup/optimization)</option>
+                  <option value="Have WordPress / WooCommerce">Have WordPress / WooCommerce</option>
+                  <option value="Have custom site needing revamp / AI automation">Have custom site needing revamp / AI automation</option>
+                  <option value="Other situation">Other situation</option>
+                </select>
+              </div>
             </div>
 
-            <!-- Budget Range per Master Prompt -->
+            <div class="grid sm:grid-cols-2 gap-4">
+              <!-- Service Selection -->
+              <div>
+                <label for="service-select" class="block text-xs uppercase tracking-wider text-brutal-light/80 mb-2">Service Needed *</label>
+                <select id="service-select" class="w-full bg-brutal-gray border-2 border-brutal-light/20 p-3 text-brutal-light focus:outline-none focus:border-brutal-yellow">
+                  <option value="Shopify Development" selected>Shopify Development &amp; Customization</option>
+                  <option value="Easy Orders Store Design">Easy Orders Store Design</option>
+                  <option value="E-commerce Operations & CRO">E-commerce Operations &amp; CRO</option>
+                  <option value="AI Solutions & Automation">AI Solutions &amp; Automation</option>
+                  <option value="Web Development">Full Web Development</option>
+                  <option value="Vibe Coding & Rapid Prototyping">Vibe Coding &amp; Rapid Prototyping</option>
+                  <option value="Digital Operations">Digital Operations &amp; Tech Support</option>
+                  <option value="Social Media Management">Social Media Management</option>
+                  <option value="Other">Other Inquiry</option>
+                </select>
+              </div>
+
+              <!-- Budget Range -->
+              <div>
+                <label for="budget-select" class="block text-xs uppercase tracking-wider text-brutal-light/80 mb-2">Estimated Budget *</label>
+                <select id="budget-select" class="w-full bg-brutal-gray border-2 border-brutal-light/20 p-3 text-brutal-light focus:outline-none focus:border-brutal-yellow">
+                  <option value="Under $500">Under $500 (or equivalent in EGP)</option>
+                  <option value="$500–$1,500" selected>$500–$1,500</option>
+                  <option value="$1,500–$3,000">$1,500–$3,000</option>
+                  <option value="$3,000–$5,000">$3,000–$5,000</option>
+                  <option value="$5,000+">$5,000+</option>
+                  <option value="Not sure yet">Not sure yet / Let's discuss</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Preferred Contact Method -->
             <div>
-              <label for="budget-select" class="block text-xs uppercase tracking-wider text-brutal-light/80 mb-2">Estimated Budget *</label>
-              <select id="budget-select" class="w-full bg-brutal-gray border-2 border-brutal-light/20 p-3 text-brutal-light focus:outline-none focus:border-brutal-yellow">
-                <option value="Under 5K">Under 5K</option>
-                <option value="5K–10K" selected>5K–10K</option>
-                <option value="10K–20K">10K–20K</option>
-                <option value="20K–50K">20K–50K</option>
-                <option value="50K+">50K+</option>
-                <option value="Not sure yet">Not sure yet</option>
+              <label for="preferred-contact-select" class="block text-xs uppercase tracking-wider text-brutal-light/80 mb-2">Preferred Contact Method *</label>
+              <select id="preferred-contact-select" class="w-full bg-brutal-gray border-2 border-brutal-light/20 p-3 text-brutal-light focus:outline-none focus:border-brutal-yellow">
+                <option value="WhatsApp" selected>WhatsApp (Fastest response)</option>
+                <option value="Email">Email (hello@mohammedessam.site)</option>
+                <option value="Phone Call">Direct Phone Call</option>
               </select>
             </div>
 
             <!-- Message -->
             <div>
-              <label for="message-input" class="block text-xs uppercase tracking-wider text-brutal-light/80 mb-2">Project Details *</label>
-              <textarea id="message-input" rows="4" required placeholder="Tell me about your brand, store requirements, and desired timeline..." class="w-full bg-brutal-gray border-2 border-brutal-light/20 p-3 text-brutal-light focus:outline-none focus:border-brutal-yellow font-grotesk"></textarea>
+              <label for="message-input" class="block text-xs uppercase tracking-wider text-brutal-light/80 mb-2">Project Details &amp; Requirements *</label>
+              <textarea id="message-input" rows="4" required placeholder="Tell me about your business goals, target timeline, any reference stores or links, and key challenges..." class="w-full bg-brutal-gray border-2 border-brutal-light/20 p-3 text-brutal-light focus:outline-none focus:border-brutal-yellow font-grotesk"></textarea>
             </div>
 
             <!-- Submit -->
@@ -269,7 +350,7 @@
               START MY PROJECT →
             </button>
 
-            <!-- Status Alert -->
+            <!-- Status Alert Container -->
             <div id="form-status" class="hidden"></div>
 
           </form>

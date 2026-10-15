@@ -1,147 +1,436 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://mohammedessam.site/</loc>
-    <lastmod>2026-08-28</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mohammedessam.site/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mohammedessam.site/ar/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mohammedessam.site/" />
+  </url>
+  <url>
+    <loc>https://mohammedessam.site/ar/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mohammedessam.site/ar/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mohammedessam.site/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mohammedessam.site/" />
   </url>
   <url>
     <loc>https://mohammedessam.site/about.html</loc>
-    <lastmod>2026-08-28</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mohammedessam.site/about.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mohammedessam.site/ar/about.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mohammedessam.site/about.html" />
+  </url>
+  <url>
+    <loc>https://mohammedessam.site/ar/about.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mohammedessam.site/ar/about.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mohammedessam.site/about.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mohammedessam.site/about.html" />
   </url>
   <url>
     <loc>https://mohammedessam.site/services.html</loc>
-    <lastmod>2026-08-28</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mohammedessam.site/services.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mohammedessam.site/ar/services.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mohammedessam.site/services.html" />
+  </url>
+  <url>
+    <loc>https://mohammedessam.site/ar/services.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mohammedessam.site/ar/services.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mohammedessam.site/services.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mohammedessam.site/services.html" />
   </url>
   <url>
     <loc>https://mohammedessam.site/services/shopify.html</loc>
-    <lastmod>2026-08-28</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mohammedessam.site/services/shopify.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mohammedessam.site/ar/services/shopify.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mohammedessam.site/services/shopify.html" />
   </url>
   <url>
-    <loc>https://mohammedessam.site/services/ai.html</loc>
-    <lastmod>2026-08-28</lastmod>
+    <loc>https://mohammedessam.site/ar/services/shopify.html</loc>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mohammedessam.site/ar/services/shopify.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mohammedessam.site/services/shopify.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mohammedessam.site/services/shopify.html" />
   </url>
   <url>
     <loc>https://mohammedessam.site/services/easy-orders.html</loc>
-    <lastmod>2026-08-28</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mohammedessam.site/services/easy-orders.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mohammedessam.site/ar/services/easy-orders.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mohammedessam.site/services/easy-orders.html" />
+  </url>
+  <url>
+    <loc>https://mohammedessam.site/ar/services/easy-orders.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mohammedessam.site/ar/services/easy-orders.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mohammedessam.site/services/easy-orders.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mohammedessam.site/services/easy-orders.html" />
+  </url>
+  <url>
+    <loc>https://mohammedessam.site/services/ai.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mohammedessam.site/services/ai.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mohammedessam.site/ar/services/ai.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mohammedessam.site/services/ai.html" />
+  </url>
+  <url>
+    <loc>https://mohammedessam.site/ar/services/ai.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mohammedessam.site/ar/services/ai.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mohammedessam.site/services/ai.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mohammedessam.site/services/ai.html" />
   </url>
   <url>
     <loc>https://mohammedessam.site/work.html</loc>
-    <lastmod>2026-08-28</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mohammedessam.site/work.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mohammedessam.site/ar/work.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mohammedessam.site/work.html" />
+  </url>
+  <url>
+    <loc>https://mohammedessam.site/ar/work.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mohammedessam.site/ar/work.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mohammedessam.site/work.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mohammedessam.site/work.html" />
   </url>
   <url>
     <loc>https://mohammedessam.site/products.html</loc>
-    <lastmod>2026-08-28</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mohammedessam.site/products.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mohammedessam.site/ar/products.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mohammedessam.site/products.html" />
   </url>
   <url>
-    <loc>https://mohammedessam.site/products/shoghlhub.html</loc>
-    <lastmod>2026-08-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://mohammedessam.site/ar/products.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mohammedessam.site/ar/products.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mohammedessam.site/products.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mohammedessam.site/products.html" />
   </url>
   <url>
     <loc>https://mohammedessam.site/products/dafaterak.html</loc>
-    <lastmod>2026-08-28</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mohammedessam.site/products/dafaterak.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mohammedessam.site/ar/products/dafaterak.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mohammedessam.site/products/dafaterak.html" />
   </url>
   <url>
-    <loc>https://mohammedessam.site/products/zbot.html</loc>
-    <lastmod>2026-08-28</lastmod>
+    <loc>https://mohammedessam.site/ar/products/dafaterak.html</loc>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mohammedessam.site/ar/products/dafaterak.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mohammedessam.site/products/dafaterak.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mohammedessam.site/products/dafaterak.html" />
   </url>
   <url>
     <loc>https://mohammedessam.site/products/matamek.html</loc>
-    <lastmod>2026-08-28</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mohammedessam.site/products/matamek.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mohammedessam.site/ar/products/matamek.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mohammedessam.site/products/matamek.html" />
+  </url>
+  <url>
+    <loc>https://mohammedessam.site/ar/products/matamek.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mohammedessam.site/ar/products/matamek.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mohammedessam.site/products/matamek.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mohammedessam.site/products/matamek.html" />
+  </url>
+  <url>
+    <loc>https://mohammedessam.site/products/shoghlhub.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mohammedessam.site/products/shoghlhub.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mohammedessam.site/ar/products/shoghlhub.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mohammedessam.site/products/shoghlhub.html" />
+  </url>
+  <url>
+    <loc>https://mohammedessam.site/ar/products/shoghlhub.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mohammedessam.site/ar/products/shoghlhub.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mohammedessam.site/products/shoghlhub.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mohammedessam.site/products/shoghlhub.html" />
+  </url>
+  <url>
+    <loc>https://mohammedessam.site/products/zbot.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mohammedessam.site/products/zbot.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mohammedessam.site/ar/products/zbot.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mohammedessam.site/products/zbot.html" />
+  </url>
+  <url>
+    <loc>https://mohammedessam.site/ar/products/zbot.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mohammedessam.site/ar/products/zbot.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mohammedessam.site/products/zbot.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mohammedessam.site/products/zbot.html" />
   </url>
   <url>
     <loc>https://mohammedessam.site/ai-projects.html</loc>
-    <lastmod>2026-08-28</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mohammedessam.site/ai-projects.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mohammedessam.site/ar/ai-projects.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mohammedessam.site/ai-projects.html" />
+  </url>
+  <url>
+    <loc>https://mohammedessam.site/ar/ai-projects.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mohammedessam.site/ar/ai-projects.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mohammedessam.site/ai-projects.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mohammedessam.site/ai-projects.html" />
   </url>
   <url>
     <loc>https://mohammedessam.site/contact.html</loc>
-    <lastmod>2026-08-28</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mohammedessam.site/contact.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mohammedessam.site/ar/contact.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mohammedessam.site/contact.html" />
   </url>
   <url>
-    <loc>https://mohammedessam.site/work/african-business-council.html</loc>
-    <lastmod>2026-08-28</lastmod>
+    <loc>https://mohammedessam.site/ar/contact.html</loc>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://mohammedessam.site/work/arlo-furniture.html</loc>
-    <lastmod>2026-08-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://mohammedessam.site/work/techno-store-eg.html</loc>
-    <lastmod>2026-08-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://mohammedessam.site/work/beescaree.html</loc>
-    <lastmod>2026-08-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://mohammedessam.site/work/veloye.html</loc>
-    <lastmod>2026-08-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://mohammedessam.site/work/uno-stores.html</loc>
-    <lastmod>2026-08-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://mohammedessam.site/work/skinbooster.html</loc>
-    <lastmod>2026-08-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://mohammedessam.site/work/pawfect-worlds.html</loc>
-    <lastmod>2026-08-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mohammedessam.site/ar/contact.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mohammedessam.site/contact.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mohammedessam.site/contact.html" />
   </url>
   <url>
     <loc>https://mohammedessam.site/work/3angles.html</loc>
-    <lastmod>2026-08-28</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mohammedessam.site/work/3angles.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mohammedessam.site/ar/work/3angles.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mohammedessam.site/work/3angles.html" />
+  </url>
+  <url>
+    <loc>https://mohammedessam.site/ar/work/3angles.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mohammedessam.site/ar/work/3angles.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mohammedessam.site/work/3angles.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mohammedessam.site/work/3angles.html" />
+  </url>
+  <url>
+    <loc>https://mohammedessam.site/work/african-business-council.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mohammedessam.site/work/african-business-council.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mohammedessam.site/ar/work/african-business-council.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mohammedessam.site/work/african-business-council.html" />
+  </url>
+  <url>
+    <loc>https://mohammedessam.site/ar/work/african-business-council.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mohammedessam.site/ar/work/african-business-council.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mohammedessam.site/work/african-business-council.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mohammedessam.site/work/african-business-council.html" />
+  </url>
+  <url>
+    <loc>https://mohammedessam.site/work/arlo-furniture.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mohammedessam.site/work/arlo-furniture.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mohammedessam.site/ar/work/arlo-furniture.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mohammedessam.site/work/arlo-furniture.html" />
+  </url>
+  <url>
+    <loc>https://mohammedessam.site/ar/work/arlo-furniture.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mohammedessam.site/ar/work/arlo-furniture.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mohammedessam.site/work/arlo-furniture.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mohammedessam.site/work/arlo-furniture.html" />
+  </url>
+  <url>
+    <loc>https://mohammedessam.site/work/beescaree.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mohammedessam.site/work/beescaree.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mohammedessam.site/ar/work/beescaree.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mohammedessam.site/work/beescaree.html" />
+  </url>
+  <url>
+    <loc>https://mohammedessam.site/ar/work/beescaree.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mohammedessam.site/ar/work/beescaree.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mohammedessam.site/work/beescaree.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mohammedessam.site/work/beescaree.html" />
   </url>
   <url>
     <loc>https://mohammedessam.site/work/inaya.html</loc>
-    <lastmod>2026-08-28</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mohammedessam.site/work/inaya.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mohammedessam.site/ar/work/inaya.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mohammedessam.site/work/inaya.html" />
+  </url>
+  <url>
+    <loc>https://mohammedessam.site/ar/work/inaya.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mohammedessam.site/ar/work/inaya.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mohammedessam.site/work/inaya.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mohammedessam.site/work/inaya.html" />
+  </url>
+  <url>
+    <loc>https://mohammedessam.site/work/pawfect-worlds.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mohammedessam.site/work/pawfect-worlds.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mohammedessam.site/ar/work/pawfect-worlds.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mohammedessam.site/work/pawfect-worlds.html" />
+  </url>
+  <url>
+    <loc>https://mohammedessam.site/ar/work/pawfect-worlds.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mohammedessam.site/ar/work/pawfect-worlds.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mohammedessam.site/work/pawfect-worlds.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mohammedessam.site/work/pawfect-worlds.html" />
+  </url>
+  <url>
+    <loc>https://mohammedessam.site/work/skinbooster.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mohammedessam.site/work/skinbooster.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mohammedessam.site/ar/work/skinbooster.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mohammedessam.site/work/skinbooster.html" />
+  </url>
+  <url>
+    <loc>https://mohammedessam.site/ar/work/skinbooster.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mohammedessam.site/ar/work/skinbooster.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mohammedessam.site/work/skinbooster.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mohammedessam.site/work/skinbooster.html" />
+  </url>
+  <url>
+    <loc>https://mohammedessam.site/work/techno-store-eg.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mohammedessam.site/work/techno-store-eg.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mohammedessam.site/ar/work/techno-store-eg.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mohammedessam.site/work/techno-store-eg.html" />
+  </url>
+  <url>
+    <loc>https://mohammedessam.site/ar/work/techno-store-eg.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mohammedessam.site/ar/work/techno-store-eg.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mohammedessam.site/work/techno-store-eg.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mohammedessam.site/work/techno-store-eg.html" />
+  </url>
+  <url>
+    <loc>https://mohammedessam.site/work/uno-stores.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mohammedessam.site/work/uno-stores.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mohammedessam.site/ar/work/uno-stores.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mohammedessam.site/work/uno-stores.html" />
+  </url>
+  <url>
+    <loc>https://mohammedessam.site/ar/work/uno-stores.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mohammedessam.site/ar/work/uno-stores.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mohammedessam.site/work/uno-stores.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mohammedessam.site/work/uno-stores.html" />
+  </url>
+  <url>
+    <loc>https://mohammedessam.site/work/veloye.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mohammedessam.site/work/veloye.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mohammedessam.site/ar/work/veloye.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mohammedessam.site/work/veloye.html" />
+  </url>
+  <url>
+    <loc>https://mohammedessam.site/ar/work/veloye.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mohammedessam.site/ar/work/veloye.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mohammedessam.site/work/veloye.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mohammedessam.site/work/veloye.html" />
   </url>
 </urlset>

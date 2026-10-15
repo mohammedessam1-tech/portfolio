@@ -3,6 +3,8 @@
    Custom CSS (extends Tailwind)
 ═══════════════════════════════════════════════════════ */
 
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap');
+
 /* ─── Base Reset & Fonts ─── */
 *, *::before, *::after {
   box-sizing: border-box;
@@ -736,3 +738,140 @@ select option {
   #hero-canvas, .scroll-arrow { display: none; }
   body { background: white; color: black; }
 }
+
+/* ═══════════════════════════════════════════════════════
+   Arabic & RTL Support (Cairo & Neo-Brutalist Layout)
+═══════════════════════════════════════════════════════ */
+html[lang="ar"],
+html[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+  font-family: 'Cairo', 'Space Grotesk', system-ui, -apple-system, sans-serif;
+}
+
+html[lang="ar"] body,
+html[dir="rtl"] body {
+  font-family: 'Cairo', 'Space Grotesk', system-ui, -apple-system, sans-serif;
+}
+
+html[lang="ar"] .font-grotesk {
+  font-family: 'Cairo', 'Space Grotesk', system-ui, -apple-system, sans-serif;
+}
+
+html[lang="ar"] .font-mono {
+  font-family: 'Cairo', 'Space Mono', monospace;
+  letter-spacing: normal !important;
+}
+
+/* Reset letter spacing that breaks Arabic script */
+html[lang="ar"] [class*="tracking-"],
+html[dir="rtl"] [class*="tracking-"] {
+  letter-spacing: 0 !important;
+}
+
+/* RTL Neo-Brutalist Shadows */
+html[dir="rtl"] .shadow-brutal {
+  box-shadow: -4px 4px 0 0 #0A0A0A;
+}
+html[dir="rtl"] .shadow-brutal-lg {
+  box-shadow: -8px 8px 0 0 #0A0A0A;
+}
+html[dir="rtl"] .shadow-brutal-xl {
+  box-shadow: -12px 12px 0 0 #0A0A0A;
+}
+html[dir="rtl"] .shadow-brutal-yellow {
+  box-shadow: -6px 6px 0 0 #FFE600;
+}
+html[dir="rtl"] .shadow-brutal-pink {
+  box-shadow: -6px 6px 0 0 #FF2D78;
+}
+html[dir="rtl"] .shadow-brutal-cyan {
+  box-shadow: -6px 6px 0 0 #00E5FF;
+}
+html[dir="rtl"] .shadow-brutal-green {
+  box-shadow: -6px 6px 0 0 #00FF88;
+}
+
+/* RTL Border and Spacing Adjustments */
+html[dir="rtl"] .border-l-4 {
+  border-left-width: 0 !important;
+  border-right-width: 4px !important;
+}
+html[dir="rtl"] .border-l-2 {
+  border-left-width: 0 !important;
+  border-right-width: 2px !important;
+}
+html[dir="rtl"] .mobile-nav-link.border-l-4 {
+  border-left-width: 0 !important;
+  border-right-width: 4px !important;
+}
+
+/* RTL Form Inputs */
+html[dir="rtl"] input[type="text"],
+html[dir="rtl"] textarea,
+html[dir="rtl"] select {
+  text-align: right;
+  direction: rtl;
+}
+
+html[dir="rtl"] input[type="email"],
+html[dir="rtl"] input[type="tel"] {
+  direction: ltr;
+  text-align: right;
+}
+
+/* Numbers, Technical Badges, Code & Social Links */
+.dir-ltr,
+html[dir="rtl"] .badge-ltr,
+html[dir="rtl"] a[href^="mailto:"],
+html[dir="rtl"] a[href^="https://wa.me"] span.phone-ltr {
+  direction: ltr !important;
+  display: inline-block;
+  unicode-bidi: embed;
+}
+
+/* ─── Language Switcher Component ─── */
+.lang-switcher {
+  display: inline-flex;
+  align-items: center;
+  border: 2px solid #FFE600;
+  background: #0A0A0A;
+  box-shadow: 2px 2px 0 0 #FFE600;
+  font-family: 'Space Mono', 'Cairo', monospace;
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+  user-select: none;
+}
+
+.lang-switcher a,
+.lang-switcher span.active-lang {
+  padding: 0.35rem 0.65rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  transition: all 0.15s ease-in-out;
+  text-decoration: none;
+}
+
+.lang-switcher span.active-lang {
+  background: #FFE600;
+  color: #0A0A0A;
+  font-weight: 800;
+}
+
+.lang-switcher a {
+  color: #F5F5F0;
+}
+
+.lang-switcher a:hover {
+  background: rgba(255, 230, 0, 0.18);
+  color: #FFE600;
+}
+
+.lang-switcher .lang-divider {
+  color: rgba(245, 245, 240, 0.3);
+  padding: 0 0.1rem;
+}
+

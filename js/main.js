@@ -366,12 +366,13 @@
 })();
 
 
-// ─── Contact Form & Pre-selection Helper ──────────────────
+// ─── Contact Form & Pre-selection Helper (Robust AJAX Submission) ──
 (function initContactHelper() {
   const serviceSelect = document.getElementById('service-select');
-  const contactForm    = document.getElementById('contact-form');
-  const formStatus     = document.getElementById('form-status');
+  const contactForm   = document.getElementById('contact-form');
+  const formStatus    = document.getElementById('form-status');
 
+  // Preselect service if passed in query param ?service=...
   const params = new URLSearchParams(window.location.search);
   const requestedService = params.get('service');
   if (serviceSelect && requestedService) {
@@ -383,34 +384,213 @@
   }
 
   if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
+    const isArabic = document.documentElement.lang === 'ar' || document.documentElement.dir === 'rtl';
+    const submitBtn = contactForm.querySelector('button[type="submit"]');
+
+    contactForm.addEventListener('submit', async (e) => {
       e.preventDefault();
-      
+
+      if (!submitBtn || submitBtn.disabled) return;
+
+      // Check standard HTML5 validation
+      if (!contactForm.checkValidity()) {
+        contactForm.reportValidity();
+        return;
+      }
+
+      // Collect form values
       const name = (document.getElementById('name-input')?.value || '').trim();
       const email = (document.getElementById('email-input')?.value || '').trim();
+      const phone = (document.getElementById('phone-input')?.value || '').trim();
       const company = (document.getElementById('company-input')?.value || '').trim();
+      const businessType = (document.getElementById('business-type-select')?.value || document.getElementById('business-type-input')?.value || '').trim();
+      const websiteSituation = (document.getElementById('website-situation-select')?.value || '').trim();
       const service = serviceSelect?.value || 'Project Inquiry';
-      const budget = document.getElementById('budget-select')?.value || 'Not specified';
+      const budget = (document.getElementById('budget-select')?.value || 'Not specified').trim();
+      const preferredContact = (document.getElementById('preferred-contact-select')?.value || 'Email').trim();
       const message = (document.getElementById('message-input')?.value || '').trim();
 
-      const companyInfo = company ? ` [Company/Brand: ${company}]` : '';
-      const textMessage = `Hello Mohammed, my name is ${name} (${email})${companyInfo}. I'm interested in: ${service} (Budget: ${budget}). Details: ${message}`;
+      // Basic client-side checks
+      if (!name || !email || !message) {
+        if (formStatus) {
+          formStatus.className = 'mt-4 p-4 border-2 border-brutal-orange bg-brutal-orange/10 text-brutal-orange font-mono text-sm';
+          formStatus.textContent = isArabic
+            ? 'يرجى ملء جميع الحقول الإلزامية (*)'
+            : 'Please fill out all required fields marked with an asterisk (*).';
+          formStatus.classList.remove('hidden');
+        }
+        return;
+      }
 
-      const encodedMsg = encodeURIComponent(textMessage);
-      const whatsappUrl = `https://wa.me/201018923563?text=${encodedMsg}`;
+      // Set Loading State
+      submitBtn.disabled = true;
+      const originalBtnText = submitBtn.innerHTML;
+      submitBtn.innerHTML = isArabic
+        ? '<i class="fas fa-spinner fa-spin ml-2"></i> جاري حفظ وإرسال طلبك...'
+        : '<i class="fas fa-spinner fa-spin mr-2"></i> SENDING INQUIRY...';
+      submitBtn.classList.add('opacity-75', 'cursor-not-allowed');
 
       if (formStatus) {
-        formStatus.className = 'mt-4 p-4 border-2 border-brutal-green bg-brutal-green/10 text-brutal-green font-mono text-sm';
-        formStatus.textContent = 'Opening WhatsApp to send your inquiry directly...';
+        formStatus.className = 'mt-4 p-4 border-2 border-brutal-yellow bg-brutal-yellow/10 text-brutal-yellow font-mono text-sm';
+        formStatus.innerHTML = isArabic
+          ? '<div class="flex items-center gap-2"><i class="fas fa-circle-notch fa-spin"></i> جاري إرسال البيانات بشكل مشفر وآمن إلى بريد محمد عصام...</div>'
+          : '<div class="flex items-center gap-2"><i class="fas fa-circle-notch fa-spin"></i> Securely sending inquiry to Mohammed Essam...</div>';
         formStatus.classList.remove('hidden');
       }
 
-      setTimeout(() => {
-        window.open(whatsappUrl, '_blank');
-      }, 600);
+      // Prepare payload
+      const payload = {
+        name: name,
+        email: email,
+        phone: phone || 'Not provided',
+        company: company || 'N/A',
+        businessType: businessType || 'Not specified',
+        websiteSituation: websiteSituation || 'Not specified',
+        service: service,
+        budget: budget,
+        preferredContact: preferredContact,
+        message: message,
+        _subject: `New Project Inquiry from ${name} [${service}]`,
+        _replyto: email,
+        _template: 'table'
+      };
+
+      // Form submission endpoint. Defaults to reliable FormSubmit endpoint configured to hello@mohammedessam.site
+      // Can also be set via window.FORM_SUBMISSION_ENDPOINT
+      const ENDPOINT = window.FORM_SUBMISSION_ENDPOINT || 'https://formsubmit.co/ajax/hello@mohammedessam.site';
+
+      try {
+        const response = await fetch(ENDPOINT, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify(payload)
+        });
+
+        const result = await response.json().catch(() => null);
+
+        if (response.ok && (!result || result.success === true || result.success === 'true' || result.ok === true || response.status === 200)) {
+          // Success!
+          submitBtn.innerHTML = isArabic ? '✓ تم إرسال الطلب بنجاح' : '✓ INQUIRY SENT SUCCESSFULLY';
+          submitBtn.classList.remove('bg-brutal-yellow', 'text-brutal-dark');
+          submitBtn.classList.add('bg-brutal-green', 'text-brutal-dark');
+
+          // Optional follow-up via WhatsApp
+          const companyTag = company ? ` [${company}]` : '';
+          const waText = isArabic
+            ? `مرحباً محمد، أرسلت لك طلباً عبر الموقع:\n- الاسم: ${name}${companyTag}\n- الخدمة: ${service}\n- الميزانية: ${budget}\n- تفاصيل: ${message}`
+            : `Hello Mohammed, I just submitted an inquiry via your website:\n- Name: ${name}${companyTag}\n- Service: ${service}\n- Budget: ${budget}\n- Details: ${message}`;
+          const waUrl = `https://wa.me/201018923563?text=${encodeURIComponent(waText)}`;
+
+          if (formStatus) {
+            formStatus.className = 'mt-6 p-6 border-4 border-brutal-green bg-brutal-green/10 text-brutal-light font-mono text-sm space-y-3';
+            formStatus.innerHTML = isArabic
+              ? `<div class="flex items-start gap-3">
+                   <span class="text-2xl text-brutal-green">✓</span>
+                   <div>
+                     <h4 class="font-bold text-base text-brutal-green uppercase">تم استلام طلبك بنجاح!</h4>
+                     <p class="text-xs text-brutal-light/90 mt-1">شكراً لك يا <strong>${name}</strong>. وصلت رسالتك إلى بريدي الرسمي (hello@mohammedessam.site) وسأراجع متطلبات المشروع وأتواصل معك خلال 24 ساعة.</p>
+                   </div>
+                 </div>
+                 <div class="pt-3 border-t border-brutal-green/30 flex flex-col sm:flex-row items-center justify-between gap-3">
+                   <span class="text-xs text-brutal-light/70">هل ترغب في تنبيهي مباشرة عبر واتساب للمتابعة الفورية؟</span>
+                   <a href="${waUrl}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2 bg-brutal-green text-brutal-dark font-bold text-xs uppercase tracking-wider hover:bg-white transition-all shadow-brutal-sm">
+                     <i class="fab fa-whatsapp text-sm"></i> فتح محادثة واتساب الآن (اختياري)
+                   </a>
+                 </div>`
+              : `<div class="flex items-start gap-3">
+                   <span class="text-2xl text-brutal-green">✓</span>
+                   <div>
+                     <h4 class="font-bold text-base text-brutal-green uppercase">Inquiry Received Successfully!</h4>
+                     <p class="text-xs text-brutal-light/90 mt-1">Thank you <strong>${name}</strong>. Your project details have been successfully captured and routed to hello@mohammedessam.site. I will review your requirements and follow up within 24 hours.</p>
+                   </div>
+                 </div>
+                 <div class="pt-3 border-t border-brutal-green/30 flex flex-col sm:flex-row items-center justify-between gap-3">
+                   <span class="text-xs text-brutal-light/70">Want an immediate real-time touchpoint?</span>
+                   <a href="${waUrl}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2 bg-brutal-green text-brutal-dark font-bold text-xs uppercase tracking-wider hover:bg-white transition-all shadow-brutal-sm">
+                     <i class="fab fa-whatsapp text-sm"></i> Open WhatsApp Follow-up (Optional)
+                   </a>
+                 </div>`;
+          }
+
+          contactForm.reset();
+        } else {
+          throw new Error(result?.message || 'Submission service returned an unexpected response.');
+        }
+      } catch (err) {
+        console.error('Submission error:', err);
+
+        // Reset submit button
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalBtnText;
+        submitBtn.classList.remove('opacity-75', 'cursor-not-allowed');
+
+        // Honest Error Message with direct 1-click fallback
+        const companyTag = company ? ` [${company}]` : '';
+        const fallbackWaText = `مرحباً محمد، حاولت إرسال رسالة عبر نموذج الموقع وتعذر الإرسال بسبب اتصال الشبكة:\n- الاسم: ${name}${companyTag}\n- الخدمة: ${service}\n- تفاصيل: ${message}`;
+        const fallbackWaUrl = `https://wa.me/201018923563?text=${encodeURIComponent(fallbackWaText)}`;
+
+        if (formStatus) {
+          formStatus.className = 'mt-6 p-6 border-4 border-brutal-orange bg-brutal-orange/10 text-brutal-light font-mono text-sm space-y-3';
+          formStatus.innerHTML = isArabic
+            ? `<div class="flex items-start gap-3">
+                 <span class="text-2xl text-brutal-orange"><i class="fas fa-exclamation-triangle"></i></span>
+                 <div>
+                   <h4 class="font-bold text-base text-brutal-orange uppercase">تعذر تسليم النموذج مؤقتاً</h4>
+                   <p class="text-xs text-brutal-light/90 mt-1">حدث انقطاع في الاتصال أو استجابة الخدمة. لضمان عدم ضياع فكرتك، تفاصيلك محفوظة ويمكنك إرسالها إليّ بنقرة واحدة مباشرة:</p>
+                 </div>
+               </div>
+               <div class="pt-2 flex flex-wrap gap-2">
+                 <a href="${fallbackWaUrl}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2 bg-brutal-green text-brutal-dark font-bold text-xs uppercase hover:bg-white transition-all shadow-brutal-sm">
+                   <i class="fab fa-whatsapp text-sm"></i> إرسال عبر واتساب الآن
+                 </a>
+                 <a href="mailto:hello@mohammedessam.site?subject=Project Inquiry - ${encodeURIComponent(name)}" class="inline-flex items-center gap-2 px-4 py-2 bg-brutal-yellow text-brutal-dark font-bold text-xs uppercase hover:bg-white transition-all shadow-brutal-sm">
+                   <i class="fas fa-envelope text-sm"></i> مراسلة عبر الإيميل مباشرة
+                 </a>
+               </div>`
+            : `<div class="flex items-start gap-3">
+                 <span class="text-2xl text-brutal-orange"><i class="fas fa-exclamation-triangle"></i></span>
+                 <div>
+                   <h4 class="font-bold text-base text-brutal-orange uppercase">Submission Temporarily Interrupted</h4>
+                   <p class="text-xs text-brutal-light/90 mt-1">A network or server issue prevented direct delivery. To ensure your inquiry reaches me immediately, click below to forward your details directly via WhatsApp or email:</p>
+                 </div>
+               </div>
+               <div class="pt-2 flex flex-wrap gap-2">
+                 <a href="${fallbackWaUrl}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2 bg-brutal-green text-brutal-dark font-bold text-xs uppercase hover:bg-white transition-all shadow-brutal-sm">
+                   <i class="fab fa-whatsapp text-sm"></i> Forward via WhatsApp
+                 </a>
+                 <a href="mailto:hello@mohammedessam.site?subject=Project Inquiry - ${encodeURIComponent(name)}" class="inline-flex items-center gap-2 px-4 py-2 bg-brutal-yellow text-brutal-dark font-bold text-xs uppercase hover:bg-white transition-all shadow-brutal-sm">
+                   <i class="fas fa-envelope text-sm"></i> Send Directly via Email
+                 </a>
+               </div>`;
+          formStatus.classList.remove('hidden');
+        }
+      }
     });
   }
 })();
+
+// ─── Language Preference Storage & Helper ─────────────────
+(function initLanguageManager() {
+  // If user clicks a link with data-lang-switch attribute
+  document.querySelectorAll('[data-lang-switch]').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      const targetLang = btn.getAttribute('data-lang-switch');
+      try {
+        localStorage.setItem('mo_lang_pref', targetLang);
+      } catch (err) {}
+    });
+  });
+
+  // Track active language
+  const isArabic = document.documentElement.lang === 'ar' || window.location.pathname.includes('/ar/');
+  try {
+    localStorage.setItem('mo_current_lang', isArabic ? 'ar' : 'en');
+  } catch (err) {}
+})();
+
 
 
 // ─── Carousel Dots Pagination (Mobile) ────────────────────

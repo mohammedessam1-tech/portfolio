@@ -6,6 +6,9 @@
   <title>Mohammed Essam | E-commerce & Website Specialist</title>
   <meta name="description" content="E-commerce & Website Specialist experienced in Shopify, Easy Orders, e-commerce operations, website administration, social media operations, and AI-assisted digital solutions." />
   <link rel="canonical" href="https://mohammedessam.site/" />
+  <link rel="alternate" hreflang="en" href="https://mohammedessam.site/" />
+  <link rel="alternate" hreflang="ar" href="https://mohammedessam.site/ar/" />
+  <link rel="alternate" hreflang="x-default" href="https://mohammedessam.site/" />
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="images/favicon.png?v=3" />
@@ -76,7 +79,7 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css" />
@@ -150,13 +153,30 @@
           <li><a href="products.html" class="nav-link px-2.5 py-2 border-b-2 border-transparent hover:border-brutal-green hover:text-brutal-green transition-all duration-200 ">Products</a></li>
           <li><a href="ai-projects.html" class="nav-link px-2.5 py-2 border-b-2 border-transparent hover:border-brutal-yellow hover:text-brutal-yellow transition-all duration-200 ">AI Projects</a></li>
           <li><a href="contact.html" class="nav-link px-2.5 py-2 border-b-2 border-transparent hover:border-brutal-yellow hover:text-brutal-yellow transition-all duration-200 ">Contact</a></li>
-          <li><a href="contact.html" class="ml-2 px-4 py-2 bg-brutal-yellow text-brutal-dark border-2 border-brutal-yellow font-bold hover:bg-transparent hover:text-brutal-yellow transition-all duration-200 shadow-brutal text-xs">Start a Project</a></li>
+          
+          <!-- Language Switcher in Navigation -->
+          <li class="mx-1">
+            <div class="lang-switcher inline-flex items-center border-2 border-brutal-yellow font-mono text-xs font-bold bg-brutal-dark">
+              <a href="ar/index.html" data-lang-switch="ar" class="px-2 py-1 text-brutal-light hover:text-brutal-yellow transition-colors" title="التحويل للغة العربية">العربية</a>
+              <span class="text-brutal-light/30">|</span>
+              <span class="px-2 py-1 bg-brutal-yellow text-brutal-dark font-extrabold cursor-default">English</span>
+            </div>
+          </li>
+          
+          <li><a href="contact.html" class="ml-1 px-4 py-2 bg-brutal-yellow text-brutal-dark border-2 border-brutal-yellow font-bold hover:bg-transparent hover:text-brutal-yellow transition-all duration-200 shadow-brutal text-xs">Start a Project</a></li>
         </ul>
 
-        <!-- Mobile Menu Button -->
-        <button id="menu-btn" class="lg:hidden text-brutal-yellow p-2 border-2 border-brutal-yellow hover:bg-brutal-yellow hover:text-brutal-dark transition-all duration-200" aria-label="Toggle menu">
-          <i id="menu-icon" class="fas fa-bars text-xl"></i>
-        </button>
+        <!-- Mobile Bar: Language Switcher + Menu Button -->
+        <div class="flex items-center gap-2 lg:hidden">
+          <div class="lang-switcher inline-flex items-center border-2 border-brutal-yellow font-mono text-[11px] font-bold bg-brutal-dark">
+            <a href="ar/index.html" data-lang-switch="ar" class="px-2 py-1 text-brutal-light hover:text-brutal-yellow transition-colors">العربية</a>
+            <span class="text-brutal-light/30">|</span>
+            <span class="px-2 py-1 bg-brutal-yellow text-brutal-dark font-extrabold">EN</span>
+          </div>
+          <button id="menu-btn" class="text-brutal-yellow p-2 border-2 border-brutal-yellow hover:bg-brutal-yellow hover:text-brutal-dark transition-all duration-200" aria-label="Toggle menu">
+            <i id="menu-icon" class="fas fa-bars text-xl"></i>
+          </button>
+        </div>
 
       </div>
     </div>
@@ -171,6 +191,16 @@
         <li><a href="products.html" class="mobile-nav-link block px-3 py-3 border-l-4 border-transparent hover:border-brutal-green hover:text-brutal-green transition-all duration-200 ">Products & Ventures</a></li>
         <li><a href="ai-projects.html" class="mobile-nav-link block px-3 py-3 border-l-4 border-transparent hover:border-brutal-yellow hover:text-brutal-yellow transition-all duration-200 ">AI Projects</a></li>
         <li><a href="contact.html" class="mobile-nav-link block px-3 py-3 border-l-4 border-transparent hover:border-brutal-yellow hover:text-brutal-yellow transition-all duration-200 ">Contact</a></li>
+        <li class="pt-2 border-t border-brutal-light/10">
+          <div class="flex items-center justify-between px-3 py-2 bg-brutal-dark border border-brutal-yellow/40">
+            <span class="text-xs text-brutal-light/60">Language / اللغة</span>
+            <div class="lang-switcher inline-flex items-center border-2 border-brutal-yellow font-mono text-xs font-bold bg-brutal-dark">
+              <a href="ar/index.html" data-lang-switch="ar" class="px-2.5 py-1 text-brutal-light hover:text-brutal-yellow transition-colors">العربية</a>
+              <span class="text-brutal-light/30">|</span>
+              <span class="px-2.5 py-1 bg-brutal-yellow text-brutal-dark font-extrabold">English</span>
+            </div>
+          </div>
+        </li>
         <li><a href="contact.html" class="mobile-nav-link block px-3 py-3 bg-brutal-yellow text-brutal-dark hover:bg-brutal-orange transition-all duration-200 text-center font-bold">Start a Project</a></li>
       </ul>
     </div>
