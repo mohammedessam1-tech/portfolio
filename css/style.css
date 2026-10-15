@@ -875,3 +875,153 @@ html[dir="rtl"] a[href^="https://wa.me"] span.phone-ltr {
   padding: 0 0.1rem;
 }
 
+
+/* ─── Floating WhatsApp Action Button ─── */
+.floating-whatsapp-btn {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 45;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: #00FF88;
+  color: #0A0A0A;
+  border: 3px solid #0A0A0A;
+  box-shadow: 4px 4px 0 0 #0A0A0A;
+  padding: 0.65rem 1.15rem;
+  font-family: 'Space Mono', 'Cairo', monospace;
+  font-size: 0.85rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+html[dir="rtl"] .floating-whatsapp-btn {
+  right: auto;
+  left: 1.5rem;
+  box-shadow: -4px 4px 0 0 #0A0A0A;
+}
+
+.floating-whatsapp-btn:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0 0 #0A0A0A;
+  background: #FFE600;
+}
+
+html[dir="rtl"] .floating-whatsapp-btn:hover {
+  transform: translate(2px, -2px);
+  box-shadow: -6px 6px 0 0 #0A0A0A;
+  background: #FFE600;
+}
+
+.floating-whatsapp-pulse {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #0A0A0A;
+  animation: pulse-dot 1.5s infinite;
+}
+
+@keyframes pulse-dot {
+  0% { transform: scale(0.9); opacity: 0.7; }
+  50% { transform: scale(1.4); opacity: 1; }
+  100% { transform: scale(0.9); opacity: 0.7; }
+}
+
+@media (max-width: 640px) {
+  .floating-whatsapp-btn {
+    bottom: 1.25rem;
+    right: 1.25rem;
+    padding: 0.75rem;
+    border-radius: 0;
+  }
+  html[dir="rtl"] .floating-whatsapp-btn {
+    right: auto;
+    left: 1.25rem;
+  }
+  .floating-whatsapp-text {
+    display: none;
+  }
+}
+
+/* ─── Neo-Brutalist FAQ Accordion ─── */
+.faq-item {
+  background: #1A1A1A;
+  border: 3px solid rgba(245, 245, 240, 0.15);
+  box-shadow: 4px 4px 0 0 #0A0A0A;
+  transition: all 0.2s ease;
+  margin-bottom: 1rem;
+}
+
+html[dir="rtl"] .faq-item {
+  box-shadow: -4px 4px 0 0 #0A0A0A;
+}
+
+.faq-item.active {
+  border-color: #FFE600;
+  box-shadow: 6px 6px 0 0 #FFE600;
+}
+
+html[dir="rtl"] .faq-item.active {
+  box-shadow: -6px 6px 0 0 #FFE600;
+}
+
+.faq-trigger {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 1.5rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  font-family: 'Space Mono', 'Cairo', monospace;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #F5F5F0;
+  gap: 1rem;
+}
+
+html[dir="rtl"] .faq-trigger {
+  text-align: right;
+}
+
+.faq-trigger .faq-icon {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #FFE600;
+  color: #FFE600;
+  font-size: 0.85rem;
+  transition: transform 0.25s ease;
+  flex-shrink: 0;
+}
+
+.faq-item.active .faq-trigger .faq-icon {
+  transform: rotate(45deg);
+  background: #FFE600;
+  color: #0A0A0A;
+}
+
+.faq-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s cubic-bezier(0, 1, 0, 1);
+  padding: 0 1.5rem;
+  font-family: 'Space Grotesk', 'Cairo', sans-serif;
+  color: rgba(245, 245, 240, 0.75);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.faq-item.active .faq-content {
+  max-height: 600px;
+  transition: max-height 0.4s ease-in-out;
+  padding: 0 1.5rem 1.25rem 1.5rem;
+}

@@ -798,3 +798,63 @@
   }
 })();
 
+
+// ─── Floating WhatsApp Action Button ─────────────────────
+(function initFloatingWhatsApp() {
+  if (document.getElementById('floating-whatsapp-btn')) return;
+  
+  const isAr = document.documentElement.lang === 'ar' || document.documentElement.getAttribute('dir') === 'rtl';
+  const msg = isAr 
+    ? "مرحباً محمد، تصفحت موقعك وأرغب في استشارة بخصوص متجري/مشروعي."
+    : "Hi Mohammed, I visited your website and would like to discuss a project for my business.";
+  const url = `https://wa.me/201018923563?text=${encodeURIComponent(msg)}`;
+  const label = isAr ? "تواصل واتساب" : "Chat on WhatsApp";
+
+  const btn = document.createElement('a');
+  btn.id = 'floating-whatsapp-btn';
+  btn.className = 'floating-whatsapp-btn';
+  btn.href = url;
+  btn.target = '_blank';
+  btn.rel = 'noopener noreferrer';
+  btn.setAttribute('aria-label', label);
+  btn.title = label;
+
+  btn.innerHTML = `
+    <span class="floating-whatsapp-pulse" aria-hidden="true"></span>
+    <i class="fab fa-whatsapp text-lg" aria-hidden="true"></i>
+    <span class="floating-whatsapp-text font-bold">${label}</span>
+  `;
+
+  document.body.appendChild(btn);
+})();
+
+// ─── Neo-Brutalist FAQ Accordion ─────────────────────────
+(function initFaqAccordion() {
+  const faqItems = document.querySelectorAll('.faq-item');
+  if (!faqItems.length) return;
+
+  faqItems.forEach(item => {
+    const trigger = item.querySelector('.faq-trigger');
+    if (!trigger) return;
+
+    trigger.addEventListener('click', () => {
+      const isActive = item.classList.contains('active');
+      
+      faqItems.forEach(otherItem => {
+        if (otherItem !== item) {
+          otherItem.classList.remove('active');
+          const otherTrigger = otherItem.querySelector('.faq-trigger');
+          if (otherTrigger) otherTrigger.setAttribute('aria-expanded', 'false');
+        }
+      });
+
+      if (isActive) {
+        item.classList.remove('active');
+        trigger.setAttribute('aria-expanded', 'false');
+      } else {
+        item.classList.add('active');
+        trigger.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+})();
