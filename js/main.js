@@ -858,3 +858,66 @@
     });
   });
 })();
+
+// ─── Click-to-Copy Email with Toast ─────────────────────
+(function initCopyEmail() {
+  function showToast(text) {
+    let toast = document.getElementById('copy-toast-notification');
+    if (!toast) {
+      toast = document.createElement('div');
+      toast.id = 'copy-toast-notification';
+      toast.className = 'copy-toast';
+      document.body.appendChild(toast);
+    }
+    toast.innerHTML = text;
+    toast.classList.add('show');
+    clearTimeout(toast._timeout);
+    toast._timeout = setTimeout(() => {
+      toast.classList.remove('show');
+    }, 3200);
+  }
+
+  function copyText(val, successHtml) {
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(val).then(() => {
+        showToast(successHtml);
+      }).catch(() => {
+        fallbackCopy(val, successHtml);
+      });
+    } else {
+      fallbackCopy(val, successHtml);
+    }
+  }
+
+  function fallbackCopy(val, successHtml) {
+    const ta = document.createElement('textarea');
+    ta.value = val;
+    ta.style.position = 'fixed';
+    ta.style.left = '-9999px';
+    document.body.appendChild(ta);
+    ta.focus();
+    ta.select();
+    try {
+      document.execCommand('copy');
+      showToast(successHtml);
+    } catch (e) {
+      prompt("Copy email:", val);
+    }
+    document.body.removeChild(ta);
+  }
+
+  document.addEventListener('click', (e) => {
+    const trigger = e.target.closest('[data-copy="email"], .btn-copy-email');
+    if (!trigger) return;
+    e.preventDefault();
+    e.stopPropagation();
+
+    const isAr = document.documentElement.lang === 'ar' || document.documentElement.getAttribute('dir') === 'rtl';
+    const email = 'hello@mohammedessam.site';
+    const msg = isAr 
+      ? `<i class="fas fa-check-circle text-brutal-dark"></i> تم نسخ البريد الإلكتروني: <strong>${email}</strong>`
+      : `<i class="fas fa-check-circle text-brutal-dark"></i> Email copied: <strong>${email}</strong>`;
+
+    copyText(email, msg);
+  });
+})();

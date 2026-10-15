@@ -1025,3 +1025,35 @@ html[dir="rtl"] .faq-trigger {
   transition: max-height 0.4s ease-in-out;
   padding: 0 1.5rem 1.25rem 1.5rem;
 }
+
+/* ─── Click-to-Copy Toast Notification ─── */
+.copy-toast {
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(100px);
+  opacity: 0;
+  visibility: hidden;
+  background: #FFE600;
+  color: #0A0A0A;
+  border: 3px solid #0A0A0A;
+  box-shadow: 5px 5px 0 0 #0A0A0A;
+  padding: 0.85rem 1.4rem;
+  font-family: 'Space Mono', 'Cairo', monospace;
+  font-size: 0.85rem;
+  font-weight: 700;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  transition: all 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+  pointer-events: none;
+  max-width: 90vw;
+  text-align: center;
+}
+
+.copy-toast.show {
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
