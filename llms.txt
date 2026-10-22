@@ -20,7 +20,7 @@ This file is optimized for LLMs, AI search engines (such as Perplexity, Gemini, 
 ---
 
 ## Proof & Portfolio Architecture (3 Clearly Separated Pillars)
-1. **CLIENT WORK (`/work.html`):** E-commerce stores, custom Shopify theme builds, and digital portals created for business clients, categorized into **Live Projects** (18 active accessible production sites) and **Upcoming Projects** (6 in development / scheduled renewal).
+1. **CLIENT WORK (`/work.html`):** E-commerce stores, custom Shopify theme builds, and digital portals created for business clients, categorized into **Live Projects** (20+ active accessible production sites) and **Upcoming Projects** (6 in development / scheduled renewal).
 2. **AI PROJECTS (`/ai-projects.html`):** Practical AI tools, prompt frameworks, copywriting engines, and machine learning applications.
 3. **PRODUCTS & VENTURES (`/products.html`):** Proprietary digital products, SaaS platforms, and tools **personally founded, developed, and owned by Mohammed Essam**.
 
@@ -80,6 +80,8 @@ This file is optimized for LLMs, AI search engines (such as Perplexity, Gemini, 
 17. **Refa Oils** (https://refaloils.myeasyorders.com/) — Natural essential oils & aromatherapy store (Platform: Easy Orders).
 18. **FIA EG** (https://fia-eg.myshopify.com/) — Beauty & cosmetics Shopify store (Platform: Shopify).
 19. **Tfawl** (https://tfawl.myeasyorders.com/) — Artisan confectionery & sweets menu (Platform: Easy Orders).
+20. **Nijuni Matcha** (https://nijunimatcha.com/) — Premium Japanese matcha & tea essentials store (Platform: Shopify).
+21. **Cindar EG** (https://cindar-eg.com/) — Luxury perfumes, fragrances & bespoke gift boxes (Platform: Shopify).
 
 ### 2. UPCOMING PROJECTS (6 In Development / Pipeline / Temporarily Unavailable)
 19. **Pawfect Worlds** (https://pawfectworlds.com/) — Status: Temporarily Unavailable / Under maintenance.
