@@ -3,6 +3,10 @@
 
 User-agent: *
 Allow: /
+Disallow: /bot-proxy/
+Disallow: /redirect.html
+Disallow: /work/case-study-template.html
+Disallow: /ar/work/case-study-template.html
 
 # Explicitly welcome AI and LLM Search Crawlers
 User-agent: GPTBot

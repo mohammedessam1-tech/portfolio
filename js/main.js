@@ -921,3 +921,19 @@
     copyText(email, msg);
   });
 })();
+
+
+// ─── Site assistant loader (rule-based chatbot, see js/chatbot.js) ───
+(function loadSiteAssistant() {
+  if (window.__siteBotLoaded) return;
+  const self = document.currentScript || document.querySelector('script[src$="main.js"]');
+  if (!self || !self.src) return;
+  const s = document.createElement('script');
+  s.src = self.src.replace(/main\.js(\?.*)?$/, 'chatbot.js');
+  s.defer = true;
+  document.body.appendChild(s);
+  const p = document.createElement('script');
+  p.src = self.src.replace(/main\.js(\?.*)?$/, 'partners.js');
+  p.defer = true;
+  document.body.appendChild(p);
+})();

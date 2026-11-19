@@ -1057,3 +1057,43 @@ html[dir="rtl"] .faq-trigger {
   opacity: 1;
   visibility: visible;
 }
+
+/* ═══════════════════════════════════════════════════════════════
+   Testimonials section — append to css/style.css
+   Reusable card: quote + client name + project name.
+   RTL handled: ar pages are dir="rtl", flex/grid flip automatically;
+   rules below only fix the quote icon spacing for RTL.
+   ═══════════════════════════════════════════════════════════════ */
+
+.testimonial-card {
+  position: relative;
+}
+
+.testimonial-card blockquote {
+  quotes: none;
+}
+
+.testimonial-card:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0 0 #0A0A0A;
+}
+
+/* RTL: mirror the hover shift so the brutal shadow stays consistent */
+html[dir="rtl"] .testimonial-card:hover {
+  transform: translate(2px, -2px);
+}
+
+/* Optional: yellow accent bar on the leading edge of each card */
+.testimonial-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  inset-inline-start: 0;
+  width: 4px;
+  height: 40%;
+  background: #FFE600;
+}
+
+/* To add a 4th+ card: duplicate a <figure class="testimonial-card"> block.
+   The grid wraps automatically (1 col mobile, 3 cols desktop).
+   For 4 cards on desktop change md:grid-cols-3 to md:grid-cols-2 lg:grid-cols-4. */
