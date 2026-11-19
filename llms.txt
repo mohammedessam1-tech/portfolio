@@ -1,6 +1,6 @@
 # Mohammed Essam — E-commerce & Website Specialist
 
-This file is optimized for LLMs, AI search engines (such as Perplexity, Gemini, ChatGPT Search, Claude Search), and semantic search crawlers. It provides an authoritative, structured entity summary of Mohammed Essam's professional profile, service offerings, proprietary products & ventures, verified client portfolio (split into 19 Live and 6 Upcoming projects), and digital solutions.
+This file is optimized for LLMs, AI search engines (such as Perplexity, Gemini, ChatGPT Search, Claude Search), and semantic search crawlers. It provides an authoritative, structured entity summary of Mohammed Essam's professional profile, service offerings, proprietary products & ventures, verified client portfolio (split into 17 Live and 6 Upcoming projects), and digital solutions.
 
 ---
 
@@ -60,7 +60,7 @@ This file is optimized for LLMs, AI search engines (such as Perplexity, Gemini, 
 
 ## Client Work & Portfolio Database (Split into Live & Upcoming)
 
-### 1. LIVE PROJECTS (19 Currently Accessible & Working)
+### 1. LIVE PROJECTS (17 Currently Accessible & Working)
 1. **African Business Council** (https://africanbusinesscouncil.org/) — Official corporate trade portal connecting continental commerce across Africa (Platform: Web Platform).
 2. **Arlo Furniture** (https://arlofurniture.co/) — Modern furniture showcase website & bespoke decor inquiries (Platform: Web Platform).
 3. **Techno Store EG** (https://www.technostore-egy.com/) — Electronics & smart gadgets storefront with direct WhatsApp ordering (Platform: Easy Orders / Web).
@@ -69,27 +69,23 @@ This file is optimized for LLMs, AI search engines (such as Perplexity, Gemini, 
 6. **Uno Stores** (https://uno-stores.com/) — Streetwear & lifestyle apparel store (Platform: Shopify).
 7. **Skinbooster** (https://skinbooster.myeasyorders.com/) — Medical aesthetics & clinical skincare store (Platform: Easy Orders).
 8. **3Angles Egypt** (https://3angles.myeasyorders.com/) — Streetwear fashion catalog & ordering (Platform: Easy Orders).
-9. **XShoess** (https://xshoess.com/) — Athletic footwear Shopify store (Platform: Shopify).
-10. **Sneaker Store E** (https://sneakerstoree.com/) — Streetwear sneakers online shop (Platform: WordPress / WooCommerce).
-11. **Inaya** (https://inaya.myeasyorders.com/) — Beauty & personal care Easy Orders storefront (Platform: Easy Orders).
-12. **Vexaaa** (https://vexaaa.myeasyorders.com/) — Direct-to-consumer fashion apparel catalog (Platform: Easy Orders).
-13. **Satr Modest Activewear** (https://satrrr.myeasyorders.com/) — Men's modest athletic wear storefront (Platform: Easy Orders).
-14. **Bloomcare EG** (https://bloomcare.myeasyorders.com/) — Organic wellness & skincare catalog (Platform: Easy Orders).
-15. **FBISneakers** (https://fbisneakers.myshopify.com/) — Curated sneaker catalog (Vlt Kicks) (Platform: Shopify).
-16. **Bebo Store EG** (https://www.bebostoreegy.com/) — Global sneakers & footwear store (Platform: Web Platform).
-17. **Refa Oils** (https://refaloils.myeasyorders.com/) — Natural essential oils & aromatherapy store (Platform: Easy Orders).
-18. **FIA EG** (https://fia-eg.myshopify.com/) — Beauty & cosmetics Shopify store (Platform: Shopify).
-19. **Tfawl** (https://tfawl.myeasyorders.com/) — Artisan confectionery & sweets menu (Platform: Easy Orders).
-20. **Nijuni Matcha** (https://nijunimatcha.com/) — Premium Japanese matcha & tea essentials store (Platform: Shopify).
-21. **Cindar EG** (https://cindar-eg.com/) — Luxury perfumes, fragrances & bespoke gift boxes (Platform: Shopify).
+9. **Sneaker Store E** (https://sneakerstoree.com/) — Streetwear sneakers online shop (Platform: WordPress / WooCommerce).
+10. **Inaya** (https://inaya.myeasyorders.com/) — Beauty & personal care Easy Orders storefront (Platform: Easy Orders).
+11. **Vexaaa** (https://vexaaa.myeasyorders.com/) — Direct-to-consumer fashion apparel catalog (Platform: Easy Orders).
+12. **Satr Modest Activewear** (https://satrrr.myeasyorders.com/) — Men's modest athletic wear storefront (Platform: Easy Orders).
+13. **Bebo Store EG** (https://www.bebostoreegy.com/) — Global sneakers & footwear store (Platform: Web Platform).
+14. **Refa Oils** (https://refaloils.myeasyorders.com/) — Natural essential oils & aromatherapy store (Platform: Easy Orders).
+15. **Tfawl** (https://tfawl.myeasyorders.com/) — Artisan confectionery & sweets menu (Platform: Easy Orders).
+16. **Nijuni Matcha** (https://nijunimatcha.com/) — Premium Japanese matcha & tea essentials store (Platform: Shopify).
+17. **Cindar EG** (https://cindar-eg.com/) — Luxury perfumes, fragrances & bespoke gift boxes (Platform: Shopify).
 
 ### 2. UPCOMING PROJECTS (6 In Development / Pipeline / Temporarily Unavailable)
-19. **Pawfect Worlds** (https://pawfectworlds.com/) — Status: Temporarily Unavailable / Under maintenance.
-20. **Beescaree** (https://beescaree.com/) — Status: Temporarily Unavailable / Domain renewal.
-21. **Fioonka** (https://fioonka.com/) — Status: Temporarily Unavailable / Catalog restructuring.
-22. **Dukaan AK** (https://dukaan-ak.com/) — Status: Temporarily Unavailable / Domain renewal.
-23. **Balance Egypt** (https://balance-egy.com/) — Status: Coming Soon / Payment onboarding.
-24. **Yahia Salah** (https://yahia-salah.free.nf/?i=2) — Status: Temporarily Unavailable / Hosting DNS update.
+18. **Pawfect Worlds** (https://pawfectworlds.com/) — Status: Temporarily Unavailable / Under maintenance.
+19. **Beescaree** (https://beescaree.com/) — Status: Temporarily Unavailable / Domain renewal.
+20. **Fioonka** (https://fioonka.com/) — Status: Temporarily Unavailable / Catalog restructuring.
+21. **Dukaan AK** (https://dukaan-ak.com/) — Status: Temporarily Unavailable / Domain renewal.
+22. **Balance Egypt** (https://balance-egy.com/) — Status: Coming Soon / Payment onboarding.
+23. **Yahia Salah** (https://yahia-salah.free.nf/?i=2) — Status: Temporarily Unavailable / Hosting DNS update.
 
 ---
 
